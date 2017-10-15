@@ -1,1 +1,33 @@
-/* YOUR CUSTOM STYLES */
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+.top-nav-collapse {
+    background-color: #393e41 !important; 
+}
+.navbar:not(.top-nav-collapse) {
+    background: #393e41 !important;
+}
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #393e41 !important;
+    } 
+}
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+}
+
+.hr-light {
+    border-top: 3px solid #fff;
+    width: 80px;
+}
+@media (max-width: 740px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+        height: 700px; 
+    } 
+}
+.big-paragraph {
+    font-size: 1.25rem;
+}
