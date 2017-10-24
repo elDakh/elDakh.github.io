@@ -24,17 +24,14 @@ h1, h2 {
     width: 80px;
 }
 
-@media (max-width: 740px) {
-    
-    .main-answ {
-        font-size: 2rem;
-    }
-}
-
 @media (max-width: 500px) {
     
     .main-quest {
         font-size: 1rem;
+    }
+    
+    .main-answ {
+        font-size: 1.7rem;
     }
 }
 
