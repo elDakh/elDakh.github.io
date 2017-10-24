@@ -3,14 +3,17 @@
 .top-nav-collapse {
     background-color: #393e41 !important; 
 }
+
 .navbar:not(.top-nav-collapse) {
     background: #393e41 !important;
 }
+
 @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
         background: #393e41 !important;
     } 
 }
+
 h1, h2 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -20,6 +23,7 @@ h1, h2 {
     border-top: 3px solid #fff;
     width: 80px;
 }
+
 @media (max-width: 740px) {
     .full-height,
     .full-height body,
@@ -27,7 +31,19 @@ h1, h2 {
     .full-height header .view {
         height: 700px; 
     } 
+    
+    .main-answ {
+        font-size: 2rem;
+    }
 }
+
+@media (max-width: 500px) {
+    
+    .main-quest {
+        font-size: 1rem;
+    }
+}
+
 .big-paragraph {
     font-size: 1.25rem;
 }
