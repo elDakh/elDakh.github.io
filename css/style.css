@@ -25,12 +25,6 @@ h1, h2 {
 }
 
 @media (max-width: 740px) {
-    .full-height,
-    .full-height body,
-    .full-height header,
-    .full-height header .view {
-        height: 700px; 
-    } 
     
     .main-answ {
         font-size: 2rem;
