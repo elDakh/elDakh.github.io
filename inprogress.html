@@ -308,15 +308,15 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="md-form">
-                                <input type="number" id="bwQty" class="form-control text-center" value="0" min="0">
-                                <label for="bwQty" class="">Чорно-білих А4</label>
+                                <input type="number" id="bwQtyInput" class="form-control text-center" value="0" min="0" onchange="calculate()">
+                                <label for="bwQtyInput" class="">Чорно-білих А4</label>
                             </div>
                         </div>
                         
                         <div class="col-sm-6">
                             <div class="md-form">
-                                <input type="text" id="clQty" class="form-control text-center" value="0" min="0">
-                                <label for="clQty" class="text-center">Кольорових А4</label>
+                                <input type="number" id="clQtyInput" class="form-control text-center" value="0" min="0" onchange="calculate()">
+                                <label for="clQtyInput" class="text-center">Кольорових А4</label>
                             </div>
                         </div>
                     </div>
@@ -326,15 +326,15 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="md-form">
-                                <input type="text" id="form1" class="form-control text-center" value="0.00">
-                                <label for="form1" class="">У нас</label>
+                                <input type="text" id="ourPriceOutput" class="form-control text-center" value="0 грн">
+                                <label for="ourPriceOutput" class="">У нас</label>
                             </div>
                         </div>
                         
                         <div class="col-sm-6">
                             <div class="md-form">
-                                <input type="text" id="form1" class="form-control text-center" value="0.00">
-                                <label for="form1" class="">В звичайній друкарні</label>
+                                <input type="text" id="theirPriceOutput" class="form-control text-center" value="0 грн">
+                                <label for="theirPriceOutput" class="">У звичайній друкарні</label>
                             </div>
                         </div>
                     </div>
@@ -344,15 +344,15 @@
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="md-form">
-                                <input type="text" id="form1" class="form-control text-center" value="0">
-                                <label for="form1" class="">Гривні</label>
+                                <input type="text" id="eGrnOutput" class="form-control text-center" value="0 грн">
+                                <label for="eGrnOutput" class="">Гривні</label>
                             </div>
                         </div>
                         
                         <div class="col-sm-6">
                             <div class="md-form">
-                                <input type="text" id="form1" class="form-control text-center" value="0">
-                                <label for="form1" class="">Відсотки</label>
+                                <input type="text" id="ePercOutput" class="form-control text-center" value="0%">
+                                <label for="ePercOutput" class="">Відсотки</label>
                             </div>
                         </div>
                     </div>
@@ -366,11 +366,41 @@
         </div>
 
         
-        
-        
         <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
         <script type="text/javascript" src="js/popper.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/mdb.min.js"></script>
+        
+        <script type="text/javascript">
+            var bwQty;
+            var clQty;
+            
+            var ourPrice;
+            var theirPrice;
+            
+            var eGrn;
+            var ePerc;
+            
+            function calculate () {
+                bwQty = document.getElementById('bwQtyInput').value;
+                clQty = document.getElementById('clQtyInput').value;
+                
+                ourPrice = bwQty * 0.5 + clQty * 3;
+                theirPrice = bwQty * 0.6 + clQty * 6;
+                
+                eGrn = theirPrice*1 - ourPrice*1;
+                ePerc = (theirPrice/ourPrice)*100 - 100;
+                
+                ourPrice = ourPrice.toFixed(2);
+                theirPrice = theirPrice.toFixed(2);
+                eGrn = eGrn.toFixed(2);
+                ePerc = ePerc.toFixed(2);
+                
+                document.getElementById('ourPriceOutput').setAttribute('value', ourPrice + ' грн');
+                document.getElementById('theirPriceOutput').setAttribute('value', theirPrice + ' грн');
+                document.getElementById('eGrnOutput').setAttribute('value', eGrn + ' грн');
+                document.getElementById('ePercOutput').setAttribute('value', ePerc + '%');
+            }
+         </script>
     </body>
 </html>
