@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 .top-nav-collapse {
-    background-color: #393e41 !important; 
+    background-color: #2e2e2e !important; 
 }
 
 .navbar:not(.top-nav-collapse) {
-    background: #393e41 !important;
+    background: #2e2e2e !important;
 }
 
 @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
-        background: #393e41 !important;
+        background: #2e2e2e !important;
     } 
 }
 
