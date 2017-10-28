@@ -60,7 +60,6 @@ h1, h2, h3 {
 
 .darkback {
     background-color: rgba(0, 0, 0, 0.8);
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding: 1rem;
     border-radius: 15px;
 }
