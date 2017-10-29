@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
+html {
+    background-color: #f6f7eb;
+}
+
 .top-nav-collapse {
     background-color: #2e2e2e !important;
     -webkit-border-radius: 0;
