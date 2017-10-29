@@ -1,46 +1,472 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en" class="full-height">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108799040-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-<body>
+            gtag('config', 'UA-108799040-1');
+        </script>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Сервіс, що дозволяє студентам які не мають власних принтерів заощаджувати час та кошти">
+        
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+        <title>OnPrint - Перша студентська онлайн-друкарня</title>
+        
+        <link rel="canonical" href="http://onprint.lviv.ua/"/>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/mdb.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
 
-    <!-- ЛЮБА, ВЕСЬ КОНТЕНТ ПОЧИНАЄТЬСЯ ТУТ, ІНШІ ЧАСТИНИ КОДУ БАЖАНО НЕ ЧІПАТИ-->
-    
-    <div style="height: 100vh">
-        <div class="flex-center flex-column text-center">
-            <h1 class="animated fadeIn mb-4">Йой! Ми ще не дописали сторінку</h1>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand waves-effect waves-light" href="#"><strong style="font-family: 'Oswald', sans-serif;">On<span class="amber-text">Print</span></strong></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                        <ul class="navbar-nav mx-auto text-center">
+                            <li class="nav-item">
+                                <a class="nav-link pr-4 pl-4" href="#review">Про сервіс</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link pr-4 pl-4" href="#howitworks">Як це працює</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link pr-4 pl-4" href="#rules">Правила</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link pr-4 pl-4" href="#order">Замовити</a>
+                            </li>
+                        </ul>       
+                    </div>
+                </div>
+            </nav>
 
-            <h5 class="animated fadeIn mb-4">Зовсім скоро вона запрацює для Вас, потрібно лиш трііішечки зачекати :P</h5>
-
-            <p class="animated fadeIn text-muted">LU Team © All rights reserved</p>
+            <div class="view" style="background-color: #393e41;">
+                <div class="full-bg-img">
+                    <div class="container flex-center">
+                        <div class="row">
+                            <div class="col-md-12 mb-md-5 pb-md-2">
+                                <div class="text-center">
+                                    <h4 class="font-up white-text wow fadeInDown main-quest" data-wow-delay="0.4s"><strong>Набридло стояти в чергах щоб роздрукувати документ?</strong></h4>
+                                    <hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.4s">
+                                    <div class="darkback">
+                                        <h1 class="h1-reponsive white-text font-bold wow fadeInDown main-answ dark-back" data-wow-delay="0.3s">    <strong>On<span class="amber-text">Print</span> - ПЕРША ОНЛАЙН-ДРУКАРНЯ ДЛЯ СТУДЕНТІВ</strong>
+                                    </h1>
+                                    </div>
+                                    <div class="row justify-content-center pt-3 no-gutters pb-md-5 mb-md-5 mb-3">
+                                        <div class="col-md-4 col-sm-5 col-8 pt-2 ml-1 mr-1">
+                                            <a class="btn btn-white wow fadeInDown btn-block m-0" data-wow-delay="0.4s" href="https://docs.google.com/forms/d/e/1FAIpQLSePkOix301xZuvXpmjOuls-pu67bjiiy_vzqn7zKq-HVjJsqg/viewform" target="_blank"><span class="black-text" >Замовити друк</span></a>
+                                        </div>
+                                        
+                                        <div class="col-md-4 col-sm-5 col-8 pt-2 ml-1 mr-1">
+                                            <a class="btn btn-outline-white wow fadeInDown btn-block m-0 waves-effect waves-light" data-wow-delay="0.4s" href="#review" style="background-color: #ffc107;"><span style="color: #2e2e2e;">Детальніше</span></a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="mb-md-2 pt-md-4" id="review"></div>
+        
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="h2-reponsive">
+                        onprint - унікальний сервіс для студентів львівської політехніки    
+                    </h2>
+                    <p class="pt-2 pb-4">
+                        Наша мета - заощадити час та кошти студентів які не мають власних принтерів і змушені стояти в довгих чергах до звичайних друкарень
+                    </p>
+                </div>
+            </div>  
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-3 hoverable">
+                        <div class="view overlay hm-white-slight">
+                            <img src="img/time.png" class="img-fluid" alt="quick" title="quick">
+                            <div class="mask"></div>
+                        </div>
+                        
+                        <div class="card-body text-center">
+                            <h4 class="card-title">У нас швидше</h4>
+                            <p class="card-text">Друк відбувається заздалегідь, тому тобі не доведеться чекати в черзі, достатньо просто прийти та забрати замовлення</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card mb-3 hoverable">
+                        <div class="view overlay hm-white-slight">
+                            <img src="img/prices.png" class="img-fluid" alt="cheep" title="cheep">
+                            <div class="mask"></div>
+                        </div>
+                        
+                        <div class="card-body text-center">
+                            <h4 class="card-title">У нас вигідніше</h4>
+                            <p class="card-text">Ми встановили нижчі ціни ніж у звичайних друкарнях, бо самі знаємо як це - бути студентом та економити на всьому :)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card mb-3 hoverable">
+                        <div class="view overlay hm-white-slight">
+                            <img src="img/comfort.png" class="img-fluid" alt="comfort" title="comfort">
+                            <div class="mask"></div>
+                        </div>
+                        
+                        <div class="card-body text-center">
+                            <h4 class="card-title">У нас зручніше</h4>
+                            <p class="card-text">Із нами тобі більше не треба думати про те чи не забув ти вдома флешку з документами і чи встигнеш видрукувати все за перерву</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    
-    <!-- ЛЮБА, ВЕСЬ КОНТЕНТ ЗАКІНЧУЄТЬСЯ ТУТ, ІНШІ ЧАСТИНИ КОДУ БАЖАНО НЕ ЧІПАТИ-->
+        
+        <div class="container mb-md-4 mt-md-2 hline" id="howitworks"></div>
 
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-</body>
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="h2-reponsive">
+                        як це працює?    
+                    </h2>
+                    <p class="pt-2 pb-4">
+                        Щоб скористатися нашим сервісом, тобі потрібно зробити 6 простих кроків
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-4 mb-5 text-center">
+                    <i class="fa fa-laptop fa-5x red-text mb-3"></i>
+                    <h4 class="h4-responsive">
+                        Крок 1
+                    </h4>
+                    <h3 class="h4-responsive">
+                        <strong>Зайди на onprint.lviv.ua</strong>
+                    </h3>
+                </div>
+                
+                <div class="col-sm-4 mb-5 text-center">
+                    <i class="fa fa-gears fa-5x deep-orange-text mb-3"></i>
+                    <h4 class="h4-responsive">
+                        Крок 2
+                    </h4>
+                    <h3 class="h4-responsive">
+                        <strong>Уважно прочитай правила</strong>
+                    </h3>
+                </div>
+                
+                <div class="col-sm-4 mb-5 text-center">
+                    <i class="fa fa-edit fa-5x amber-text mb-3"></i>
+                    <h4 class="h4-responsive">
+                        Крок 3
+                    </h4>
+                    <h3 class="h4-responsive">
+                        <strong>Заповни та відправ форму</strong>
+                    </h3>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col text-center">
+                    <p>Наступного робочого дня:</p>
+                </div>
+            </div>
+            
+            <div class="row pt-3">
+                <div class="col-sm-4 mb-5 text-center">
+                    <i class="fa fa-money fa-5x lime-text mb-3"></i>
+                    <h4 class="h4-responsive">
+                        Крок 4
+                    </h4>
+                    <h3 class="h4-responsive">
+                        <strong>Не забудь взяти студентський та достатньо грошей</strong>
+                    </h3>
+                </div>
+                
+                <div class="col-sm-4 mb-5 text-center">
+                    <i class="fa fa-street-view fa-5x light-green-text mb-3"></i>
+                    <h4 class="h4-responsive">
+                        Крок 5
+                    </h4>
+                    <h3 class="h4-responsive">
+                        <strong>В обраний час прийди по своє замовлення у вказане місце</strong>
+                    </h3>
+                </div>
+                
+                <div class="col-sm-4 mb-5 text-center">
+                    <i class="fa fa-thumbs-o-up fa-5x teal-text mb-3"></i>
+                    <h4 class="h4-responsive">
+                        Крок 6
+                    </h4>
+                    <h3 class="h4-responsive">
+                        <strong>Заощадь час та кошти і порадь друкарню друзям</strong>
+                    </h3>
+                </div>
+            </div>
+        </div>
 
+        <div class="container mb-md-4 mt-md-2 hline" id="rules"></div>
+        
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="h2-reponsive">
+                        правила    
+                    </h2>
+                    <p class="pt-2 pb-4">
+                        Ми додали це сюди тільки для того, щоб у тебе виникло якнайменше запитань, тому не полінуйся і прочитай ;)
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 pb-4">
+                    <h3 class="h4-resonsive text-center pb-3">
+                        Ми обіцяємо
+                    </h3>
+                    <ul>
+                        <li>
+                            <p>
+                                Забезпечувати тобі зручність та економію - наш сервіс піклується про студентів 
+                            </p>
+                        </li>
+                        
+                        <li>
+                            <p>
+                                Поважати твій час - наші співробітники пунктуальні, оскільки знають що час це гроші, а гроші це успіх
+                            </p>
+                        </li>
+                        
+                        <li>
+                            <p>
+                                Зберігати всю інформацію в таємниці - ти можеш бути впевненим в тому що твоїми документами ніхто більше не скористається 
+                            </p>
+                        </li>
+                        
+                        <li>
+                            <p>
+                                Віддавати якісний друк - кожне виконане замовлення ретельно перевіряється на якість і якщо потрібно, переробляється
+                            </p>
+                        </li>
+                        
+                        <li>
+                            <p>
+                                Вдосконалюватися заради тебе - ми постійно аналізуємо свою роботу щоб покращити наш сервіс
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-6 pb-4">
+                    <h3 class="h4-resonsive text-center pb-3">
+                        Ти обіцяєш
+                    </h3>
+                    <ul>
+                        <li>
+                            <p>
+                                Поважати наш час та приходити за замовленням вчасно - ми не чекатимемо більше ніж 15 хвилин, якщо ти, звичайно ж, не професор :Р
+                            </p>
+                        </li>
+                        
+                        <li>
+                            <p>
+                                Мати із собою студентський квиток чи інший документ що засвідчує особу - ми не віддаємо замовлення анонімам (хіба що за потрійну оплату)
+                            </p>
+                        </li>
+                        
+                        <li>
+                            <p>
+                                Завжди забирати замовлення вчасно - ми тобі довіряємо. Якщо ти замовив друк і не прийшов по нього, то зможеш забрати його наступного разу тільки за подвійну оплату. Якщо ж не забрав вдруге - ласкаво просимо до чорного списку<strike>, ціна виходу з якого обговорюється окремо</strike>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mb-md-4 mt-md-2 hline" id="order"></div>
+        
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="h2-reponsive">
+                        замовлення    
+                    </h2>
+                    <p class="pt-2 pb-4">
+                        Перед тим як скористатися нашими послугами, ти можеш самотужки обчислити свою економію використовуючи наш калькулятор
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-10 mb-5">
+                    <h5 class="text-center mb-4 font-up">
+                        <strong>Мені потрібно видрукувати:</strong>
+                    </h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="md-form">
+                                <input type="number" id="bwQtyInput" class="form-control text-center black-text" value="0" min="0" onchange="calculate()">
+                                <label for="bwQtyInput" class="black-text">Чорно-білих А4</label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-6">
+                            <div class="md-form">
+                                <input type="number" id="clQtyInput" class="form-control text-center black-text" value="0" min="0" onchange="calculate()">
+                                <label for="clQtyInput" class="black-text">Кольорових А4</label>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="text-center mb-4 font-up">
+                        <strong>Це коштуватиме:</strong>
+                    </h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="md-form">
+                                <input type="text" id="ourPriceOutput" class="form-control text-center black-text" value="0 грн" disabled>
+                                <label for="ourPriceOutput" class="black-text">У нас</label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-6">
+                            <div class="md-form">
+                                <input type="text" id="theirPriceOutput" class="form-control text-center black-text" value="0 грн" disabled>
+                                <label for="theirPriceOutput" class="black-text">У звичайній друкарні</label>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="text-center mb-4 font-up">
+                        <strong>Економія:</strong>
+                    </h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="md-form">
+                                <input type="text" id="eGrnOutput" class="form-control text-center black-text" value="0 грн" disabled>
+                                <label for="eGrnOutput" class="black-text">Гривні</label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-6">
+                            <div class="md-form">
+                                <input type="text" id="ePercOutput" class="form-control text-center black-text" value="0%" disabled>
+                                <label for="ePercOutput" class="black-text">Відсотки</label>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-amber wow fadeInDown btn-block m-0" data-wow-delay="0.4s" href="https://docs.google.com/forms/d/e/1FAIpQLSePkOix301xZuvXpmjOuls-pu67bjiiy_vzqn7zKq-HVjJsqg/viewform" target="_blank">Замовити друк</a>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="page-footer elegant-color-dark center-on-small-only">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h5 class="title">
+                            <i class="fa fa-comment"></i>
+                            Залиш відгук
+                        </h5>
+                        <p>Нам важливо отримати твої коментарі, зауваження та запитання. Тицяй на кнопку та ділися враженнями!</p>
+                        <a class="btn btn-outline-white btn-block waves-effect waves-light" href="https://docs.google.com/forms/d/e/1FAIpQLSd-kTYgjMMZ0QEzV6HMJVads2DX_qY5NPJK43xCqupn9Eh6Ng/viewform" target="_blank">Залишити відгук</a> 
+                        <p class="mt-2">Електронна скринька для зв'язку: onprint.lviv@gmail.com</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h5 class="title">
+                            <i class="fa fa-link"></i>
+                            Посилання
+                        </h5>
+                        <ul>
+                            <li><a href="#about">Про сервіс</a></li>
+                            <li><a href="#howitworks">Як це працює</a></li>
+                            <li><a href="#rules">Правила</a></li>
+                            <li><a href="#order">Замовити</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="title">
+                            <i class="fa fa-phone"></i>
+                            Телефони
+                        </h5>
+                        <ul>
+                            <li>+38 (063) 476-93-01</li>
+                            <li>+38 (096) 414-38-51</li>
+                            <li>+38 (066) 441-20-44</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+     
+            <div class="footer-copyright">
+                <div class="container-fluid">
+                    © 2017 Copyright: <a href="http://www.onprint.lviv.ua">onprint.lviv.ua</a>
+                </div>
+            </div>
+        </footer>
+
+        
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        
+        <script type="text/javascript">
+            var bwQty;
+            var clQty;
+            
+            var ourPrice;
+            var theirPrice;
+            
+            var eGrn;
+            var ePerc;
+            
+            function calculate () {
+                bwQty = document.getElementById('bwQtyInput').value;
+                clQty = document.getElementById('clQtyInput').value;
+                
+                ourPrice = bwQty * 0.5 + clQty * 3;
+                theirPrice = bwQty * 0.6 + clQty * 6;
+                
+                eGrn = theirPrice*1 - ourPrice*1;
+                ePerc = (theirPrice/ourPrice)*100 - 100;
+                
+                ourPrice = ourPrice.toFixed(2);
+                theirPrice = theirPrice.toFixed(2);
+                eGrn = eGrn.toFixed(2);
+                ePerc = ePerc.toFixed(2);
+                
+                document.getElementById('ourPriceOutput').setAttribute('value', ourPrice + ' грн');
+                document.getElementById('theirPriceOutput').setAttribute('value', theirPrice + ' грн');
+                document.getElementById('eGrnOutput').setAttribute('value', eGrn + ' грн');
+                document.getElementById('ePercOutput').setAttribute('value', ePerc + '%');
+            }
+         </script>
+    </body>
 </html>
