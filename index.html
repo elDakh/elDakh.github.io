@@ -47,11 +47,11 @@
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link pr-4 pl-4" href="#rules">Правила</a>
+                                <a class="nav-link pr-4 pl-4" href="#order">Розрахунок вартості</a>
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link pr-4 pl-4" href="#order">Замовити</a>
+                                <a class="nav-link pr-4 pl-4" href="#rules">Правила</a>
                             </li>
                         </ul>       
                     </div>
@@ -72,7 +72,7 @@
                                     </div>
                                     <div class="row justify-content-center pt-3 no-gutters pb-md-5 mb-md-5 mb-3">
                                         <div class="col-md-4 col-sm-5 col-8 pt-2 ml-1 mr-1">
-                                            <a class="btn btn-white wow fadeInDown btn-block m-0" data-wow-delay="0.4s" href="https://docs.google.com/forms/d/e/1FAIpQLSePkOix301xZuvXpmjOuls-pu67bjiiy_vzqn7zKq-HVjJsqg/viewform" target="_blank"><span class="black-text" >Замовити друк</span></a>
+                                            <a class="btn btn-white wow fadeInDown btn-block m-0" data-wow-delay="0.4s" href="#order"><span class="black-text" >Замовити друк</span></a>
                                         </div>
                                         
                                         <div class="col-md-4 col-sm-5 col-8 pt-2 ml-1 mr-1">
@@ -231,6 +231,81 @@
             </div>
         </div>
 
+        <div class="container mb-md-4 mt-md-2 hline" id="order"></div>
+        
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="h2-reponsive">
+                        Розрахунок вартості    
+                    </h2>
+                    <p class="pt-2 pb-4">
+                        Перед тим як скористатися нашими послугами, ти можеш самотужки обчислити свою економію використовуючи наш калькулятор
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-sm-10 mb-5">
+                    <h5 class="text-center mb-4 font-up">
+                        <strong>Мені потрібно видрукувати:</strong>
+                    </h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="md-form">
+                                <input type="number" id="bwQtyInput" class="form-control text-center black-text" value="0" min="0" onchange="calculate()">
+                                <label for="bwQtyInput" class="black-text">Чорно-білих А4</label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-6">
+                            <div class="md-form">
+                                <input type="number" id="clQtyInput" class="form-control text-center black-text" value="0" min="0" onchange="calculate()">
+                                <label for="clQtyInput" class="black-text">Кольорових А4</label>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="text-center mb-4 font-up">
+                        <strong>Це коштуватиме:</strong>
+                    </h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="md-form">
+                                <input type="text" id="ourPriceOutput" class="form-control text-center black-text" value="0 грн" disabled>
+                                <label for="ourPriceOutput" class="black-text">У нас</label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-6">
+                            <div class="md-form">
+                                <input type="text" id="theirPriceOutput" class="form-control text-center black-text" value="0 грн" disabled>
+                                <label for="theirPriceOutput" class="black-text">У звичайній друкарні</label>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="text-center mb-4 font-up">
+                        <strong>Економія:</strong>
+                    </h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="md-form">
+                                <input type="text" id="eGrnOutput" class="form-control text-center black-text" value="0 грн" disabled>
+                                <label for="eGrnOutput" class="black-text">Гривні</label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-6">
+                            <div class="md-form">
+                                <input type="text" id="ePercOutput" class="form-control text-center black-text" value="0%" disabled>
+                                <label for="ePercOutput" class="black-text">Відсотки</label>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-amber wow fadeInDown btn-block m-0" data-wow-delay="0.4s" href="https://docs.google.com/forms/d/e/1FAIpQLSePkOix301xZuvXpmjOuls-pu67bjiiy_vzqn7zKq-HVjJsqg/viewform" target="_blank">Замовити друк</a>
+                </div>
+            </div>
+        </div>
+        
         <div class="container mb-md-4 mt-md-2 hline" id="rules"></div>
         
         <div class="container pt-5">
@@ -306,81 +381,6 @@
                             </p>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="container mb-md-4 mt-md-2 hline" id="order"></div>
-        
-        <div class="container pt-5 pb-5">
-            <div class="row">
-                <div class="col text-center">
-                    <h2 class="h2-reponsive">
-                        замовлення    
-                    </h2>
-                    <p class="pt-2 pb-4">
-                        Перед тим як скористатися нашими послугами, ти можеш самотужки обчислити свою економію використовуючи наш калькулятор
-                    </p>
-                </div>
-            </div>
-            
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-sm-10 mb-5">
-                    <h5 class="text-center mb-4 font-up">
-                        <strong>Мені потрібно видрукувати:</strong>
-                    </h5>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="md-form">
-                                <input type="number" id="bwQtyInput" class="form-control text-center black-text" value="0" min="0" onchange="calculate()">
-                                <label for="bwQtyInput" class="black-text">Чорно-білих А4</label>
-                            </div>
-                        </div>
-                        
-                        <div class="col-6">
-                            <div class="md-form">
-                                <input type="number" id="clQtyInput" class="form-control text-center black-text" value="0" min="0" onchange="calculate()">
-                                <label for="clQtyInput" class="black-text">Кольорових А4</label>
-                            </div>
-                        </div>
-                    </div>
-                    <h5 class="text-center mb-4 font-up">
-                        <strong>Це коштуватиме:</strong>
-                    </h5>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="md-form">
-                                <input type="text" id="ourPriceOutput" class="form-control text-center black-text" value="0 грн" disabled>
-                                <label for="ourPriceOutput" class="black-text">У нас</label>
-                            </div>
-                        </div>
-                        
-                        <div class="col-6">
-                            <div class="md-form">
-                                <input type="text" id="theirPriceOutput" class="form-control text-center black-text" value="0 грн" disabled>
-                                <label for="theirPriceOutput" class="black-text">У звичайній друкарні</label>
-                            </div>
-                        </div>
-                    </div>
-                    <h5 class="text-center mb-4 font-up">
-                        <strong>Економія:</strong>
-                    </h5>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="md-form">
-                                <input type="text" id="eGrnOutput" class="form-control text-center black-text" value="0 грн" disabled>
-                                <label for="eGrnOutput" class="black-text">Гривні</label>
-                            </div>
-                        </div>
-                        
-                        <div class="col-6">
-                            <div class="md-form">
-                                <input type="text" id="ePercOutput" class="form-control text-center black-text" value="0%" disabled>
-                                <label for="ePercOutput" class="black-text">Відсотки</label>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="btn btn-amber wow fadeInDown btn-block m-0" data-wow-delay="0.4s" href="https://docs.google.com/forms/d/e/1FAIpQLSePkOix301xZuvXpmjOuls-pu67bjiiy_vzqn7zKq-HVjJsqg/viewform" target="_blank">Замовити друк</a>
                 </div>
             </div>
         </div>
