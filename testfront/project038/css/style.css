@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 .thin-paragraph {
     line-height: 1.1;
     color: #2e2e2e;
 }
-
-
+.main-banner-text {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #2e2e2e;
+}
