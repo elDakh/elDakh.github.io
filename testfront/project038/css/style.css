@@ -1,5 +1,9 @@
 
 .thin-paragraph {
-    line-height: 1;
+    line-height: 1.1;
     color: #2e2e2e;
+}
+
+.btn-full-width {
+    width: 100%;
 }
