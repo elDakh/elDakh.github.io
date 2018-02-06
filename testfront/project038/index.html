@@ -66,12 +66,13 @@
 
     <div class="container-fluid" id="main-banner">
         <div class="row">
-            <div class="col-md-6 pt-md-5 mt-3 pr-0 pl-0 mr-0 ml-0">
-                <h3 class="main-banner-text text-md-right text-center">
+            <div class="col-lg-6 pt-md-5 mt-3 pr-0 pl-0 mr-0 ml-0">
+                <h3 class="main-banner-text text-lg-right text-center">
                     <span class="text-primary">Замовте адресну табличку для дому</span><br>
                     з терміном служби до 15 років та<br>
                     отримайте її через 5 днів з моменту замовлення!
-                </h3>
+                    <div class="eTimer pt-5"></div>
+                </h3>          
             </div>
         </div>
     </div>
@@ -79,6 +80,15 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    
+    <script src="http://e-timer.ru/js/etimer.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery(".eTimer").eTimer({
+                etType: 2, etDate: "07.02.2018.0.0", etTitleText: "До закінчення акції залишилось:", etTitleSize: 21, etShowSign: 3, etSep: ":", etFontFamily: "Trebuchet MS", etTextColor: "#2e2e2e", etPaddingTB: 1, etPaddingLR: 0, etBackground: "transparent", etBorderSize: 0, etBorderRadius: 3, etBorderColor: "white", etShadow: " 0px 0px 0px 0px #333333", etLastUnit: 4, etNumberFontFamily: "Impact", etNumberSize: 35, etNumberColor: "white", etNumberPaddingTB: 0, etNumberPaddingLR: 8, etNumberBackground: "#11abb0", etNumberBorderSize: 0, etNumberBorderRadius: 5, etNumberBorderColor: "white", etNumberShadow: "inset 0px 0px 10px 0px rgba(0, 0, 0, 0.5)"
+            });
+        });
+    </script>
 </body>
 
 </html>
