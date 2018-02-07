@@ -14,8 +14,8 @@
 <body>
     <div class="container-fluid" id="top-banner">
         <div class="row text-center">
-            <div class="col-md-4 pt-3">
-                <img class="img-fluid" src="img/LOGO-DSV.png" alt="logo" width="65%">
+            <div class="col-md-4 pt-4">
+                <img class="img-fluid" src="img/LOGO-DSV.png" alt="logo" width="40%">
             </div>
             <div class="col-md-4 pt-4">
                 <p class="thin-paragraph"><b>Адресні таблички від виробника.</b><br>Доставка по Україні</p>
@@ -24,7 +24,7 @@
                 <h4>
                     <b>(095) 881-10-06</b>
                     <br>
-                    <button type="button" class="btn btn-danger mt-1 pl-4 pr-4"> Замовити дзвінок </button>
+                    <button type="button" class="btn btn-primary mt-1 pl-4 pr-4"> Замовити дзвінок </button>
                 </h4>
             </div>
         </div>
@@ -40,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto text-center">
                 <li class="nav-item pr-2 pl-2 active">
-                    <a class="nav-link" href="#"><i class="fas fa-home"></i> ГОЛОВНА</a>
+                    <a class="nav-link" href="#">ГОЛОВНА</a>
                 </li>
                 <li class="nav-item pr-2 pl-2">
                     <a class="nav-link" href="#">ПРО НАС</a>
@@ -72,19 +72,19 @@
                 </h3>
                 <h6 class="text-danger"><b>БЕЗКОШТОВНА ДОСТАВКА</b></h6>
                 <h6>
-                    Замовте табличку до <b>кінця дня</b><br> і доставка буде для вас <b>БЕЗКОШТОВНОЮ</b>
+                    Замовте табличку до <b><span id="next-day">кінця дня</span></b><br> і доставка буде для вас <b>БЕЗКОШТОВНОЮ</b>
                 </h6>
                 <div class="eTimer pt-3"></div><br>
-                <button type="button" class="btn btn-danger mt-4 mb-5">Замовити з безкоштовною доставкою!</button>
+                <button type="button" class="btn btn-primary mt-4 mb-5">Замовити з безкоштовною доставкою!</button>
             </div>
         </div>
     </div>
 
     <div class="container-fluid mt-4 pl-lg-5 pr-lg-5">
         <div class="row">
-           <div class="col-md-5 col-md-push-7">
+            <div class="col-md-5 order-md-2">
                 <div class="card">
-                    <img class="mx-auto mt-5 img-fluid" src="img/table.png" alt="Card image cap" width="90%">
+                    <img class="mx-auto mt-5 img-fluid" src="img/table.png" alt="Card image cap" width="80%">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -92,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-7 col-md-pull-5">
+            <div class="col-md-7 order-md-1">
                 <div id="accordion">
                     <div class="card">
                         <div class="card-header" id="headingOne">
@@ -137,7 +137,7 @@
                         <div class="card-header" id="headingTwo">
                             <h5 class="mb-0">
                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <span class="red-header"><i class="fas fa-sliders-h"></i> ВИберіть форму та розмір таблички:</span>
+                                    <span class="red-header"><i class="fas fa-sliders-h"></i> Форма та розмір таблички:</span>
                                 </button>
                             </h5>
                         </div>
@@ -151,7 +151,7 @@
                         <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
                                 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <span class="red-header"><i class="fas fa-paint-brush"></i> Виберіть колір таблички:</span>
+                                    <span class="red-header"><i class="fas fa-paint-brush"></i> Колір таблички:</span>
                                 </button>
                             </h5>
                         </div>
@@ -177,7 +177,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
@@ -217,6 +217,26 @@
                 etNumberShadow: "inset 0px 0px 10px 0px rgba(0, 0, 0, 0.5)"
             });
         });
+    </script>
+
+    <script type="text/javascript">
+        function echo_date(date) {
+            var months = ["січня", "лютого", "березня", "квітня", "травня", "червня", "липня", "серпня", "вересня", "жовтня", "листопада", "грудня"];
+
+            echo_date = function(date) {
+                date = new Date(date);
+                return {
+                    "date": date,
+                    "month": months[date.getMonth()],
+                    "day_num": date.getDate()
+                };
+            }
+            return echo_date(date);
+        };
+
+        var out = echo_date(Date.now() + 24 * 60 * 60 * 1000);
+
+        document.getElementById("next-day").innerHTML = out.day_num + " " + out.month;
     </script>
 </body>
 
