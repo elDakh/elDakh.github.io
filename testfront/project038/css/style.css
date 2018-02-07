@@ -33,5 +33,18 @@
 }
 
 .navbar {
-    background-color: blue;
+    background-color: #02001a;
+}
+
+.bordered {
+    border: 1px solid #db4d4d;
+    border-radius: 5px;
+    border-style: outset;
+}
+
+.btn span.glyphicon {    			
+	opacity: 0;				
+}
+.btn.active span.glyphicon {				
+	opacity: 1;				
 }
