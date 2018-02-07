@@ -6,25 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="/fonts/font/css/open-iconic-foundation.css" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-    <title>Hello, world!</title>
+    <title>Адресні таблички від ДизайнСВ</title>
 </head>
 
 <body>
     <div class="container-fluid" id="top-banner">
         <div class="row text-center">
-            <div class="col-md-4">
-                <img class="img-fluid" src="" alt="logo">
+            <div class="col-md-4 pt-3">
+                <img class="img-fluid" src="img/LOGO-DSV.png" alt="logo" width="65%">
             </div>
             <div class="col-md-4 pt-4">
                 <p class="thin-paragraph"><b>Адресні таблички від виробника.</b><br>Доставка по Україні</p>
             </div>
             <div class="col-md-4 pt-2">
                 <h4>
-                    <b>(050) 912-12-13</b>
+                    <b>(095) 881-10-06</b>
                     <br>
-                    <button type="button" class="btn btn-danger mt-1">Замовити дзвінок</button>
+                    <button type="button" class="btn btn-danger mt-1 pl-4 pr-4"> Замовити дзвінок </button>
                 </h4>
             </div>
         </div>
@@ -40,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto text-center">
                 <li class="nav-item pr-2 pl-2 active">
-                    <a class="nav-link" href="#"><span class="fi-home" title="home" aria-hidden="true"></span> ГОЛОВНА</a>
+                    <a class="nav-link" href="#"><i class="fas fa-home"></i> ГОЛОВНА</a>
                 </li>
                 <li class="nav-item pr-2 pl-2">
                     <a class="nav-link" href="#">ПРО НАС</a>
@@ -68,30 +68,152 @@
         <div class="row">
             <div class="col-lg-6 pt-md-5 mt-3 text-lg-right text-center">
                 <h3 class="main-banner-text pb-5">
-                    <span class="text-primary">Замовте адресну табличку для дому</span><br>
-                    з терміном служби до 15 років та<br>
-                    отримайте її через 5 днів з моменту замовлення!<br>  
-                </h3>     
-                <h6 class="text-danger"><b>БЕЗКОШТОВНА ДОСТАВКА</b></h6> 
+                    <span class="text-primary">Замовте адресну табличку для дому</span><br> з терміном служби до 15 років та<br> отримайте її через 5 днів з моменту замовлення!<br>
+                </h3>
+                <h6 class="text-danger"><b>БЕЗКОШТОВНА ДОСТАВКА</b></h6>
                 <h6>
-                    Замовте табличку до <b>кінця тижня</b><br>
-                    і доставка буде для вас <b>БЕЗКОШТОВНОЮ</b>
-                </h6>    
+                    Замовте табличку до <b>кінця дня</b><br> і доставка буде для вас <b>БЕЗКОШТОВНОЮ</b>
+                </h6>
                 <div class="eTimer pt-3"></div><br>
                 <button type="button" class="btn btn-danger mt-4 mb-5">Замовити з безкоштовною доставкою!</button>
             </div>
         </div>
     </div>
-   
+
+    <div class="md-container container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-7">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span class="red-header"><i class="fas fa-pencil-alt"></i> Що пишемо на табличці:</span>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <form>
+                                            <div class="form-group">
+                                                <input class="form-control" id="InputStreet" aria-describedby="streetHelp" placeholder="Вулиця">
+                                                <small id="streetHelp" class="form-text text-muted">Або проспект/майдан тощо</small>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <form>
+                                            <div class="form-group">
+                                                <input class="form-control" id="InputStreetName" aria-describedby="streetNameHelp" placeholder="Назва вулиці">
+                                                <small id="streetNameHelp" class="form-text text-muted">Назва потрібної вулиці</small>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <form>
+                                            <div class="form-group">
+                                                <input class="form-control" id="InputNumber" aria-describedby="numberHelp" placeholder="146">
+                                                <small id="numberHelp" class="form-text text-muted">Номер будинку</small>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <span class="red-header"><i class="fas fa-sliders-h"></i> ВИберіть форму та розмір таблички:</span>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span class="red-header"><i class="fas fa-paint-brush"></i> Виберіть колір таблички:</span>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <span class="red-header"><i class="fas fa-check-circle"></i> Додаткові параметри:</span>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="card">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
+
     <script src="http://e-timer.ru/js/etimer.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function() {
             jQuery(".eTimer").eTimer({
-                etType: 2, etDate: "07.02.2018.0.0", etTitleText: "До закінчення акції залишилось:", etTitleSize: 14, etShowSign: 3, etSep: ":", etFontFamily: "Trebuchet MS", etTextColor: "#2e2e2e", etPaddingTB: 0, etPaddingLR: 0, etBackground: "transparent", etBorderSize: 0, etBorderRadius: 0, etBorderColor: "white", etShadow: " 0px 0px 0px 0px #333333", etLastUnit: 4, etNumberFontFamily: "Trebuchet MS", etNumberSize: 35, etNumberColor: "white", etNumberPaddingTB: 0, etNumberPaddingLR: 3, etNumberBackground: "#2e2e2e", etNumberBorderSize: 0, etNumberBorderRadius: 3, etNumberBorderColor: "white", etNumberShadow: "inset 0px 0px 10px 0px rgba(0, 0, 0, 0.5)"
+                etType: 1,
+                etDate: "07.02.2018.0.0",
+                etTitleText: "До закінчення акції залишилось:",
+                etTitleSize: 14,
+                etShowSign: 3,
+                etSep: ":",
+                etFontFamily: "Trebuchet MS",
+                etTextColor: "#2e2e2e",
+                etPaddingTB: 0,
+                etPaddingLR: 0,
+                etBackground: "transparent",
+                etBorderSize: 0,
+                etBorderRadius: 0,
+                etBorderColor: "white",
+                etShadow: " 0px 0px 0px 0px #333333",
+                etLastUnit: 4,
+                etNumberFontFamily: "Trebuchet MS",
+                etNumberSize: 35,
+                etNumberColor: "white",
+                etNumberPaddingTB: 0,
+                etNumberPaddingLR: 3,
+                etNumberBackground: "#2e2e2e",
+                etNumberBorderSize: 0,
+                etNumberBorderRadius: 3,
+                etNumberBorderColor: "white",
+                etNumberShadow: "inset 0px 0px 10px 0px rgba(0, 0, 0, 0.5)"
             });
         });
     </script>
