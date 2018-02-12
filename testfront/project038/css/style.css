@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
-
 .thin-paragraph {
     line-height: 1.1;
     color: #2e2e2e;
 }
+
 .main-banner-text {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -29,7 +29,7 @@
     color: darkred;
     font-weight: 500;
     font-size: 1.2rem;
-    text-decoration: none !important;  
+    text-decoration: none !important;
 }
 
 .navbar {
@@ -42,9 +42,29 @@
     border-style: outset;
 }
 
-.btn span.glyphicon {    			
-	opacity: 0;				
+.custom-radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance:none;
+    appearance: none;
+    content: '';
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    outline: 0px;
 }
-.btn.active span.glyphicon {				
-	opacity: 1;				
+
+.custom-radio:checked:after {
+    content: '';
+    background: #fff;
+    display: block;
+    height: 50%;
+    width: 50%;
+    margin: 25%;
+    border-radius: 50%;
+}
+
+.vertical-line {
+    height: 1px;
+    background-color: #ddd;
 }
