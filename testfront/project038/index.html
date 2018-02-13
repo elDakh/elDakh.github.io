@@ -76,22 +76,34 @@
                         Замовте табличку до <b><span id="next-day">кінця дня</span></b><br> і доставка буде для вас <b>БЕЗКОШТОВНОЮ</b>
                     </h6>
                     <div class="eTimer pt-3"></div><br>
-                    <button type="button" class="btn btn-primary mt-4 mb-5">Вибрати модель таблички з безкоштовною доставкою</button>
+                    <button type="button" class="btn btn-primary mt-4 mb-5">Вибрати модель таблички<br>з безкоштовною доставкою</button>
                 </div>
-
             </div>
         </div>
     </div>
 
     <div class="container-fluid mt-4 pl-lg-5 pr-lg-5">
         <div class="row">
-            <div class="col-md-5 order-md-2 mb-3">
+            <div class="col-md-5 order-md-2 mb-3  text-center">
                 <div class="card">
                     <img class="mx-auto mt-5 img-fluid" src="img/table.png" alt="Card image cap" width="80%">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <div class="row mt-3">
+                            <div class="col-4">
+                                <h6><i class="fas fa-sliders-h"></i> Розмір:</h6>
+                                <p id="sizeValue">30x30 см</p>
+                            </div>
+                            <div class="col-4">
+                                <h6><i class="fas fa-paint-brush"></i> Колір:</h6>
+                                <p id="sizeValue">синій</p>
+                            </div>
+                            <div class="col-4">
+                                <h6><i class="fas fa-map-signs"></i> Матеріал:</h6>
+                                <p id="sizeValue">композит</p>
+                            </div>
+                        </div>
+                        <h2>1500 грн</h2>
+                        <a href="#" class="btn btn-primary mt-3">Швидке замовлення</a>
                     </div>
                 </div>
             </div>
@@ -228,13 +240,13 @@
                                     <div class="col-sm-6">
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input custom-radio" type="radio" name="materials" id="oneMaterial" style="background-color: #007bff;" checked>
-                                            <label for="oneMaterial"><h5 class="mt-3">Пластик ПВХ (4мм)</h5></label>
+                                            <label for="oneMaterial"><h6 class="mt-3 ml-2"> Пластик ПВХ (4мм)</h6></label>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio" type="radio" name="materials" id="oneMaterial" style="background-color: #007bff;">
-                                            <label for="oneMaterial"><h5 class="mt-3">Композит (3мм)</h5></label>
+                                            <input class="form-check-input custom-radio" type="radio" name="materials" id="twoMaterial" style="background-color: #007bff;">
+                                            <label for="oneMaterial"><h6 class="mt-3 ml-2"> Композит (3мм)</h6></label>
                                         </div>
                                     </div>
                                 </div>
@@ -251,7 +263,54 @@
                         </div>
                         <div id="collapseFive" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                <div class="row ml-md-2 mb-3">
+                                    <div class="col">
+                                        <div class="form-check">
+                                            <input class="form-check-input custom-checkbox" type="checkbox" name="options" id="lamination" style="background-color: #007bff;">
+                                            <label for="lamination"><h6 class="mt-2 ml-3">Ламінування та захист від інфрачервоних променів</h6></label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input custom-checkbox" type="checkbox" name="options" id="holes" style="background-color: #007bff;">
+                                            <label for="holes"><h6 class="mt-2 ml-3">Свердління отворів</h6></label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input custom-checkbox" type="checkbox" name="options" id="stickers" style="background-color: #007bff;">
+                                            <label for="stickers"><h6 class="mt-2 ml-3">Декоративні заглушки-наклейки кольору таблички</h6></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vertical-line"></div>
+                                <div class="row text-center">
+                                    <div class="col mt-3">
+                                        <h5>Комплекти кріплень</h5>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-sm-6">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input custom-radio" type="radio" name="optionsRadio" id="forBrick" style="background-color: #007bff;">
+                                            <label for="oneMaterial"><h6 class="mt-3 ml-2"> Для цегли</h6></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input custom-radio" type="radio" name="optionsRadio" id="forWood" style="background-color: #007bff;">
+                                            <label for="oneMaterial"><h6 class="mt-3 ml-2"> Для дерева</h6></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input custom-radio" type="radio" name="optionsRadio" id="forSiding" style="background-color: #007bff;">
+                                            <label for="oneMaterial"><h6 class="mt-3 ml-2"> Для сайдингу</h6></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input custom-radio" type="radio" name="optionsRadio" id="forProf" style="background-color: #007bff;">
+                                            <label for="oneMaterial"><h6 class="mt-3 ml-2"> Для профнастилу</h6></label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

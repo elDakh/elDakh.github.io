@@ -48,9 +48,9 @@
     -o-appearance:none;
     appearance: none;
     content: '';
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
     outline: 0px;
 }
 
@@ -58,13 +58,36 @@
     content: '';
     background: #fff;
     display: block;
-    height: 50%;
-    width: 50%;
-    margin: 25%;
-    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    margin: 6px;
+    border-radius: 12px;
 }
 
 .vertical-line {
     height: 1px;
     background-color: #ddd;
+}
+
+.custom-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance:none;
+    appearance: none;
+    content: '';
+    width: 24px;
+    height: 24px;
+    border-radius:3px;
+    outline: 0px;
+    box-sizing: content-box;
+}
+
+.custom-checkbox:checked:after {
+    content: '';
+    background: #fff;
+    display: block;
+    height: 12px;
+    width: 12px;
+    margin: 6px;
+    border-radius: 3px;
 }
