@@ -101,9 +101,9 @@
 }
 
 .footer-link {
-    color: white;
+    color: white !important;
 }
 
 .footer-link:hover {
-    color: white;
+    color: white !important;
 }
