@@ -174,8 +174,8 @@
                                 </div>
                                 <div class="horizontal-line"></div>
                                 <div class="row no-gutters mt-3">
-                                    <div class="col-sm-4 col-6" id="type-01">
-                                        <img class="img-fluid mb-0 pb-0" src="img/table-01.png" onclick="setBorder(1)">
+                                    <div class="col-sm-4 col-6" id="type-01" onclick="setBorder(1)">
+                                        <img class="img-fluid mb-0 pb-0" src="img/table-01.png">
                                         <p class="text-center" id="01-size">10x10 см</p>   
                                     </div>
                                     <div class="col-sm-4 col-6" id="type-02" onclick="setBorder(2)">
@@ -461,10 +461,8 @@
     </script>
     
     <script type="text/javascript">
-        function setBorder(var target) {    
-             alert(target + " d");
-            
-            /*var types = [
+        function setBorder(target) {    
+            var types = [
                 document.getElementById('type-01'),
                 document.getElementById('type-02'),
                 document.getElementById('type-03'),
@@ -474,15 +472,12 @@
                 document.getElementById('type-07'),
                 document.getElementById('type-08'),
                 document.getElementById('type-09')
-            ];*/
-           
+            ];
             
-            //types[targer].classList.add("bordered");
-            
-            /*for (var i = 0; i < 9; i++) {
-                if (i == target - 1) types[i].classList.add("bordered");
-                //else types[i].classList.delete("bordered");
-            }*/
+            for (var i = 0; i < 9; i++) {
+                if (target != i*1 + 1) types[i].classList.remove("bordered");
+                else types[i].classList.add("bordered");
+            }
         }
     </script>
 </body>
