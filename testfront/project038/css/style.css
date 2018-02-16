@@ -107,3 +107,12 @@
 .footer-link:hover {
     color: white !important;
 }
+
+.section-header {
+    text-transform: uppercase;
+    color: #2e2e2e;
+}
+
+body {
+    background-color: #eee;
+}
