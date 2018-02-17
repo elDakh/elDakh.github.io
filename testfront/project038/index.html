@@ -86,7 +86,7 @@
         <div class="row">
             <div class="col-md-5 order-md-2 mb-3 text-center">
                 <div class="card">
-                    <img class="mx-auto img-fluid" src="img/lightBlue-01.png" alt="Card image cap">
+                    <img class="mx-auto img-fluid w-75" src="img/lightBlue-01.png" alt="Card image cap" id="back-image">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-4">
@@ -168,16 +168,16 @@
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                             <div class="card-body">
-                                <div class="row text-center">
+                                <div class="row text-center" onclick="imageResize()">
                                     <div class="col-sm-6">
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio" type="radio" name="sizes" id="normalSize" style="background-color: #007bff;">
-                                            <label for="oneMaterial"><h6 class="mt-3 ml-2"> Нормальний розмір</h6></label>
+                                            <input class="form-check-input custom-radio" type="radio" name="sizes" id="normalSize" style="background-color: #007bff;" checked>
+                                            <label for="oneMaterial"><h6 class="mt-3 ml-2"> Звичайний розмір</h6></label>
                                         </div>
                                     </div>
                                     <div class="col-sm-6 mb-3">
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio" type="radio" name="sizes" id="bigSize" style="background-color: #007bff;" checked>
+                                            <input class="form-check-input custom-radio" type="radio" name="sizes" id="bigSize" style="background-color: #007bff;">
                                             <label for="oneMaterial"><h6 class="mt-3 ml-2"> Збільшений розмір</h6></label>
                                         </div>
                                     </div>
@@ -488,6 +488,15 @@
                 if (target != i*1 + 1) types[i].classList.remove("blue-border");
                 else types[i].classList.add("blue-border");
             }
+        }
+    </script>
+    
+    <script type="text/javascript">
+        function imageResize() {
+            if (document.getElementById("normalSize").checked) {
+                document.getElementById("back-image").classList.add("w-75");
+            }
+            else document.getElementById("back-image").classList.remove("w-75");
         }
     </script>
 </body>
