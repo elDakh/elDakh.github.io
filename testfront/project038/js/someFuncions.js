@@ -2,7 +2,7 @@
 var TableTotalPrice = 0;
 var Holes = 50;
 var Stickers = 30;
-var Kriplenya = 30;
+var Bracing = 30;
 var StandartSizes = new Array();
 var StandartLaminaciya = 50;
 var StandartSvitlovidbuvayuchuy = 350;
@@ -30,6 +30,7 @@ BigSizes["type-07"] = 970;
 BigSizes["type-08"] = 970;
 BigSizes["type-09"] = 970;
 
+//функція для отримання ціни від форми та розміру таблички
 function getFormPrice() {
     
     var FormPrice = 0;
@@ -40,7 +41,7 @@ function getFormPrice() {
     }
     return FormPrice;
 }
-
+//функція для отримання ціни від кольору
 function getColorPrice(){
     var ColorPrice=0;
     for(var i=0;i<document.getElementsByClassName("svitlo").length; i++){
@@ -55,10 +56,9 @@ function getColorPrice(){
             }
         }  
     }
-    console.log(ColorPrice);
     return ColorPrice;
 }
-
+//функція для отримання ціни від матеріалу
 function getMaterialPrice(){
     var MaterialPrice=0;
      if(document.getElementById("twoMaterial").checked){
@@ -68,10 +68,9 @@ function getMaterialPrice(){
              MaterialPrice=bigKompozyt;
          }
     }
-    console.log(MaterialPrice);
     return MaterialPrice;
 }
-
+//функція для отримання ціни від ламінації
 function getLaminationPrice(){
   var LaminationPrice=0;
     if(document.getElementById("lamination").checked){
@@ -82,41 +81,40 @@ function getLaminationPrice(){
             LaminationPrice=+BigLamination;
         }
     }
-    console.log(LaminationPrice)
     return LaminationPrice;
 }
+//функція для отримання ціни від отворів
 function getHolesPrice(){
     var HolePrice=0;
      if(document.getElementById("holes").checked){
         HolePrice=+Holes;
-        console.log("tablefromholes " +HolePrice);
+        
     }
     return HolePrice;
 }
-
+//функція для отримання ціни від наклейок
 function getStickersPrice(){
     var StickersPrice=0;
     if(document.getElementById("stickers").checked){       
         StickersPrice=+Stickers;
-        console.log("table from stickers " + TableTotalPrice);
+        
     } 
     return StickersPrice;
 }
-
-function getKriplenyaPrice(){
-    var KriplenyaPrice=0;
+//функція для отримання ціни від кріплень
+function getBracingPrice(){
+    var BracingPrice=0;
     for(var i = 0; i<document.getElementsByName("optionsRadio").length;i++){
         if(document.getElementsByName("optionsRadio")[i].checked){
-            KriplenyaPrice=+Kriplenya;
-        console.log("table from krip "+TableTotalPrice)  ;  
+            BracingPrice=+Bracing;  
         }
     }
-    return KriplenyaPrice;
+    return BracingPrice;
 }
-
+//функція для отримання загальної ціни
 function getTotalPrice() {
    
-    TableTotalPrice=+getFormPrice()+getMaterialPrice()+getColorPrice()+getLaminationPrice()+getHolesPrice()+getStickersPrice()+getKriplenyaPrice();
-    console.log(TableTotalPrice);
+    TableTotalPrice=+getFormPrice()+getMaterialPrice()+getColorPrice()+getLaminationPrice()+getHolesPrice()+getStickersPrice()+getBracingPrice();
     document.getElementById("totalPrice").innerHTML = TableTotalPrice + " грн";
 }
+jQuery(document).ready(getTotalPrice());
