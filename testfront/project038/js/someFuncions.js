@@ -30,15 +30,15 @@ BigSizes["type-07"] = 970;
 BigSizes["type-08"] = 970;
 BigSizes["type-09"] = 970;
 var ImageArray = new Array();
-ImageArray["type-01"] ="img/table-01.png";
-ImageArray["type-02"] ="img/table-02.png";
-ImageArray["type-03"] ="img/table-03.png";
-ImageArray["type-04"] ="img/table-04.png";
-ImageArray["type-05"] ="img/table-05.png";
-ImageArray["type-06"] ="img/table-06.png";
-ImageArray["type-07"] ="img/table-07.png";
-ImageArray["type-08"] ="img/table-08.png";
-ImageArray["type-09"] ="img/table-09.png";
+ImageArray["type-01"] ="img/tableBorder-01.png";
+ImageArray["type-02"] ="img/tableBorder-02.png";
+ImageArray["type-03"] ="img/tableBorder-03.png";
+ImageArray["type-04"] ="img/tableBorder-04.png";
+ImageArray["type-05"] ="img/tableBorder-05.png";
+ImageArray["type-06"] ="img/tableBorder-06.png";
+ImageArray["type-07"] ="img/tableBorder-07.png";
+ImageArray["type-08"] ="img/tableBorder-08.png";
+ImageArray["type-09"] ="img/tableBorder-09.png";
 
 //функція для отримання ціни від форми та розміру таблички
 function getFormPrice() {
