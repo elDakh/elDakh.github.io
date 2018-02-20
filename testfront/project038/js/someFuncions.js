@@ -29,6 +29,16 @@ BigSizes["type-06"] = 520;
 BigSizes["type-07"] = 970;
 BigSizes["type-08"] = 970;
 BigSizes["type-09"] = 970;
+var ImageArray = new Array();
+ImageArray["type-01"] ="img/table-01.png";
+ImageArray["type-02"] ="img/table-02.png";
+ImageArray["type-03"] ="img/table-03.png";
+ImageArray["type-04"] ="img/table-04.png";
+ImageArray["type-05"] ="img/table-05.png";
+ImageArray["type-06"] ="img/table-06.png";
+ImageArray["type-07"] ="img/table-07.png";
+ImageArray["type-08"] ="img/table-08.png";
+ImageArray["type-09"] ="img/table-09.png";
 
 //функція для отримання ціни від форми та розміру таблички
 function getFormPrice() {
@@ -118,3 +128,57 @@ function getTotalPrice() {
     document.getElementById("totalPrice").innerHTML = TableTotalPrice + " грн";
 }
 jQuery(document).ready(getTotalPrice());
+//функція для зміни форми при виборі
+function changeImage() {
+    document.getElementById("back-image").src = ImageArray[document.getElementsByClassName("blue-border")[0].id];
+}
+
+//функція зміни кольору
+function colorChange(){
+    for(var i=0;i<document.getElementsByName("colors").length; i++){
+        if(document.getElementsByName("colors")[i].checked){
+            document.getElementById("back-image").style.backgroundColor=document.getElementsByName("colors")[i].style.backgroundColor;
+        }  
+    }
+}
+
+//функції плюс-мінус
+function laminationPlusMinus(){
+    if(document.getElementById("lamination").checked){
+        document.getElementById("fa-lamination").classList.remove("fa-minus");
+        document.getElementById("fa-lamination").classList.add("fa-plus");
+        
+    }else{
+        document.getElementById("fa-lamination").classList.remove("fa-plus");
+        document.getElementById("fa-lamination").classList.add("fa-minus");
+        
+    }
+}
+function holesPlusMinus(){
+    if(document.getElementById("holes").checked){
+        document.getElementById("fa-holes").classList.remove("fa-minus");
+        document.getElementById("fa-holes").classList.add("fa-plus");
+        
+    }else{
+        document.getElementById("fa-holes").classList.remove("fa-plus");
+        document.getElementById("fa-holes").classList.add("fa-minus");
+        
+    }
+}
+function stickersPlusMinus(){
+    if(document.getElementById("stickers").checked){
+        document.getElementById("fa-stickers").classList.remove("fa-minus");
+        document.getElementById("fa-stickers").classList.add("fa-plus");
+    }else{
+        document.getElementById("fa-stickers").classList.remove("fa-plus");
+        document.getElementById("fa-stickers").classList.add("fa-minus");
+    }
+}
+function bracingPlusMinus(){
+     for(var i = 0; i<document.getElementsByName("optionsRadio").length;i++){
+        if(document.getElementsByName("optionsRadio")[i].checked){
+            document.getElementById("fa-bracing").classList.remove("fa-minus");
+            document.getElementById("fa-bracing").classList.add("fa-plus");
+        }
+     }
+}
