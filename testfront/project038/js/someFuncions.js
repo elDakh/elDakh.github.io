@@ -479,3 +479,5 @@ jQuery(document).ready(textSizeData());
 jQuery(document).ready(previewSizeData());
 
 jQuery(document).ready(previewMaterialData());
+
+jQuery(document).ready(changeImage());
