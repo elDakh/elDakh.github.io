@@ -3,33 +3,33 @@ var TableTotalPrice = 0;
 var Holes = 50;
 var Stickers = 30;
 var Bracing = 30;
-var StandartSizes = new Array();
 var StandartLaminaciya = 50;
 var StandartSvitlovidbuvayuchuy = 350;
 var StandartKompozyt = 160;
 var BigLamination = 100;
 var bigSvitlovidbuvayuchuy = 780;
 var bigKompozyt = 360;
-StandartSizes["type-01"] = 240;
-StandartSizes["type-02"] = 240;
-StandartSizes["type-03"] = 300;
-StandartSizes["type-04"] = 240;
-StandartSizes["type-05"] = 240;
-StandartSizes["type-06"] = 240;
-StandartSizes["type-07"] = 400;
-StandartSizes["type-08"] = 400;
-StandartSizes["type-09"] = 400;
-var BigSizes = new Array();
-BigSizes["type-01"] = 570;
-BigSizes["type-02"] = 750;
-BigSizes["type-03"] = 700;
-BigSizes["type-04"] = 460;
-BigSizes["type-05"] = 460;
-BigSizes["type-06"] = 520;
-BigSizes["type-07"] = 970;
-BigSizes["type-08"] = 970;
-BigSizes["type-09"] = 970;
-var ImageArray = new Array();
+var StandartSizesPrice = [];
+StandartSizesPrice["type-01"] = 240;
+StandartSizesPrice["type-02"] = 240;
+StandartSizesPrice["type-03"] = 300;
+StandartSizesPrice["type-04"] = 240;
+StandartSizesPrice["type-05"] = 240;
+StandartSizesPrice["type-06"] = 240;
+StandartSizesPrice["type-07"] = 400;
+StandartSizesPrice["type-08"] = 400;
+StandartSizesPrice["type-09"] = 400;
+var BigSizesPrice = [];
+BigSizesPrice["type-01"] = 570;
+BigSizesPrice["type-02"] = 750;
+BigSizesPrice["type-03"] = 700;
+BigSizesPrice["type-04"] = 460;
+BigSizesPrice["type-05"] = 460;
+BigSizesPrice["type-06"] = 520;
+BigSizesPrice["type-07"] = 970;
+BigSizesPrice["type-08"] = 970;
+BigSizesPrice["type-09"] = 970;
+var ImageArray = [];
 ImageArray["type-01"] ="img/tableBorder-01.png";
 ImageArray["type-02"] ="img/tableBorder-02.png";
 ImageArray["type-03"] ="img/tableBorder-03.png";
@@ -39,15 +39,35 @@ ImageArray["type-06"] ="img/tableBorder-06.png";
 ImageArray["type-07"] ="img/tableBorder-07.png";
 ImageArray["type-08"] ="img/tableBorder-08.png";
 ImageArray["type-09"] ="img/tableBorder-09.png";
+var StandartSizes=[];
+StandartSizes["01-size"]="620x200";
+StandartSizes["02-size"]="620x267";
+StandartSizes["03-size"]="620x257";
+StandartSizes["04-size"]="680x180";
+StandartSizes["05-size"]="680x180";
+StandartSizes["06-size"]="320x380";
+StandartSizes["07-size"]="620x340";
+StandartSizes["08-size"]="620x340";
+StandartSizes["09-size"]="620x340";
+var BigSizes=[];
+BigSizes["01-size"]="960x308";
+BigSizes["02-size"]="960x416";
+BigSizes["03-size"]="960x390";
+BigSizes["04-size"]="950x250";
+BigSizes["05-size"]="950x250";
+BigSizes["06-size"]="450x600";
+BigSizes["07-size"]="960x527";
+BigSizes["08-size"]="960x527";
+BigSizes["09-size"]="960x527";
 
 //функція для отримання ціни від форми та розміру таблички
 function getFormPrice() {
     
     var FormPrice = 0;
     if (document.getElementById("normalSize").checked) {
-        FormPrice = StandartSizes[document.getElementsByClassName("blue-border")[0].id];
+        FormPrice = StandartSizesPrice[document.getElementsByClassName("blue-border")[0].id];
     } else {
-        FormPrice = BigSizes[document.getElementsByClassName("blue-border")[0].id];
+        FormPrice = BigSizesPrice[document.getElementsByClassName("blue-border")[0].id];
     }
     return FormPrice;
 }
@@ -127,7 +147,7 @@ function getTotalPrice() {
     TableTotalPrice=+getFormPrice()+getMaterialPrice()+getColorPrice()+getLaminationPrice()+getHolesPrice()+getStickersPrice()+getBracingPrice();
     document.getElementById("totalPrice").innerHTML = TableTotalPrice + " грн";
 }
-jQuery(document).ready(getTotalPrice());
+
 //функція для зміни форми при виборі
 function changeImage() {
     document.getElementById("back-image").src = ImageArray[document.getElementsByClassName("blue-border")[0].id];
@@ -182,3 +202,40 @@ function bracingPlusMinus(){
         }
      }
 }
+//функція для зміни назви кольору в превью
+function colorData(){
+    for(var i=0;i<document.getElementsByName("colors").length; i++){
+        if(document.getElementsByName("colors")[i].checked){
+             document.getElementById("colorValue").innerHTML=document.getElementsByName("colors")[i].getAttribute("data-name");
+        }  
+    }
+}
+//функція для зміни значень розмірів в табличці вибору
+function textSizeData(){
+    if (document.getElementById("normalSize").checked) {
+        for(var i=0; i<document.getElementsByClassName("size-data").length;i++){
+            document.getElementsByClassName("size-data")[i].innerHTML=StandartSizes[document.getElementsByClassName("size-data")[i].id]+" мм";
+        }
+    } else {
+        for(var i=0; i<document.getElementsByClassName("size-data").length;i++){
+            document.getElementsByClassName("size-data")[i].innerHTML=BigSizes[document.getElementsByClassName("size-data")[i].id]+" мм";
+        }
+    }
+}
+//функція для зміни значення розміру в превью
+function previewSizeData(){
+    document.getElementById("sizeValue").innerHTML=document.getElementsByClassName("blue-border")[0].querySelectorAll("p")[0].innerHTML;
+}
+
+function previewMaterialData(){ 
+        if(document.getElementById("oneMaterial").checked){
+             document.getElementById("materialValue").innerHTML=document.getElementById("oneMaterial").getAttribute("data-name");
+        }else{
+            document.getElementById("materialValue").innerHTML=document.getElementById("twoMaterial").getAttribute("data-name");
+        }  
+}
+jQuery(document).ready(getTotalPrice());
+jQuery(document).ready(colorData());
+jQuery(document).ready(textSizeData());
+jQuery(document).ready(previewSizeData());
+jQuery(document).ready(previewMaterialData());
