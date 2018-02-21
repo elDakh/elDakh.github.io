@@ -87,20 +87,20 @@
         <div class="row">
             <div class="col-md-5 order-md-2 mb-3 text-center">
                 <div class="card">
-                    <img class="mx-auto img-fluid w-75" src="img/tableBorder-1.png" alt="Card image cap" id="back-image" style="background-color: #007bff">
+                    <img class="mx-auto img-fluid w-75" src="img/lightBlue-01.png" alt="Card image cap" id="back-image">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-4">
                                 <h6><i class="fas fa-sliders-h"></i> Розмір:</h6>
-                                <p id="sizeValue"> </p>
+                                <p id="sizeValue">30x30 см</p>
                             </div>
                             <div class="col-4">
                                 <h6><i class="fas fa-paint-brush"></i> Колір:</h6>
-                                <p id="colorValue"> </p>
+                                <p id="sizeValue">синій</p>
                             </div>
                             <div class="col-4">
                                 <h6><i class="fas fa-map-signs"></i> Матеріал:</h6>
-                                <p id="materialValue"> </p>
+                                <p id="sizeValue">композит</p>
                             </div>
                         </div>
                         <div class="horizontal-line"></div>
@@ -172,61 +172,62 @@
                                 <div class="row text-center" onclick="imageResize()">
                                     <div class="col-sm-6">
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), textSizeData(), previewSizeData()" name="sizes" id="normalSize" style="background-color: #007bff;" checked>
+                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice()" name="sizes" id="normalSize" style="background-color: #007bff;" checked>
                                             <label for="oneMaterial"><h6 class="mt-3 ml-2"> Звичайний розмір</h6></label>
                                         </div>
                                     </div>
                                     <div class="col-sm-6 mb-3">
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio" type="radio" name="sizes" id="bigSize" style="background-color: #007bff;" onclick="getTotalPrice(), textSizeData(), previewSizeData()">
+                                            <input class="form-check-input custom-radio" type="radio" name="sizes" id="bigSize" style="background-color: #007bff;" onclick="getTotalPrice()">
                                             <label for="oneMaterial"><h6 class="mt-3 ml-2"> Збільшений розмір</h6></label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="horizontal-line"></div>
                                 <div class="row no-gutters mt-3">
-                                    <div class="col-sm-4 col-6 blue-border" id="type-01" onclick="setBorder(1), getTotalPrice(), changeImage(), previewSizeData()">
+                                    <div class="col-sm-4 col-6 blue-border" id="type-01" onclick="setBorder(1), getTotalPrice(), changeImage()">
                                         <img class="img-fluid mb-0 pb-0" src="img/table-01.png">
-                                        <p class="text-center size-data" id="01-size"> </p>
-                                    </div>
-                                    <div class="col-sm-4 col-6 input_selector" id="type-02" onclick="setBorder(2), getTotalPrice(), changeImage(), previewSizeData()">
-                                       <img class="img-fluid mb-0 pb-0" src="img/table-02.png">
-                                       <p class="text-center size-data" id="02-size"> </p>
+                                        <p class="text-center" id="01-size">620x200 мм</p>
                                         
                                     </div>
-                                    <div class="col-sm-4 col-6 input_selector" id="type-03" onclick="setBorder(3), getTotalPrice(), changeImage(), previewSizeData()">
+                                    <div class="col-sm-4 col-6 input_selector" id="type-02" onclick="setBorder(2), getTotalPrice(), changeImage()">
+                                       <img class="img-fluid mb-0 pb-0" src="img/table-02.png">
+                                       <p class="text-center" id="02-size">620x257 мм</p>
+                                        
+                                    </div>
+                                    <div class="col-sm-4 col-6 input_selector" id="type-03" onclick="setBorder(3), getTotalPrice(), changeImage()">
                                        <img class="img-fluid mb-0 pb-0" src="img/table-03.png">
-                                       <p class="text-center size-data" id="03-size"> </p>
+                                       <p class="text-center" id="03-size">620x257 мм</p>
                                        
                                     </div>
-                                    <div class="col-sm-4 col-6 input_selector" id="type-04" onclick="setBorder(4), getTotalPrice(), changeImage(), previewSizeData()">
+                                    <div class="col-sm-4 col-6 input_selector" id="type-04" onclick="setBorder(4), getTotalPrice(), changeImage()">
                                        <img class="img-fluid mb-0 pb-0" src="img/table-04.png">
-                                       <p class="text-center size-data" id="04-size"> </p>  
+                                       <p class="text-center" id="04-size">680x180 мм</p>  
                                         
                                     </div>
-                                    <div class="col-sm-4 col-6 input_selector" id="type-05" onclick="setBorder(5), getTotalPrice(), changeImage(), previewSizeData()">
+                                    <div class="col-sm-4 col-6 input_selector" id="type-05" onclick="setBorder(5), getTotalPrice(), changeImage()">
                                        <img class="img-fluid mb-0 pb-0" src="img/table-05.png">
-                                       <p class="text-center size-data" id="05-size"> </p> 
+                                       <p class="text-center" id="05-size">680x180 мм</p> 
                                         
                                     </div>
-                                    <div class="col-sm-4 col-6 input_selector" id="type-06" onclick="setBorder(6), getTotalPrice(), changeImage(), previewSizeData()">
+                                    <div class="col-sm-4 col-6 input_selector" id="type-06" onclick="setBorder(6), getTotalPrice(), changeImage()">
                                        <img class="img-fluid mb-0 pb-0" src="img/table-06.png">
-                                       <p class="text-center size-data" id="06-size"> </p> 
+                                       <p class="text-center" id="06-size">320x380 мм</p> 
                                         
                                     </div>
-                                    <div class="col-sm-4 col-6 input_selector" id="type-07" onclick="setBorder(7), getTotalPrice(), changeImage(), previewSizeData()">
+                                    <div class="col-sm-4 col-6 input_selector" id="type-07" onclick="setBorder(7), getTotalPrice(), changeImage()">
                                        <img class="img-fluid mb-0 pb-0" src="img/table-07.png">
-                                       <p class="text-center size-data" id="07-size"> </p> 
+                                       <p class="text-center" id="07-size">620x340 мм</p> 
                                         
                                     </div>
-                                    <div class="col-sm-4 col-6 input_selector" id="type-08" onclick="setBorder(8), getTotalPrice(), changeImage(), previewSizeData()">
+                                    <div class="col-sm-4 col-6 input_selector" id="type-08" onclick="setBorder(8), getTotalPrice(), changeImage()">
                                        <img class="img-fluid mb-0 pb-0" src="img/table-08.png">
-                                       <p class="text-center size-data" id="08-size"> </p> 
+                                       <p class="text-center" id="08-size">620x340 мм</p> 
                                         
                                     </div>
-                                    <div class="col-sm-4 col-6 input_selector" id="type-09" onclick="setBorder(9), getTotalPrice(), changeImage(), previewSizeData()">
+                                    <div class="col-sm-4 col-6 input_selector" id="type-09" onclick="setBorder(9), getTotalPrice(), changeImage()">
                                        <img class="img-fluid mb-0 pb-0" src="img/table-09.png">
-                                       <p class="text-center size-data" id="09-size"> </p> 
+                                       <p class="text-center" id="09-size">620x340 мм</p> 
                                         
                                     </div>
                                 </div>
@@ -249,22 +250,22 @@
                                     </div>
                                     <div class="col-sm-7">
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="lightBlueColor" data-name="Голубий" style="background-color: #007cb0;" checked>
+                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), colorChange()" name="colors" id="lightBlueColor" style="background-color: #007cb0;" checked>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="darkBlueColor" data-name="Синій" style="background-color: #051867;">
+                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), colorChange()" name="colors" id="darkBlueColor" style="background-color: #051867;">
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="darkRedColor" data-name="Бордовий" style="background-color: #800000;">
+                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), colorChange()" name="colors" id="darkRedColor" style="background-color: #800000;">
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="redColor" data-name="Червоний" style="background-color: #de0000;">
+                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), colorChange()" name="colors" id="redColor" style="background-color: #de0000;">
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="darkGreenColor" data-name="Темно-зелений" style="background-color: #00380f;">
+                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), colorChange()" name="colors" id="darkGreenColor" style="background-color: #00380f;">
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="brownColor" data-name="Коричневий" style="background-color: #4f1c00;">
+                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), colorChange()" name="colors" id="brownColor" style="background-color: #4f1c00;">
                                         </div>
                                     </div>
                                 </div>
@@ -275,22 +276,22 @@
                                     </div>
                                     <div class="col-sm-7">
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio svitlo" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="blueColor" data-name="Голубий(сітловідбиваючий)" style="background-color: #2e4a9a;">
+                                            <input class="form-check-input custom-radio svitlo" type="radio" onclick="getTotalPrice(), colorChange()" name="colors" id="blueColor" style="background-color: #2e4a9a;">
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio svitlo" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="pinkColor" data-name="Рожевий(світловідбиваючий)" style="background-color: #d50022;">
+                                            <input class="form-check-input custom-radio svitlo" type="radio" onclick="getTotalPrice(), colorChange()" name="colors" id="pinkColor" style="background-color: #d50022;">
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio svitlo" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="greenColor" data-name="Зелений(світловідбиваючий)" style="background-color: #007828;">
+                                            <input class="form-check-input custom-radio svitlo" type="radio" onclick="getTotalPrice(), colorChange()" name="colors" id="greenColor" style="background-color: #007828;">
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio svitlo" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="orangeColor" data-name="Оранжевий(світловідбиваючий)" style="background-color: #e75d1c;">
+                                            <input class="form-check-input custom-radio svitlo" type="radio" onclick="getTotalPrice(), colorChange()" name="colors" id="orangeColor" style="background-color: #e75d1c;">
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio svitlo" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="yellowColor" data-name="Жовтий(світловідбиваючий)" style="background-color: #f3d800;">
+                                            <input class="form-check-input custom-radio svitlo" type="radio" onclick="getTotalPrice(), colorChange()" name="colors" id="yellowColor" style="background-color: #f3d800;">
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio svitlo" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="blackColor" data-name="Чорний(світловідбиваючий)" style="background-color: #000002;">
+                                            <input class="form-check-input custom-radio svitlo" type="radio" onclick="getTotalPrice(), colorChange()" name="colors" id="blackColor" style="background-color: #000002;">
                                         </div>
                                     </div>
                                 </div>
@@ -310,13 +311,13 @@
                                 <div class="row text-center">
                                     <div class="col-sm-6">
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), previewMaterialData()"  data-name="Пластик ПВХ (4мм)" name="materials" id="oneMaterial" style="background-color: #007bff;" checked>
+                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice()" name="materials" id="oneMaterial" style="background-color: #007bff;" checked>
                                             <label for="oneMaterial"><h6 class="mt-3 ml-2"> Пластик ПВХ (4мм)</h6></label>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio" type="radio" data-name="Композит (3мм)" onclick="getTotalPrice(), previewMaterialData()" name="materials" id="twoMaterial" style="background-color: #007bff;">
+                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice()" name="materials" id="twoMaterial" style="background-color: #007bff;">
                                             <label for="oneMaterial"><h6 class="mt-3 ml-2"> Композит (3мм)</h6></label>
                                         </div>
                                     </div>
