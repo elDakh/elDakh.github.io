@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+
 .thin-paragraph {
     line-height: 1.1;
     color: #2e2e2e;
@@ -115,4 +116,13 @@
 
 body {
     background-color: #eee;
+}
+.responsive-logo {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .responsive-logo {
+        width: 80%;
+    }
 }
