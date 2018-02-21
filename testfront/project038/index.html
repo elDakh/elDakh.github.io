@@ -1,1029 +1,506 @@
 <!DOCTYPE html>
-
 <html>
 
-
-
 <head>
-
     <meta charset="utf-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
     <link rel="stylesheet" href="css/style.css">
-
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
     <script defer src="js/someFuncions.js"></script>
 
-
-
     <title>Адресні таблички від ДизайнСВ</title>
-
 </head>
 
-
-
 <body>
-
     <div class="container-fluid" id="top-banner">
-
         <div class="row text-center">
-
             <div class="col-md-4 pt-4">
-
                 <img class="img-fluid" src="img/LOGO-DSV.png" alt="logo" width="45%">
-
             </div>
-
             <div class="col-md-4 pt-3">
-
                 <p class="thin-paragraph"><b>Адресні таблички для приватного будинку від виробника.</b><br>Доставка по Україні без передоплати</p>
-
             </div>
-
             <div class="col-md-4 pt-2">
-
                 <h4>
-
                     <b>(095) 881-10-06</b>
-
                     <br>
-
                     <button type="button" class="btn btn-primary mt-1 pl-4 pr-4"> Замовити дзвінок </button>
-
                 </h4>
-
             </div>
-
         </div>
-
     </div>
-
-
 
     <nav class="navbar navbar-expand-lg navbar-dark">
-
         <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-
             <span class="navbar-toggler-icon mr-2"></span>
-
             Меню сайту
-
             <span class="navbar-toggler-icon ml-2"></span>
-
         </button>
 
-
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
             <ul class="navbar-nav mx-auto text-center">
-
                 <li class="nav-item pr-2 pl-2 active">
-
                     <a class="nav-link" href="">ГОЛОВНА</a>
-
                 </li>
-
                 <li class="nav-item pr-2 pl-2">
-
                     <a class="nav-link" href="about.html">ПРО НАС</a>
-
                 </li>
-
                 <li class="nav-item pr-2 pl-2">
-
                     <a class="nav-link" href="delivery.html">ДОСТАВКА ТА ОПЛАТА</a>
-
                 </li>
-
                 <li class="nav-item pr-2 pl-2">
-
                     <a class="nav-link" href="faq.html">ЗАПИТАННЯ</a>
-
                 </li>
-
                 <li class="nav-item pr-2 pl-2">
-
                     <a class="nav-link" href="comments.html">ВІДГУКИ</a>
-
                 </li>
-
                 <li class="nav-item pr-2 pl-2">
-
                     <a class="nav-link" href="works.html">НАШІ РОБОТИ</a>
-
                 </li>
-
                 <li class="nav-item pr-2 pl-2">
-
                     <a class="nav-link" href="contacts.html">КОНТАКТИ</a>
-
                 </li>
-
             </ul>
-
         </div>
-
     </nav>
 
-
-
     <div class="container-fluid" id="main-banner">
-
         <div class="row">
-
             <div class="col-lg-6 pt-md-5 mt-3 text-lg-right text-center">
-
                 <h3 class="main-banner-text pb-5">
-
                     <span class="text-primary">Замовте адресну табличку для дому</span><br> з терміном служби до 15 років та<br> отримайте її через 5 днів з моменту замовлення!<br>
-
                 </h3>
-
                 <div class="bordere">
-
                     <h6 class="text-danger"><b>БЕЗКОШТОВНА ДОСТАВКА</b></h6>
-
                     <h6>
-
                         Замовте табличку до <b><span id="next-day">кінця дня</span></b><br> і доставка буде для вас <b>БЕЗКОШТОВНОЮ</b>
-
                     </h6>
-
                     <div class="eTimer pt-3"></div><br>
-
                     <button type="button" class="btn btn-primary mt-4 mb-5">Вибрати модель таблички<br>з безкоштовною доставкою</button>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
-
-
     <div class="container-fluid mt-4 pl-lg-5 pr-lg-5">
-
         <div class="row">
-
             <div class="col-md-5 order-md-2 mb-3 text-center">
-
                 <div class="card">
-
                     <img class="mx-auto img-fluid w-75" src="img/tableBorder-1.png" alt="Card image cap" id="back-image" style="background-color: #007bff">
-
                     <div class="card-body">
-
                         <div class="row">
-
                             <div class="col-4">
-
                                 <h6><i class="fas fa-sliders-h"></i> Розмір:</h6>
-
                                 <p id="sizeValue"> </p>
-
                             </div>
-
                             <div class="col-4">
-
                                 <h6><i class="fas fa-paint-brush"></i> Колір:</h6>
-
                                 <p id="colorValue"> </p>
-
                             </div>
-
                             <div class="col-4">
-
                                 <h6><i class="fas fa-map-signs"></i> Матеріал:</h6>
-
                                 <p id="materialValue"> </p>
-
                             </div>
-
                         </div>
-
                         <div class="horizontal-line"></div>
-
                         <div class="row">
-
                             <div class="col my-3 mx-md-3 text-left">
-
                                 <h6><i class="fa fa-minus" id="fa-lamination"></i> Ламінування та захист від інфрачервоних променів</h6>
-
                                 <h6><i class="fa fa-minus" id="fa-holes"></i> Свердління отворів</h6>
-
                                 <h6><i class="fa fa-minus" id="fa-stickers"></i> Декоративні заглушки-наклейки кольору таблички</h6>
-
                                 <h6><i class="fa fa-minus" id="fa-bracing"></i> Комплект кріплень</h6>
-
                             </div>
-
                         </div>
-
                         <div class="horizontal-line mb-3"></div>
-
                         <h2 id="totalPrice"> </h2>
-
                         <a href="" class="btn btn-primary mt-3">Швидке замовлення</a>
-
                     </div>
-
                 </div>
-
             </div>
-
             <div class="col-md-7 order-md-1">
-
                 <div id="accordion">
-
                     <div class="card">
-
                         <div class="card-header" id="headingOne">
-
                             <h5 class="mb-0">
-
                                 <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-
                                     <span class="red-header"><i class="fas fa-pencil-alt text-primary"></i><span class="ml-2">Що пишемо на табличці</span></span>
-
                                 </a>
-
                             </h5>
-
                         </div>
-
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-
                             <div class="card-body">
-
                                 <div class="row">
-
                                     <div class="col-sm-4">
-
                                         <form>
-
                                             <div class="form-group">
-
                                                 <input class="form-control" id="InputStreet" aria-describedby="streetHelp" placeholder="Вулиця">
-
                                                 <small id="streetHelp" class="form-text text-muted">Або проспект/майдан тощо</small>
-
                                             </div>
-
                                         </form>
-
                                     </div>
-
                                     <div class="col-sm-5">
-
                                         <form>
-
                                             <div class="form-group">
-
                                                 <input class="form-control" id="InputStreetName" aria-describedby="streetNameHelp" placeholder="Назва вулиці">
-
                                                 <small id="streetNameHelp" class="form-text text-muted">Назва потрібної вулиці</small>
-
                                             </div>
-
                                         </form>
-
                                     </div>
-
                                     <div class="col-sm-3">
-
                                         <form>
-
                                             <div class="form-group">
-
                                                 <input class="form-control" id="InputNumber" aria-describedby="numberHelp" placeholder="146">
-
                                                 <small id="numberHelp" class="form-text text-muted">Номер будинку</small>
-
                                             </div>
-
                                         </form>
-
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="card">
-
                         <div class="card-header" id="headingTwo">
-
                             <h5 class="mb-0">
-
                                 <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-
                                     <span class="red-header"><i class="fas fa-sliders-h text-primary"></i><span class="ml-2">Форма та розмір</span></span>
-
                                 </a>
-
                             </h5>
-
                         </div>
-
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-
                             <div class="card-body">
-
                                 <div class="row text-center" onclick="imageResize()">
-
                                     <div class="col-sm-6">
-
                                         <div class="form-check form-check-inline">
-
                                             <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), textSizeData(), previewSizeData()" name="sizes" id="normalSize" style="background-color: #007bff;" checked>
-
                                             <label for="oneMaterial"><h6 class="mt-3 ml-2"> Звичайний розмір</h6></label>
-
                                         </div>
-
                                     </div>
-
                                     <div class="col-sm-6 mb-3">
-
                                         <div class="form-check form-check-inline">
-
                                             <input class="form-check-input custom-radio" type="radio" name="sizes" id="bigSize" style="background-color: #007bff;" onclick="getTotalPrice(), textSizeData(), previewSizeData()">
-
                                             <label for="oneMaterial"><h6 class="mt-3 ml-2"> Збільшений розмір</h6></label>
-
                                         </div>
-
                                     </div>
-
                                 </div>
-
                                 <div class="horizontal-line"></div>
-
                                 <div class="row no-gutters mt-3">
-
                                     <div class="col-sm-4 col-6 blue-border" id="type-01" onclick="setBorder(1), getTotalPrice(), changeImage(), previewSizeData()">
-
                                         <img class="img-fluid mb-0 pb-0" src="img/table-01.png">
-
                                         <p class="text-center size-data" id="01-size"> </p>
-
                                     </div>
-
                                     <div class="col-sm-4 col-6 input_selector" id="type-02" onclick="setBorder(2), getTotalPrice(), changeImage(), previewSizeData()">
-
-                                       <img class="img-fluid mb-0 pb-0" src="img/table-02.png">
-
-                                       <p class="text-center size-data" id="02-size"> </p>
-
-                                        
-
+                                        <img class="img-fluid mb-0 pb-0" src="img/table-02.png">
+                                        <p class="text-center size-data" id="02-size"> </p>
                                     </div>
-
                                     <div class="col-sm-4 col-6 input_selector" id="type-03" onclick="setBorder(3), getTotalPrice(), changeImage(), previewSizeData()">
-
-                                       <img class="img-fluid mb-0 pb-0" src="img/table-03.png">
-
-                                       <p class="text-center size-data" id="03-size"> </p>
-
-                                       
-
+                                        <img class="img-fluid mb-0 pb-0" src="img/table-03.png">
+                                        <p class="text-center size-data" id="03-size"> </p>
                                     </div>
-
                                     <div class="col-sm-4 col-6 input_selector" id="type-04" onclick="setBorder(4), getTotalPrice(), changeImage(), previewSizeData()">
-
-                                       <img class="img-fluid mb-0 pb-0" src="img/table-04.png">
-
-                                       <p class="text-center size-data" id="04-size"> </p>  
-
-                                        
-
+                                        <img class="img-fluid mb-0 pb-0" src="img/table-04.png">
+                                        <p class="text-center size-data" id="04-size"> </p>
                                     </div>
-
                                     <div class="col-sm-4 col-6 input_selector" id="type-05" onclick="setBorder(5), getTotalPrice(), changeImage(), previewSizeData()">
-
-                                       <img class="img-fluid mb-0 pb-0" src="img/table-05.png">
-
-                                       <p class="text-center size-data" id="05-size"> </p> 
-
-                                        
-
+                                        <img class="img-fluid mb-0 pb-0" src="img/table-05.png">
+                                        <p class="text-center size-data" id="05-size"> </p>
                                     </div>
-
                                     <div class="col-sm-4 col-6 input_selector" id="type-06" onclick="setBorder(6), getTotalPrice(), changeImage(), previewSizeData()">
-
-                                       <img class="img-fluid mb-0 pb-0" src="img/table-06.png">
-
-                                       <p class="text-center size-data" id="06-size"> </p> 
-
-                                        
-
+                                        <img class="img-fluid mb-0 pb-0" src="img/table-06.png">
+                                        <p class="text-center size-data" id="06-size"> </p>
                                     </div>
-
                                     <div class="col-sm-4 col-6 input_selector" id="type-07" onclick="setBorder(7), getTotalPrice(), changeImage(), previewSizeData()">
-
-                                       <img class="img-fluid mb-0 pb-0" src="img/table-07.png">
-
-                                       <p class="text-center size-data" id="07-size"> </p> 
-
-                                        
-
+                                        <img class="img-fluid mb-0 pb-0" src="img/table-07.png">
+                                        <p class="text-center size-data" id="07-size"> </p>
                                     </div>
-
                                     <div class="col-sm-4 col-6 input_selector" id="type-08" onclick="setBorder(8), getTotalPrice(), changeImage(), previewSizeData()">
-
-                                       <img class="img-fluid mb-0 pb-0" src="img/table-08.png">
-
-                                       <p class="text-center size-data" id="08-size"> </p> 
-
-                                        
-
+                                        <img class="img-fluid mb-0 pb-0" src="img/table-08.png">
+                                        <p class="text-center size-data" id="08-size"> </p>
                                     </div>
-
                                     <div class="col-sm-4 col-6 input_selector" id="type-09" onclick="setBorder(9), getTotalPrice(), changeImage(), previewSizeData()">
-
-                                       <img class="img-fluid mb-0 pb-0" src="img/table-09.png">
-
-                                       <p class="text-center size-data" id="09-size"> </p> 
-
-                                        
-
+                                        <img class="img-fluid mb-0 pb-0" src="img/table-09.png">
+                                        <p class="text-center size-data" id="09-size"> </p>
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="card">
-
                         <div class="card-header" id="headingThree">
-
                             <h5 class="mb-0">
-
                                 <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-
                                     <span class="red-header"><i class="fas fa-paint-brush text-primary"></i><span class="ml-2">Колір таблички</span></span>
-
                                 </a>
-
                             </h5>
-
                         </div>
-
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-
                             <div class="card-body text-center">
-
                                 <div class="row">
-
                                     <div class="col-sm-5 mb-3">
-
                                         <h5>Стандартний</h5>
-
                                     </div>
-
                                     <div class="col-sm-7">
-
                                         <div class="form-check form-check-inline">
-
                                             <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="lightBlueColor" data-name="Голубий" style="background-color: #007cb0;" checked>
-
                                         </div>
-
                                         <div class="form-check form-check-inline">
-
                                             <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="darkBlueColor" data-name="Синій" style="background-color: #051867;">
-
                                         </div>
-
                                         <div class="form-check form-check-inline">
-
                                             <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="darkRedColor" data-name="Бордовий" style="background-color: #800000;">
-
                                         </div>
-
                                         <div class="form-check form-check-inline">
-
                                             <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="redColor" data-name="Червоний" style="background-color: #de0000;">
-
                                         </div>
-
                                         <div class="form-check form-check-inline">
-
                                             <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="darkGreenColor" data-name="Темно-зелений" style="background-color: #00380f;">
-
                                         </div>
-
                                         <div class="form-check form-check-inline">
-
                                             <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="brownColor" data-name="Коричневий" style="background-color: #4f1c00;">
-
                                         </div>
-
                                     </div>
-
                                 </div>
-
                                 <div class="horizontal-line"></div>
-
                                 <div class="row mt-3">
-
                                     <div class="col-sm-5">
-
                                         <h5>Світлоповертаючий</h5>
-
                                     </div>
-
                                     <div class="col-sm-7">
-
                                         <div class="form-check form-check-inline">
-
                                             <input class="form-check-input custom-radio svitlo" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="blueColor" data-name="Голубий(сітловідбиваючий)" style="background-color: #2e4a9a;">
-
                                         </div>
-
                                         <div class="form-check form-check-inline">
-
                                             <input class="form-check-input custom-radio svitlo" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="pinkColor" data-name="Рожевий(світловідбиваючий)" style="background-color: #d50022;">
-
                                         </div>
-
                                         <div class="form-check form-check-inline">
-
                                             <input class="form-check-input custom-radio svitlo" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="greenColor" data-name="Зелений(світловідбиваючий)" style="background-color: #007828;">
-
                                         </div>
-
                                         <div class="form-check form-check-inline">
-
                                             <input class="form-check-input custom-radio svitlo" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="orangeColor" data-name="Оранжевий(світловідбиваючий)" style="background-color: #e75d1c;">
-
                                         </div>
-
                                         <div class="form-check form-check-inline">
-
                                             <input class="form-check-input custom-radio svitlo" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="yellowColor" data-name="Жовтий(світловідбиваючий)" style="background-color: #f3d800;">
-
                                         </div>
-
                                         <div class="form-check form-check-inline">
-
                                             <input class="form-check-input custom-radio svitlo" type="radio" onclick="getTotalPrice(), colorChange(), colorData()" name="colors" id="blackColor" data-name="Чорний(світловідбиваючий)" style="background-color: #000002;">
-
                                         </div>
-
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="card">
-
                         <div class="card-header" id="headingFour">
-
                             <h5 class="mb-0">
-
                                 <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-
                                     <span class="red-header"><i class="fas fa-map-signs text-primary"></i><span class="ml-2">Матеріал основи</span></span>
-
                                 </a>
-
                             </h5>
-
                         </div>
-
                         <div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-
                             <div class="card-body">
-
                                 <div class="row text-center">
-
                                     <div class="col-sm-6">
-
                                         <div class="form-check form-check-inline">
-
-                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), previewMaterialData()"  data-name="Пластик ПВХ (4мм)" name="materials" id="oneMaterial" style="background-color: #007bff;" checked>
-
+                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), previewMaterialData()" data-name="Пластик ПВХ (4мм)" name="materials" id="oneMaterial" style="background-color: #007bff;" checked>
                                             <label for="oneMaterial"><h6 class="mt-3 ml-2"> Пластик ПВХ (4мм)</h6></label>
-
                                         </div>
-
                                     </div>
-
                                     <div class="col-sm-6">
-
                                         <div class="form-check form-check-inline">
-
                                             <input class="form-check-input custom-radio" type="radio" data-name="Композит (3мм)" onclick="getTotalPrice(), previewMaterialData()" name="materials" id="twoMaterial" style="background-color: #007bff;">
-
                                             <label for="oneMaterial"><h6 class="mt-3 ml-2"> Композит (3мм)</h6></label>
-
                                         </div>
-
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="card">
-
                         <div class="card-header" id="headingFive">
-
                             <h5 class="mb-0">
-
                                 <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-
                                     <span class="red-header"><i class="fas fa-check-circle text-primary"></i><span class="ml-2">Додаткові параметри</span></span>
-
                                 </a>
-
                             </h5>
-
                         </div>
-
                         <div id="collapseFive" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-
                             <div class="card-body">
-
                                 <div class="row ml-md-2 mb-3">
-
                                     <div class="col">
-
                                         <div class="form-check">
-
                                             <input class="form-check-input custom-checkbox" type="checkbox" onclick="getTotalPrice(), laminationPlusMinus()" name="options" id="lamination" style="background-color: #007bff;">
-
                                             <label for="lamination"><h6 class="mt-2 ml-3">Ламінування та захист від інфрачервоних променів</h6></label>
-
                                         </div>
-
                                         <div class="form-check">
-
                                             <input class="form-check-input custom-checkbox" type="checkbox" onclick="getTotalPrice(), holesPlusMinus()" name="options" id="holes" style="background-color: #007bff;">
-
                                             <label for="holes"><h6 class="mt-2 ml-3">Свердління отворів</h6></label>
-
                                         </div>
-
                                         <div class="form-check">
-
                                             <input class="form-check-input custom-checkbox" type="checkbox" onclick="getTotalPrice(), stickersPlusMinus()" name="options" id="stickers" style="background-color: #007bff;">
-
                                             <label for="stickers"><h6 class="mt-2 ml-3">Декоративні заглушки-наклейки кольору таблички</h6></label>
-
                                         </div>
-
                                     </div>
-
                                 </div>
-
                                 <div class="horizontal-line"></div>
-
                                 <div class="row text-center">
-
                                     <div class="col mt-3">
-
                                         <h5>Комплекти кріплень</h5>
-
                                     </div>
-
                                 </div>
-
                                 <div class="row text-center">
-
                                     <div class="col-sm-6">
-
                                         <div class="form-check form-check-inline">
-
                                             <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), bracingPlusMinus()" name="optionsRadio" id="forBrick" style="background-color: #007bff;">
-
                                             <label for="oneMaterial"><h6 class="mt-3 ml-2"> Для цегли</h6></label>
-
                                         </div>
-
                                     </div>
-
                                     <div class="col-sm-6">
-
                                         <div class="form-check form-check-inline">
-
                                             <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), bracingPlusMinus()" name="optionsRadio" id="forWood" style="background-color: #007bff;">
-
                                             <label for="oneMaterial"><h6 class="mt-3 ml-2"> Для дерева</h6></label>
-
                                         </div>
-
                                     </div>
-
                                     <div class="col-sm-6">
-
                                         <div class="form-check form-check-inline">
-
                                             <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), bracingPlusMinus()" name="optionsRadio" id="forSiding" style="background-color: #007bff;">
-
                                             <label for="oneMaterial"><h6 class="mt-3 ml-2"> Для сайдингу</h6></label>
-
                                         </div>
-
                                     </div>
-
                                     <div class="col-sm-6">
-
                                         <div class="form-check form-check-inline">
-
                                             <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), bracingPlusMinus()" name="optionsRadio" id="forProf" style="background-color: #007bff;">
-
                                             <label for="oneMaterial"><h6 class="mt-3 ml-2"> Для профнастилу</h6></label>
-
                                         </div>
-
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
-
 
     <footer class="footer-dark-blue mt-3">
-
         <div class="container-fluid pt-4 pb-4">
-
             <div class="row text-white px-4">
-
                 <div class="col-md-4 mb-3">
-
                     <h6>
-
                         ДизайнСВ
-
                     </h6>
-
                     <small>Адресні таблички для приватного будинку від виробника</small>
-
                 </div>
-
                 <div class="col-md-2">
-
                     <a href="about.html" class="footer-link">Про нас</a><br>
-
                     <a href="delivery.html" class="footer-link">Доставка і оплата</a><br>
-
                     <a href="faq.html" class="footer-link">Запитання</a>
-
                 </div>
-
                 <div class="col-md-2 mb-3">
-
                     <a href="comments.html" class="footer-link">Відгуки</a><br>
-
                     <a href="works.html" class="footer-link">Наші роботи</a><br>
-
                     <a href="contacts.html" class="footer-link">Контакти</a>
-
                 </div>
-
                 <div class="col-md-4 text-md-right">
-
-                    Адреса: м. Чернівці, вул. Сагайдачного, 4<br>
-
-                    поштовий індекс 58000 
-
+                    Адреса: м. Чернівці, вул. Сагайдачного, 4<br> поштовий індекс 58000
                     <h4>
-
                         <i class="fa fa-phone"></i>
-
                         <b>(095) 881-10-06</b>
-
                     </h4>
-
                 </div>
-
             </div>
-
         </div>
-
     </footer>
 
-
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-
     <script src="js/bootstrap.min.js"></script>
-
-
-
     <script src="http://e-timer.ru/js/etimer.js"></script>
-
+    
     <script type="text/javascript">
-
         jQuery(document).ready(function() {
-
             jQuery(".eTimer").eTimer({
-
                 etType: 1,
-
                 etDate: "07.02.2018.0.0",
-
                 etTitleText: "До закінчення акції залишилось:",
-
                 etTitleSize: 14,
-
                 etShowSign: 3,
-
                 etSep: ":",
-
                 etFontFamily: "Trebuchet MS",
-
                 etTextColor: "#2e2e2e",
-
                 etPaddingTB: 0,
-
                 etPaddingLR: 0,
-
                 etBackground: "transparent",
-
                 etBorderSize: 0,
-
                 etBorderRadius: 0,
-
                 etBorderColor: "white",
-
                 etShadow: " 0px 0px 0px 0px #333333",
-
                 etLastUnit: 4,
-
                 etNumberFontFamily: "Trebuchet MS",
-
                 etNumberSize: 35,
-
                 etNumberColor: "white",
-
                 etNumberPaddingTB: 0,
-
                 etNumberPaddingLR: 3,
-
                 etNumberBackground: "#2e2e2e",
-
                 etNumberBorderSize: 0,
-
                 etNumberBorderRadius: 3,
-
                 etNumberBorderColor: "white",
-
                 etNumberShadow: "inset 0px 0px 10px 0px rgba(0, 0, 0, 0.5)"
-
             });
-
         });
-
     </script>
 
-
-
     <script type="text/javascript">
-
         function echo_date(date) {
-
             var months = ["січня", "лютого", "березня", "квітня", "травня", "червня", "липня", "серпня", "вересня", "жовтня", "листопада", "грудня"];
 
-
-
             echo_date = function(date) {
-
                 date = new Date(date);
-
                 return {
-
                     "date": date,
-
                     "month": months[date.getMonth()],
-
                     "day_num": date.getDate()
-
                 };
-
             }
-
             return echo_date(date);
-
         };
-
-
-
+        
         var out = echo_date(Date.now() + 24 * 60 * 60 * 1000);
-
-
-
+        
         document.getElementById("next-day").innerHTML = out.day_num + " " + out.month;
-
     </script>
 
-    
-
     <script type="text/javascript">
-
-        function setBorder(target) {    
-
+        function setBorder(target) {
             var types = [
-
                 document.getElementById('type-01'),
-
                 document.getElementById('type-02'),
-
                 document.getElementById('type-03'),
-
                 document.getElementById('type-04'),
-
                 document.getElementById('type-05'),
-
                 document.getElementById('type-06'),
-
                 document.getElementById('type-07'),
-
                 document.getElementById('type-08'),
-
                 document.getElementById('type-09')
-
             ];
 
-            
-
             for (var i = 0; i < 9; i++) {
-
-                if (target != i*1 + 1) types[i].classList.remove("blue-border");
-
+                if (target != i * 1 + 1) types[i].classList.remove("blue-border");
                 else types[i].classList.add("blue-border");
-
             }
-
         }
-
     </script>
 
-    
-
     <script type="text/javascript">
-
         function imageResize() {
 
             if (document.getElementById("normalSize").checked) {
 
                 document.getElementById("back-image").classList.add("w-75");
 
-            }
-
-            else document.getElementById("back-image").classList.remove("w-75");
+            } else document.getElementById("back-image").classList.remove("w-75");
 
         }
-
     </script>
-
-    
-
-    
-
 </body>
-
-
 
 </html>
