@@ -482,10 +482,10 @@ function previewMaterialData(){
 //функція для конструктора вулиці в превью
 function previewStreetConstructor(){
    // document.getElementById("table-preview").classList[0]=ConstructClasses[document.getElementsByClassName("blue-border")[0].id];
-    document.getElementById("OutputStreet").innerHTML=document.getElementById("InputStreet").value;
+    document.getElementById("OutputStreet").textContent=document.getElementById("InputStreet").value;
     console.log(document.getElementById("InputStreet").value)
-    document.getElementById("OutputStreetName").innerHTML=document.getElementById("InputStreetName").value;
-    document.getElementById("OutputNumber").innerHTML=document.getElementById("InputNumber").value;
+    document.getElementById("OutputStreetName").textContent=document.getElementById("InputStreetName").value;
+    document.getElementById("OutputNumber").textContent=document.getElementById("InputNumber").value;
 }
 
 jQuery(document).ready(getTotalPrice());

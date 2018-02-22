@@ -86,18 +86,31 @@
             </div>
         </div>
     </div>
-    
+
     <div id="anchor"></div>
-    
+
     <div class="container-fluid mt-4 pl-lg-5 pr-lg-5">
         <div class="row">
             <div class="col-md-5 order-md-2 mb-3 text-center">
                 <div class="card">
-                   <div class="table-preview">
+                    <div class="item">
                         <img class="mx-auto img-fluid w-75" src="img/tableBorder-1.png" alt="Card image cap" id="back-image" style="background-color: #007bff">
-                        <div class="street-image" id="OutputStreet">Вулиця</div>
-                        <div class="streetName-image" id="OutputStreetName">Назва вулиці</div>
-                        <div class="streetNumber-image" id="OutputNumber">146</div>
+                        
+                        <figure id="projectsvg" style="background-color: #007bff">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 343" preserveAspectRatio="xMinYMin meet">
+                            //set your background image
+                                <image xlink:href="img/tableBorder-01.png" width="512px" height="343px"></image>
+                                <g>
+                                    <text x="200" y="100" font-size="100">First</text>
+                                </g>
+                                <g>
+                                    <text x="300" y="150" font-size="100" id="OutputNumber">Second zone</text>
+                                </g>
+                            </svg>
+                        </figure>
+                        
+                        <div class="streetName-image">Назва вулиці</div>
+                        <div class="streetNumber-image" >146</div>
                     </div>
                     <div class="card-body">
                         <div class="row">
@@ -455,12 +468,12 @@
             </div>
         </div>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="http://e-timer.ru/js/etimer.js"></script>
-    
+
     <script type="text/javascript">
         jQuery(document).ready(function() {
             jQuery(".eTimer").eTimer({
@@ -508,9 +521,9 @@
             }
             return echo_date(date);
         };
-        
+
         var out = echo_date(Date.now() + 24 * 60 * 60 * 1000);
-        
+
         document.getElementById("next-day").innerHTML = out.day_num + " " + out.month;
     </script>
 
