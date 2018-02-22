@@ -93,7 +93,12 @@
         <div class="row">
             <div class="col-md-5 order-md-2 mb-3 text-center">
                 <div class="card">
-                    <img class="mx-auto img-fluid w-75" src="img/tableBorder-1.png" alt="Card image cap" id="back-image" style="background-color: #007bff">
+                   <div class="table-preview">
+                        <img class="mx-auto img-fluid w-75" src="img/tableBorder-1.png" alt="Card image cap" id="back-image" style="background-color: #007bff">
+                        <div class="street-image" id="OutputStreet">Вулиця</div>
+                        <div class="streetName-image" id="OutputStreetName">Назва вулиці</div>
+                        <div class="streetNumber-image" id="OutputNumber">146</div>
+                    </div>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-4">
@@ -140,7 +145,7 @@
                                     <div class="col-sm-4">
                                         <form>
                                             <div class="form-group">
-                                                <input class="form-control" id="InputStreet" aria-describedby="streetHelp" placeholder="Вулиця">
+                                                <input class="form-control" id="InputStreet" aria-describedby="streetHelp" onkeyup="previewStreetConstructor()" value="Вулиця">
                                                 <small id="streetHelp" class="form-text text-muted">Або проспект/майдан тощо</small>
                                             </div>
                                         </form>
@@ -148,7 +153,7 @@
                                     <div class="col-sm-5">
                                         <form>
                                             <div class="form-group">
-                                                <input class="form-control" id="InputStreetName" aria-describedby="streetNameHelp" placeholder="Назва вулиці">
+                                                <input class="form-control" id="InputStreetName" aria-describedby="streetNameHelp" onkeyup="previewStreetConstructor()" value="Назва вулиці">
                                                 <small id="streetNameHelp" class="form-text text-muted">Назва потрібної вулиці</small>
                                             </div>
                                         </form>
@@ -156,7 +161,7 @@
                                     <div class="col-sm-3">
                                         <form>
                                             <div class="form-group">
-                                                <input class="form-control" id="InputNumber" aria-describedby="numberHelp" placeholder="146">
+                                                <input class="form-control" id="InputNumber" aria-describedby="numberHelp" onkeyup="previewStreetConstructor()" value="146">
                                                 <small id="numberHelp" class="form-text text-muted">Номер будинку</small>
                                             </div>
                                         </form>
