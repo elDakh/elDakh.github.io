@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+@font-face {
+    font-family: CAMBRIAB;
+    src: url(../fonts/font/fonts/CAMBRIAB.TTF);
+}
 
 .thin-paragraph {
     line-height: 1.1;
@@ -150,8 +154,6 @@ body {
     left: 0; 
 }
 
-
-.test {
-    font-family: 'Oswald', sans-serif;
-    max-width: 40%;
+.white-table {
+    font-family: 'CAMBRIAB';
 }
