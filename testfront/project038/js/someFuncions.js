@@ -325,7 +325,7 @@ function colorChange(){
 
         if(document.getElementsByName("colors")[i].checked){
 
-            document.getElementById("back-image").style.backgroundColor=document.getElementsByName("colors")[i].style.backgroundColor;
+            document.getElementById("projectsvg").style.backgroundColor=document.getElementsByName("colors")[i].style.backgroundColor;
 
         }  
 
