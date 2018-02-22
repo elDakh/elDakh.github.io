@@ -119,7 +119,16 @@ BigSizes["07-size"]="960x527";
 BigSizes["08-size"]="960x527";
 
 BigSizes["09-size"]="960x527";
-
+var ConstructClasses=[];
+ConstructClasses["type-01"]="";
+ConstructClasses["type-02"]="";
+ConstructClasses["type-03"]="";
+ConstructClasses["type-04"]="";
+ConstructClasses["type-05"]="";
+ConstructClasses["type-06"]="";
+ConstructClasses["type-07"]="";
+ConstructClasses["type-08"]="";
+ConstructClasses["type-09"]="";
 
 
 //функція для отримання ціни від форми та розміру таблички
@@ -406,7 +415,7 @@ function bracingPlusMinus(){
 
 }
 
-//функція для зміни назви кольору в превью
+//функція для показу назви кольору в превью
 
 function colorData(){
 
@@ -422,7 +431,7 @@ function colorData(){
 
 }
 
-//функція для зміни значень розмірів в табличці вибору
+//функція для показу значень розмірів в табличці вибору
 
 function textSizeData(){
 
@@ -446,7 +455,7 @@ function textSizeData(){
 
 }
 
-//функція для зміни значення розміру в превью
+//функція для показу значення розміру в превью
 
 function previewSizeData(){
 
@@ -455,7 +464,7 @@ function previewSizeData(){
 }
 
 
-
+//функція для показу значень матеріалу в превью
 function previewMaterialData(){ 
 
         if(document.getElementById("oneMaterial").checked){
@@ -470,6 +479,15 @@ function previewMaterialData(){
 
 }
 
+//функція для конструктора вулиці в превью
+function previewStreetConstructor(){
+   // document.getElementById("table-preview").classList[0]=ConstructClasses[document.getElementsByClassName("blue-border")[0].id];
+    document.getElementById("OutputStreet").innerHTML=document.getElementById("InputStreet").value;
+    console.log(document.getElementById("InputStreet").value)
+    document.getElementById("OutputStreetName").innerHTML=document.getElementById("InputStreetName").value;
+    document.getElementById("OutputNumber").innerHTML=document.getElementById("InputNumber").value;
+}
+
 jQuery(document).ready(getTotalPrice());
 
 jQuery(document).ready(colorData());
@@ -481,3 +499,5 @@ jQuery(document).ready(previewSizeData());
 jQuery(document).ready(previewMaterialData());
 
 jQuery(document).ready(changeImage());
+
+jQuery(document).ready(previewStreetConstructor());
