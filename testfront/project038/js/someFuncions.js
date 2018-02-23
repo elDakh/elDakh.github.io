@@ -82,23 +82,23 @@ ImageArray["type-09"] ="img/tableBorder-09.png";
 
 var FormArray = [];
 
-FormArray["type-01"] ="тип 1";
+FormArray["type-01"] ="Тип 1";
 
-FormArray["type-02"] ="тип 2";
+FormArray["type-02"] ="Тип 2";
 
-FormArray["type-03"] ="тип 3";
+FormArray["type-03"] ="Тип 3";
 
-FormArray["type-04"] ="тип 4";
+FormArray["type-04"] ="Тип 4";
 
-FormArray["type-05"] ="тип 5";
+FormArray["type-05"] ="Тип 5";
 
-FormArray["type-06"] ="тип 6";
+FormArray["type-06"] ="Тип 6";
 
-FormArray["type-07"] ="тип 7";
+FormArray["type-07"] ="Тип 7";
 
-FormArray["type-08"] ="тип 8";
+FormArray["type-08"] ="Тип 8";
 
-FormArray["type-09"] ="тип 9";
+FormArray["type-09"] ="Тип 9";
 
 var StandartSizes=[];
 
