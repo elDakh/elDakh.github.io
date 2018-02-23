@@ -488,7 +488,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Залишіть свої контакти для надання безкоштовної консультації</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Залишіть свої контакти для замовлення</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -497,32 +497,31 @@
                     <div class="card">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-3">
-                                <h6><i class="fas fa-sliders-h"></i> Форма:</h6>
-                                <small id="formValueM"> </small>
+                            <div class="col-12">
+                                <p><i class="fab fa-amilia text-primary"></i> <b>Надпис:</b> <span id=""> </span></p>
+                            </div>
+                            <div class="col-6">
+                                <p><i class="fas fa-sliders-h text-primary"></i> <b>Форма:</b> <span id="formValueM"> </span></p>
                             </div> 
-                            <div class="col-3">
-                                <h6><i class="fas fa-sliders-h"></i> Розмір:</h6>
-                                <small id="sizeValueM"> </small>
+                            <div class="col-6">
+                                <p><i class="fas fa-sliders-h text-primary"></i> <b>Розмір:</b> <span id="sizeValueM"> </span></p>
                             </div>
-                            <div class="col-3">
-                                <h6><i class="fas fa-paint-brush"></i> Колір:</h6>
-                                <small id="colorValueM"> </small>
+                            <div class="col-6">
+                                <p><i class="fas fa-paint-brush text-primary"></i> <b>Колір:</b> <span id="colorValueM"> </span></p>
                             </div>
-                            <div class="col-3">
-                                <h6><i class="fas fa-map-signs"></i> Матеріал:</h6>
-                                <small id="materialValueM"> </small>
+                            <div class="col-6">
+                                <p><i class="fas fa-map-signs text-primary"></i> <b>Матеріал:</b> <span id="materialValueM"> </span></p>
                             </div>
                         </div>
                         <div class="horizontal-line mt-2"></div>
                         <div class="row">
-                            <div class="col my-3 mx-md-3 text-left">
+                            <div class="col my-3 text-left">
                                 <div class="form-check">
                                     <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="laminationFinalCheckBox(), getTotalPrice()" name="optionsFinal" id="laminationFinalM" style="background-color: #007bff;" disabled>
-                                    <label for="laminationFinal"><h6 class="ml-2" data-toggle="tooltip" data-placement="bottom" title="Текст про ламінування">Ламінування, захист від інфрачервоних променів</h6></label>
+                                    <label for="laminationFinal"><h6 class="ml-2">Ламінування, захист від інфрачервоних променів</h6></label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="holesFinalCheckBox(), getTotalPrice()" name="optionsFinal" id="holesFinalM" style="background-color: #007bff; disabled">
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="holesFinalCheckBox(), getTotalPrice()" name="optionsFinal" id="holesFinalM" style="background-color: #007bff;" disabled>
                                     <label for="holesFinal"><h6 class="ml-2">Свердління отворів</h6></label>
                                 </div>
                                 <div class="form-check">
