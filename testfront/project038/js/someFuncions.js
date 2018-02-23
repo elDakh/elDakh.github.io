@@ -323,6 +323,7 @@ function getTotalPrice() {
     TableTotalPrice=+getFormPrice()+getMaterialPrice()+getColorPrice()+getLaminationPrice()+getHolesPrice()+getStickersPrice()+getBracingPrice();
 
     document.getElementById("totalPrice").innerHTML = TableTotalPrice + " грн";
+    document.getElementById("totalPriceM").innerHTML = TableTotalPrice + " грн";
 
 }
 
@@ -397,8 +398,10 @@ function laminationCheckBox(){
 function laminationFinalCheckBox(){
     if(document.getElementById("laminationFinal").checked){
         document.getElementById("lamination").checked=true;
+        document.getElementById("laminationFinalM").checked=true;
     }else{
         document.getElementById("lamination").checked=false;
+        document.getElementById("laminationFinalM").checked=false;
     }
 }
 
@@ -421,8 +424,10 @@ function holesFinalCheckBox(){
        
     if(document.getElementById("holesFinal").checked){
         document.getElementById("holes").checked=true;
+        document.getElementById("holesFinalM").checked=true;
     }else{
         document.getElementById("holes").checked=false;
+        document.getElementById("holesFinalM").checked=false;
     }
 
 }
@@ -560,6 +565,7 @@ function previewStreetConstructor(){
     document.getElementById("OutputStreet").textContent=document.getElementById("InputStreet").value;
     document.getElementById("OutputStreetName").textContent=document.getElementById("InputStreetName").value;
     document.getElementById("OutputNumber").textContent=document.getElementById("InputNumber").value;
+    document.getElementById("streetM").innerHTML=document.getElementById("OutputStreet").textContent+" "+document.getElementById("OutputStreetName").textContent+", "+ document.getElementById("OutputNumber").textContent;
     
    
 }
