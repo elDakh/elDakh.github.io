@@ -129,6 +129,7 @@ ConstructClasses["type-06"]={NumberX:"256", NumberY:"180", NumberFont:"140", Num
 ConstructClasses["type-07"]={NumberX:"256", NumberY:"265", NumberFont:"110", NumberLength:"80", NumberAnchor:"middle", NumberFill:"#007dff", NameX:"256", NameY:"145", NameFont:"60", NameFill:"#fff" , NameAnchor:"middle", NameLength:"420", StreetX:"256", StreetY:"85", StreetFont:"35", StreetFill:"#fff", StreetAnchor:"middle", StreetLength:"130"};
 ConstructClasses["type-08"]={NumberX:"256", NumberY:"265", NumberFont:"120", NumberLength:"80", NumberAnchor:"middle", NumberFill:"#fff", NameX:"256", NameY:"145", NameFont:"60", NameFill:"#fff" , NameAnchor:"middle", NameLength:"420", StreetX:"256", StreetY:"85", StreetFont:"35", StreetFill:"#fff", StreetAnchor:"middle", StreetLength:"130"};
 ConstructClasses["type-09"]={NumberX:"256", NumberY:"160", NumberFont:"120", NumberLength:"80", NumberAnchor:"middle", NumberFill:"#fff", NameX:"256", NameY:"270", NameFont:"60", NameFill:"#fff" , NameAnchor:"middle", NameLength:"400", StreetX:"256", StreetY:"205", StreetFont:"35", StreetFill:"#fff", StreetAnchor:"middle", StreetLength:"130"};
+var color;
 
 
 //функція для отримання ціни від форми та розміру таблички
@@ -320,13 +321,19 @@ function changeImage() {
 //функція зміни кольору
 
 function colorChange(){
+    
 
     for(var i=0;i<document.getElementsByName("colors").length; i++){
 
         if(document.getElementsByName("colors")[i].checked){
 
             document.getElementById("projectsvg").style.backgroundColor=document.getElementsByName("colors")[i].style.backgroundColor;
-
+            color = document.getElementsByName("colors")[i].style.backgroundColor;
+            ConstructClasses["type-04"]["NumberFill"]=color;
+            ConstructClasses["type-05"]["NameFill"]=color;
+            ConstructClasses["type-05"]["StreetFill"]=color;
+            ConstructClasses["type-06"]["NumberFill"]=color;
+            ConstructClasses["type-07"]["NumberFill"]=color;           
         }  
 
     }
