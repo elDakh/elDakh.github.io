@@ -127,10 +127,22 @@
                         <div class="horizontal-line"></div>
                         <div class="row">
                             <div class="col my-3 mx-md-3 text-left">
-                                <h6><i class="fa fa-minus" id="fa-lamination"></i> Ламінування, захист від інфрачервоних променів</h6>
-                                <h6><i class="fa fa-minus" id="fa-holes"></i> Свердління отворів</h6>
-                                <h6><i class="fa fa-minus" id="fa-stickers"></i> Декоративні заглушки-наклейки кольору таблички</h6>
-                                <h6><i class="fa fa-minus" id="fa-bracing"></i> Комплект кріплень</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="getTotalPrice(), laminationPlusMinus()" name="optionsFinal" id="laminationFinal" style="background-color: #007bff;">
+                                    <label for="laminationFinal"><h6 class="ml-2" data-toggle="tooltip" data-placement="bottom" title="Текст про ламінування">Ламінування, захист від інфрачервоних променів</h6></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="getTotalPrice(), holesPlusMinus()" name="optionsFinal" id="holesFinal" style="background-color: #007bff;">
+                                    <label for="holesFinal"><h6 class="ml-2">Свердління отворів</h6></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="getTotalPrice(), stickersPlusMinus()" name="optionsFinal" id="stickersFinal" style="background-color: #007bff;">
+                                    <label for="stickersFinal"><h6 class="ml-2">Декоративні заглушки-наклейки кольору таблички</h6></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="" name="optionsFinal" id="stickersFinal" style="background-color: #007bff;" disabled>
+                                    <label for="kriplenyaFinal"><h6 class="ml-2">Комплект кріплень</h6></label>
+                                </div>
                             </div>
                         </div>
                         <div class="horizontal-line mb-3"></div>

@@ -150,3 +150,25 @@ body {
 .white-table {
     font-family: 'CAMBRIAB';
 }
+.custom-little-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance:none;
+    appearance: none;
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius:2px;
+    outline: 0px;
+    box-sizing: content-box;
+}
+
+.custom-little-checkbox:checked:after {
+    content: '';
+    background: #fff;
+    display: block;
+    height: 8px;
+    width: 8px;
+    margin: 4px;
+    border-radius: 1px;
+}
