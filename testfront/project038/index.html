@@ -91,73 +91,7 @@
 
     <div class="container-fluid mt-4 pl-lg-5 pr-lg-5">
         <div class="row">
-            <div class="col-md-5 order-md-2 mb-3 text-center">
-                <div class="card">
-                    <div class="w-75 mx-auto" id="back-image"> 
-                        <figure id="projectsvg" style="background-color: #007bff;">
-                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 343" preserveAspectRatio="xMinYMin meet">
-                                <image xlink:href="img/tableBorder-01.png" width="512px" height="343px" id="image-source"></image>
-                                <g style="color: white;">
-                                    <text x="100" y="200" font-size="95" id="OutputNumber" fill="#fff" class="white-table" text-anchor="middle" textLength="75" lengthAdjust="spacingAndGlyphs">4</text>
-                                </g>
-                                <g>
-                                    <text x="312" y="165" font-size="40" id="OutputStreetName" class="white-table text-capitalize" fill="#fff" text-anchor="middle" textLength="270" lengthAdjust="spacingAndGlyphs">Cагайдачного</text>
-                                </g>
-                                <g>
-                                    <text x="420" y="190" font-size="25" id="OutputStreet" class="white-table text-lowercase" fill="#fff" text-anchor="end" textLength="100" lengthAdjust="spacingAndGlyphs">вулиця</text>
-                                </g>
-                            </svg>
-                        </figure>
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-4">
-                                <a href="" data-toggle="collapse" data-target="#collapseTwo">
-                                    <h6><i class="fas fa-sliders-h"></i> Розмір:</h6>
-                                </a>
-                                <small id="sizeValue"> </small>
-                            </div>
-                            <div class="col-4">
-                                <a href="" data-toggle="collapse" data-target="#collapseThree">
-                                    <h6><i class="fas fa-paint-brush"></i> Колір:</h6>
-                                </a>   
-                                <small id="colorValue"> </small>
-                            </div>
-                            <div class="col-4">
-                                <a href="" data-toggle="collapse" data-target="#collapseFour">
-                                    <h6><i class="fas fa-map-signs"></i> Матеріал:</h6>
-                                </a>
-                                <small id="materialValue"> </small>
-                            </div>
-                        </div>
-                        <div class="horizontal-line mt-2"></div>
-                        <div class="row">
-                            <div class="col my-3 mx-md-3 text-left">
-                                <div class="form-check">
-                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="laminationFinalCheckBox(), getTotalPrice()" name="optionsFinal" id="laminationFinal" style="background-color: #007bff;">
-                                    <label for="laminationFinal"><h6 class="ml-2" data-toggle="tooltip" data-placement="bottom" title="Текст про ламінування">Ламінування, захист від інфрачервоних променів</h6></label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="holesFinalCheckBox(), getTotalPrice()" name="optionsFinal" id="holesFinal" style="background-color: #007bff;">
-                                    <label for="holesFinal"><h6 class="ml-2">Свердління отворів</h6></label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="stickersFinalCheckBox(), getTotalPrice()" name="optionsFinal" id="stickersFinal" style="background-color: #007bff;">
-                                    <label for="stickersFinal"><h6 class="ml-2">Декоративні заглушки-наклейки кольору таблички</h6></label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="" name="optionsFinal" id="bracingFinal" style="background-color: #007bff;" disabled>
-                                    <label for="kriplenyaFinal"><h6 class="ml-2">Комплект кріплень</h6></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="horizontal-line mb-3"></div>
-                        <h2 id="totalPrice"> </h2>
-                        <button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#exampleModal2">Швидке замовлення</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-7 order-md-1">
+            <div class="col-md-7 mb-3">
                 <div id="accordion">
                     <div class="card">
                         <div class="card-header" id="headingOne">
@@ -415,6 +349,72 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 text-center">
+                <div class="card">
+                    <div class="w-75 mx-auto" id="back-image"> 
+                        <figure id="projectsvg" style="background-color: #007bff;">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 343" preserveAspectRatio="xMinYMin meet">
+                                <image xlink:href="img/tableBorder-01.png" width="512px" height="343px" id="image-source"></image>
+                                <g style="color: white;">
+                                    <text x="100" y="200" font-size="95" id="OutputNumber" fill="#fff" class="white-table" text-anchor="middle" textLength="75" lengthAdjust="spacingAndGlyphs">4</text>
+                                </g>
+                                <g>
+                                    <text x="312" y="165" font-size="40" id="OutputStreetName" class="white-table text-capitalize" fill="#fff" text-anchor="middle" textLength="270" lengthAdjust="spacingAndGlyphs">Cагайдачного</text>
+                                </g>
+                                <g>
+                                    <text x="420" y="190" font-size="25" id="OutputStreet" class="white-table text-lowercase" fill="#fff" text-anchor="end" textLength="100" lengthAdjust="spacingAndGlyphs">вулиця</text>
+                                </g>
+                            </svg>
+                        </figure>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-4">
+                                <a href="" data-toggle="collapse" data-target="#collapseTwo">
+                                    <h6><i class="fas fa-sliders-h"></i> Розмір:</h6>
+                                </a>
+                                <small id="sizeValue"> </small>
+                            </div>
+                            <div class="col-4">
+                                <a href="" data-toggle="collapse" data-target="#collapseThree">
+                                    <h6><i class="fas fa-paint-brush"></i> Колір:</h6>
+                                </a>   
+                                <small id="colorValue"> </small>
+                            </div>
+                            <div class="col-4">
+                                <a href="" data-toggle="collapse" data-target="#collapseFour">
+                                    <h6><i class="fas fa-map-signs"></i> Матеріал:</h6>
+                                </a>
+                                <small id="materialValue"> </small>
+                            </div>
+                        </div>
+                        <div class="horizontal-line mt-2"></div>
+                        <div class="row">
+                            <div class="col my-3 mx-md-3 text-left">
+                                <div class="form-check">
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="laminationFinalCheckBox(), getTotalPrice()" name="optionsFinal" id="laminationFinal" style="background-color: #007bff;">
+                                    <label for="laminationFinal"><h6 class="ml-2">Ламінування, захист від інфрачервоних променів</h6></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="holesFinalCheckBox(), getTotalPrice()" name="optionsFinal" id="holesFinal" style="background-color: #007bff;">
+                                    <label for="holesFinal"><h6 class="ml-2">Свердління отворів</h6></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="stickersFinalCheckBox(), getTotalPrice()" name="optionsFinal" id="stickersFinal" style="background-color: #007bff;">
+                                    <label for="stickersFinal"><h6 class="ml-2">Декоративні заглушки-наклейки кольору таблички</h6></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="" name="optionsFinal" id="bracingFinal" style="background-color: #007bff;" disabled>
+                                    <label for="kriplenyaFinal"><h6 class="ml-2">Комплект кріплень</h6></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="horizontal-line mb-3"></div>
+                        <h2 id="totalPrice"> </h2>
+                        <button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#exampleModal2">Швидке замовлення</button>
                     </div>
                 </div>
             </div>
