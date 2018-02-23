@@ -120,15 +120,15 @@ BigSizes["08-size"]="960x527";
 
 BigSizes["09-size"]="960x527";
 var ConstructClasses=[];
-ConstructClasses["type-01"]="";
-ConstructClasses["type-02"]="";
-ConstructClasses["type-03"]="";
-ConstructClasses["type-04"]="";
-ConstructClasses["type-05"]="";
-ConstructClasses["type-06"]="";
-ConstructClasses["type-07"]="";
-ConstructClasses["type-08"]="";
-ConstructClasses["type-09"]="";
+ConstructClasses["type-01"]={NumberX:"100", NumberY:"200", NumberFont:"95", NumberLength:"75", NumberAnchor:"middle", NumberFill:"#fff", NameX:"312", NameY:"165", NameFont:"40", NameFill:"#fff" , NameAnchor:"middle", NameLength:"270", StreetX:"420", StreetY:"190", StreetFont:"25", StreetFill:"#fff", StreetAnchor:"end", StreetLength:"100"};
+ConstructClasses["type-02"]={NumberX:"256", NumberY:"260", NumberFont:"75", NumberLength:"60", NumberAnchor:"middle", NumberFill:"#fff", NameX:"256", NameY:"178", NameFont:"60", NameFill:"#fff" , NameAnchor:"middle", NameLength:"420", StreetX:"256", StreetY:"118", StreetFont:"30", StreetFill:"#fff", StreetAnchor:"middle", StreetLength:"130"};
+ConstructClasses["type-03"]={NumberX:"256", NumberY:"250", NumberFont:"100", NumberLength:"80", NumberAnchor:"middle", NumberFill:"#fff", NameX:"315", NameY:"145", NameFont:"45", NameFill:"#fff" , NameAnchor:"middle", NameLength:"300", StreetX:"100", StreetY:"144", StreetFont:"40", StreetFill:"#fff", StreetAnchor:"middle", StreetLength:"110"};
+ConstructClasses["type-04"]={NumberX:"425", NumberY:"210", NumberFont:"115", NumberLength:"85", NumberAnchor:"middle", NumberFill:"#007bff", NameX:"350", NameY:"210", NameFont:"50", NameFill:"#fff" , NameAnchor:"end", NameLength:"310", StreetX:"347", StreetY:"155", StreetFont:"40", StreetFill:"#fff", StreetAnchor:"end", StreetLength:"110"};
+ConstructClasses["type-05"]={NumberX:"425", NumberY:"210", NumberFont:"115", NumberLength:"85", NumberAnchor:"middle", NumberFill:"#fff", NameX:"350", NameY:"210", NameFont:"50", NameFill:"#007bff" , NameAnchor:"end", NameLength:"310", StreetX:"347", StreetY:"155", StreetFont:"40", StreetFill:"#007bff", StreetAnchor:"end", StreetLength:"110"};
+ConstructClasses["type-06"]={NumberX:"256", NumberY:"180", NumberFont:"140", NumberLength:"100", NumberAnchor:"middle", NumberFill:"#007bff", NameX:"256", NameY:"295", NameFont:"45", NameFill:"#fff" , NameAnchor:"middle", NameLength:"210", StreetX:"256", StreetY:"235", StreetFont:"32", StreetFill:"#fff", StreetAnchor:"middle", StreetLength:"110"};
+ConstructClasses["type-07"]={NumberX:"256", NumberY:"265", NumberFont:"110", NumberLength:"80", NumberAnchor:"middle", NumberFill:"#007dff", NameX:"256", NameY:"145", NameFont:"60", NameFill:"#fff" , NameAnchor:"middle", NameLength:"420", StreetX:"256", StreetY:"85", StreetFont:"35", StreetFill:"#fff", StreetAnchor:"middle", StreetLength:"130"};
+ConstructClasses["type-08"]={NumberX:"256", NumberY:"265", NumberFont:"120", NumberLength:"80", NumberAnchor:"middle", NumberFill:"#fff", NameX:"256", NameY:"145", NameFont:"60", NameFill:"#fff" , NameAnchor:"middle", NameLength:"420", StreetX:"256", StreetY:"85", StreetFont:"35", StreetFill:"#fff", StreetAnchor:"middle", StreetLength:"130"};
+ConstructClasses["type-09"]={NumberX:"256", NumberY:"160", NumberFont:"120", NumberLength:"80", NumberAnchor:"middle", NumberFill:"#fff", NameX:"256", NameY:"270", NameFont:"60", NameFill:"#fff" , NameAnchor:"middle", NameLength:"400", StreetX:"256", StreetY:"205", StreetFont:"35", StreetFill:"#fff", StreetAnchor:"middle", StreetLength:"130"};
 
 
 //функція для отримання ціни від форми та розміру таблички
@@ -311,7 +311,7 @@ function getTotalPrice() {
 
 function changeImage() {
 
-    document.getElementById("back-image").src = ImageArray[document.getElementsByClassName("blue-border")[0].id];
+    document.getElementById("image-source").setAttribute("xlink:href", ImageArray[document.getElementsByClassName("blue-border")[0].id]);
 
 }
 
@@ -481,9 +481,25 @@ function previewMaterialData(){
 
 //функція для конструктора вулиці в превью
 function previewStreetConstructor(){
-   // document.getElementById("table-preview").classList[0]=ConstructClasses[document.getElementsByClassName("blue-border")[0].id];
+    document.getElementById("OutputNumber").setAttribute("x", ConstructClasses[document.getElementsByClassName("blue-border")[0].id]["NumberX"]);
+    document.getElementById("OutputNumber").setAttribute("y", ConstructClasses[document.getElementsByClassName("blue-border")[0].id]["NumberY"]);
+    document.getElementById("OutputNumber").setAttribute("font-size", ConstructClasses[document.getElementsByClassName("blue-border")[0].id]["NumberFont"]);
+    document.getElementById("OutputNumber").setAttribute("fill", ConstructClasses[document.getElementsByClassName("blue-border")[0].id]["NumberFill"]);
+    document.getElementById("OutputNumber").setAttribute("text-anchor", ConstructClasses[document.getElementsByClassName("blue-border")[0].id]["NumberAnchor"]);
+    document.getElementById("OutputNumber").setAttribute("textLength", ConstructClasses[document.getElementsByClassName("blue-border")[0].id]["NumberLength"]);
+    document.getElementById("OutputStreetName").setAttribute("x", ConstructClasses[document.getElementsByClassName("blue-border")[0].id]["NameX"]);
+    document.getElementById("OutputStreetName").setAttribute("y", ConstructClasses[document.getElementsByClassName("blue-border")[0].id]["NameY"]);
+    document.getElementById("OutputStreetName").setAttribute("font-size", ConstructClasses[document.getElementsByClassName("blue-border")[0].id]["NameFont"]);
+    document.getElementById("OutputStreetName").setAttribute("fill", ConstructClasses[document.getElementsByClassName("blue-border")[0].id]["NameFill"]);
+    document.getElementById("OutputStreetName").setAttribute("text-anchor", ConstructClasses[document.getElementsByClassName("blue-border")[0].id]["NameAnchor"]);
+    document.getElementById("OutputStreetName").setAttribute("textLength", ConstructClasses[document.getElementsByClassName("blue-border")[0].id]["NameLength"]);
+    document.getElementById("OutputStreet").setAttribute("x", ConstructClasses[document.getElementsByClassName("blue-border")[0].id]["StreetX"]);
+    document.getElementById("OutputStreet").setAttribute("y", ConstructClasses[document.getElementsByClassName("blue-border")[0].id]["StreetY"]);
+    document.getElementById("OutputStreet").setAttribute("font-size", ConstructClasses[document.getElementsByClassName("blue-border")[0].id]["StreetFont"]);
+    document.getElementById("OutputStreet").setAttribute("fill", ConstructClasses[document.getElementsByClassName("blue-border")[0].id]["StreetFill"]);
+    document.getElementById("OutputStreet").setAttribute("text-anchor", ConstructClasses[document.getElementsByClassName("blue-border")[0].id]["StreetAnchor"]);
+    document.getElementById("OutputStreet").setAttribute("textLength", ConstructClasses[document.getElementsByClassName("blue-border")[0].id]["StreetLength"]);
     document.getElementById("OutputStreet").textContent=document.getElementById("InputStreet").value;
-    console.log(document.getElementById("InputStreet").value)
     document.getElementById("OutputStreetName").textContent=document.getElementById("InputStreetName").value;
     document.getElementById("OutputNumber").textContent=document.getElementById("InputNumber").value;
 }
