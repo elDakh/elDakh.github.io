@@ -128,19 +128,19 @@
                         <div class="row">
                             <div class="col my-3 mx-md-3 text-left">
                                 <div class="form-check">
-                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="getTotalPrice(), laminationPlusMinus()" name="optionsFinal" id="laminationFinal" style="background-color: #007bff;">
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="getTotalPrice(), laminationFinalCheckBox()" name="optionsFinal" id="laminationFinal" style="background-color: #007bff;">
                                     <label for="laminationFinal"><h6 class="ml-2" data-toggle="tooltip" data-placement="bottom" title="Текст про ламінування">Ламінування, захист від інфрачервоних променів</h6></label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="getTotalPrice(), holesPlusMinus()" name="optionsFinal" id="holesFinal" style="background-color: #007bff;">
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="getTotalPrice(), holesFinalCheckBox()" name="optionsFinal" id="holesFinal" style="background-color: #007bff;">
                                     <label for="holesFinal"><h6 class="ml-2">Свердління отворів</h6></label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="getTotalPrice(), stickersPlusMinus()" name="optionsFinal" id="stickersFinal" style="background-color: #007bff;">
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="getTotalPrice(), stickersFinalCheckBox()" name="optionsFinal" id="stickersFinal" style="background-color: #007bff;">
                                     <label for="stickersFinal"><h6 class="ml-2">Декоративні заглушки-наклейки кольору таблички</h6></label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="" name="optionsFinal" id="stickersFinal" style="background-color: #007bff;" disabled>
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="" name="optionsFinal" id="bracingFinal" style="background-color: #007bff;" disabled>
                                     <label for="kriplenyaFinal"><h6 class="ml-2">Комплект кріплень</h6></label>
                                 </div>
                             </div>
@@ -362,15 +362,15 @@
                                 <div class="row ml-md-2 mb-3">
                                     <div class="col">
                                         <div class="form-check">
-                                            <input class="form-check-input custom-checkbox" type="checkbox" onclick="getTotalPrice(), laminationPlusMinus()" name="options" id="lamination" style="background-color: #007bff;">
+                                            <input class="form-check-input custom-checkbox" type="checkbox" onclick="getTotalPrice(), laminationCheckBox()" name="options" id="lamination" style="background-color: #007bff;">
                                             <label for="lamination"><h6 class="mt-2 ml-3" data-toggle="tooltip" data-placement="bottom" title="Текст про ламінування">Ламінування, захист від інфрачервоних променів <span id="lamination-price">(+50 грн)</span> <i class="far fa-question-circle text-primary"></i></h6></label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input custom-checkbox" type="checkbox" onclick="getTotalPrice(), holesPlusMinus()" name="options" id="holes" style="background-color: #007bff;">
+                                            <input class="form-check-input custom-checkbox" type="checkbox" onclick="getTotalPrice(), holesCheckBox()" name="options" id="holes" style="background-color: #007bff;">
                                             <label for="holes"><h6 class="mt-2 ml-3" data-toggle="tooltip" data-placement="bottom" title="Текст про отвори">Свердління отворів <span id="holes-price">(+30 грн)</span> <i class="far fa-question-circle text-primary"></i></h6></label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input custom-checkbox" type="checkbox" onclick="getTotalPrice(), stickersPlusMinus()" name="options" id="stickers" style="background-color: #007bff;">
+                                            <input class="form-check-input custom-checkbox" type="checkbox" onclick="getTotalPrice(), stickersCheckBox()" name="options" id="stickers" style="background-color: #007bff;">
                                             <label for="stickers"><h6 class="mt-2 ml-3" data-toggle="tooltip" data-placement="bottom" title="Текст про заглушки">Декоративні заглушки-наклейки кольору таблички <span id="stickers-price">(+30 грн)</span> <i class="far fa-question-circle text-primary"></i></h6></label>
                                         </div>
                                     </div>
@@ -384,25 +384,25 @@
                                 <div class="row text-center">
                                     <div class="col-sm-6">
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), bracingPlusMinus()" name="optionsRadio" id="forBrick" style="background-color: #007bff;">
+                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), bracingCheckBox()" name="optionsRadio" id="forBrick" style="background-color: #007bff;">
                                             <label for="oneMaterial"><h6 class="mt-3 ml-2"> Для цегли</h6></label>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), bracingPlusMinus()" name="optionsRadio" id="forWood" style="background-color: #007bff;">
+                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), bracingCheckBox()" name="optionsRadio" id="forWood" style="background-color: #007bff;">
                                             <label for="oneMaterial"><h6 class="mt-3 ml-2"> Для дерева</h6></label>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), bracingPlusMinus()" name="optionsRadio" id="forSiding" style="background-color: #007bff;">
+                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), bracingCheckBox()" name="optionsRadio" id="forSiding" style="background-color: #007bff;">
                                             <label for="oneMaterial"><h6 class="mt-3 ml-2"> Для сайдингу</h6></label>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), bracingPlusMinus()" name="optionsRadio" id="forProf" style="background-color: #007bff;">
+                                            <input class="form-check-input custom-radio" type="radio" onclick="getTotalPrice(), bracingCheckBox()" name="optionsRadio" id="forProf" style="background-color: #007bff;">
                                             <label for="oneMaterial"><h6 class="mt-3 ml-2"> Для профнастилу</h6></label>
                                         </div>
                                     </div>
