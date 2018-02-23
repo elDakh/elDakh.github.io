@@ -316,7 +316,18 @@ function changeImage() {
 
 }
 
-
+//функція для зміни "+ціни"
+function priceInfo(){
+    if (document.getElementById("normalSize").checked){
+        document.getElementById("color-price").innerHTML="(+"+StandartSvitlovidbuvayuchuy+" грн)";
+        document.getElementById("material-price").innerHTML="(+"+StandartKompozyt+" грн)";
+        document.getElementById("lamination-price").innerHTML="(+"+StandartLaminaciya+" грн)";
+    }else{
+        document.getElementById("color-price").innerHTML="(+"+bigSvitlovidbuvayuchuy+" грн)";
+        document.getElementById("material-price").innerHTML="(+"+bigKompozyt+") грн)";
+        document.getElementById("lamination-price").innerHTML="(+"+BigLamination+" грн)";
+    }
+}
 
 //функція зміни кольору
 
