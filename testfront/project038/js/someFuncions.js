@@ -353,79 +353,82 @@ function colorChange(){
 
 
 
-//функції плюс-мінус
+//функції чек-боксу
 
-function laminationPlusMinus(){
+function laminationCheckBox(){
 
     if(document.getElementById("lamination").checked){
 
-        document.getElementById("fa-lamination").classList.remove("fa-minus");
-
-        document.getElementById("fa-lamination").classList.add("fa-plus");
-
-        
+        document.getElementById("laminationFinal").checked=true;
 
     }else{
 
-        document.getElementById("fa-lamination").classList.remove("fa-plus");
+        document.getElementById("laminationFinal").checked=false;
 
-        document.getElementById("fa-lamination").classList.add("fa-minus");
+    }
+    
+}
 
-        
+function laminationFinalCheckBox(){
+    if(document.getElementById("laminationFinal").checked){
+        document.getElementById("lamination").checked=true;
+    }else{
+        document.getElementById("lamination").checked=false;
+    }
+}
 
+function holesCheckBox(){
+ if(document.getElementById("holes").checked){
+
+        document.getElementById("holesFinal").checked=true;
+
+    }else{
+
+        document.getElementById("holesFinal").checked=false;
+
+    }
+ 
+}
+
+function holesFinalCheckBox(){
+       
+    if(document.getElementById("holesFinal").checked){
+        document.getElementById("holes").checked=true;
+    }else{
+        document.getElementById("holes").checked=false;
     }
 
 }
 
-function holesPlusMinus(){
-
-    if(document.getElementById("holes").checked){
-
-        document.getElementById("fa-holes").classList.remove("fa-minus");
-
-        document.getElementById("fa-holes").classList.add("fa-plus");
-
-        
-
-    }else{
-
-        document.getElementById("fa-holes").classList.remove("fa-plus");
-
-        document.getElementById("fa-holes").classList.add("fa-minus");
-
-        
-
-    }
-
-}
-
-function stickersPlusMinus(){
+function stickersCheckBox(){
 
     if(document.getElementById("stickers").checked){
 
-        document.getElementById("fa-stickers").classList.remove("fa-minus");
-
-        document.getElementById("fa-stickers").classList.add("fa-plus");
+        document.getElementById("stickersFinal").checked=true;
 
     }else{
 
-        document.getElementById("fa-stickers").classList.remove("fa-plus");
-
-        document.getElementById("fa-stickers").classList.add("fa-minus");
+        document.getElementById("stickersFinal").checked=false;
 
     }
-
+    
 }
 
-function bracingPlusMinus(){
+function stickersFinalCheckBox(){
+    if(document.getElementById("stickersFinal").checked){
+        document.getElementById("stickers").checked=true;
+    }else{
+        document.getElementById("stickers").checked=false;
+    }
+}
+
+function bracingCheckBox(){
 
      for(var i = 0; i<document.getElementsByName("optionsRadio").length;i++){
 
         if(document.getElementsByName("optionsRadio")[i].checked){
 
-            document.getElementById("fa-bracing").classList.remove("fa-minus");
-
-            document.getElementById("fa-bracing").classList.add("fa-plus");
+            document.getElementById("bracingFinal").checked=true;
 
         }
 
