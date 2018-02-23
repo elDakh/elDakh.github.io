@@ -128,15 +128,15 @@
                         <div class="row">
                             <div class="col my-3 mx-md-3 text-left">
                                 <div class="form-check">
-                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="getTotalPrice(), laminationFinalCheckBox()" name="optionsFinal" id="laminationFinal" style="background-color: #007bff;">
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="laminationFinalCheckBox(), getTotalPrice()" name="optionsFinal" id="laminationFinal" style="background-color: #007bff;">
                                     <label for="laminationFinal"><h6 class="ml-2" data-toggle="tooltip" data-placement="bottom" title="Текст про ламінування">Ламінування, захист від інфрачервоних променів</h6></label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="getTotalPrice(), holesFinalCheckBox()" name="optionsFinal" id="holesFinal" style="background-color: #007bff;">
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="holesFinalCheckBox(), getTotalPrice()" name="optionsFinal" id="holesFinal" style="background-color: #007bff;">
                                     <label for="holesFinal"><h6 class="ml-2">Свердління отворів</h6></label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="getTotalPrice(), stickersFinalCheckBox()" name="optionsFinal" id="stickersFinal" style="background-color: #007bff;">
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="stickersFinalCheckBox(), getTotalPrice()" name="optionsFinal" id="stickersFinal" style="background-color: #007bff;">
                                     <label for="stickersFinal"><h6 class="ml-2">Декоративні заглушки-наклейки кольору таблички</h6></label>
                                 </div>
                                 <div class="form-check">
@@ -147,7 +147,7 @@
                         </div>
                         <div class="horizontal-line mb-3"></div>
                         <h2 id="totalPrice"> </h2>
-                        <a href="" class="btn btn-primary mt-3">Швидке замовлення</a>
+                        <button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#exampleModal2">Швидке замовлення</button>
                     </div>
                 </div>
             </div>
@@ -477,6 +477,84 @@
             </div>
         </div>
     </div>
+    
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Залишіть свої контакти для надання безкоштовної консультації</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-3">
+                                <h6><i class="fas fa-sliders-h"></i> Форма:</h6>
+                                <small id="formValueM"> </small>
+                            </div> 
+                            <div class="col-3">
+                                <h6><i class="fas fa-sliders-h"></i> Розмір:</h6>
+                                <small id="sizeValueM"> </small>
+                            </div>
+                            <div class="col-3">
+                                <h6><i class="fas fa-paint-brush"></i> Колір:</h6>
+                                <small id="colorValueM"> </small>
+                            </div>
+                            <div class="col-3">
+                                <h6><i class="fas fa-map-signs"></i> Матеріал:</h6>
+                                <small id="materialValueM"> </small>
+                            </div>
+                        </div>
+                        <div class="horizontal-line mt-2"></div>
+                        <div class="row">
+                            <div class="col my-3 mx-md-3 text-left">
+                                <div class="form-check">
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="laminationFinalCheckBox(), getTotalPrice()" name="optionsFinal" id="laminationFinalM" style="background-color: #007bff;">
+                                    <label for="laminationFinal"><h6 class="ml-2" data-toggle="tooltip" data-placement="bottom" title="Текст про ламінування">Ламінування, захист від інфрачервоних променів</h6></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="holesFinalCheckBox(), getTotalPrice()" name="optionsFinal" id="holesFinalM" style="background-color: #007bff;">
+                                    <label for="holesFinal"><h6 class="ml-2">Свердління отворів</h6></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="stickersFinalCheckBox(), getTotalPrice()" name="optionsFinal" id="stickersFinalM" style="background-color: #007bff;">
+                                    <label for="stickersFinal"><h6 class="ml-2">Декоративні заглушки-наклейки кольору таблички</h6></label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input custom-little-checkbox" type="checkbox" onclick="" name="optionsFinal" id="bracingFinalM" style="background-color: #007bff;" disabled>
+                                    <label for="kriplenyaFinal"><h6 class="ml-2">Комплект кріплень</h6></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="horizontal-line mb-3"></div>
+                        <h2 id="totalPriceM"> </h2>
+                    </div>
+                </div>
+                    <form action="mailSend.php" method="post">
+                        <div class="form-group">
+                            <label for="sender-name" class="col-form-label">Ім'я</label>
+                            <input type="text" class="form-control" id="sender-name" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sender-phone" class="col-form-label">Телефон</label>
+                            <input type="text" class="form-control" id="sender-phone" name="userphone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sender-email" class="col-form-label">Електронна адреса</label>
+                            <input type="text" class="form-control" id="sender-email" name="usermail" required>
+                        </div> 
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Скасувати</button>
+                    <button type="submit" class="btn btn-primary">Замовити дзвінок</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -488,7 +566,7 @@
             jQuery(".eTimer").eTimer({
                 etType: 1,
                 etDate: "07.02.2018.0.0",
-                etTitleText: "До закінчення акції залишилось:",
+                etTitleText: "До закінчення акції",
                 etTitleSize: 14,
                 etShowSign: 3,
                 etSep: ":",

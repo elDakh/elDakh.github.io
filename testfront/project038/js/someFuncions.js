@@ -80,6 +80,26 @@ ImageArray["type-08"] ="img/tableBorder-08.png";
 
 ImageArray["type-09"] ="img/tableBorder-09.png";
 
+var FormArray = [];
+
+FormArray["type-01"] ="тип 1";
+
+FormArray["type-02"] ="тип 2";
+
+FormArray["type-03"] ="тип 3";
+
+FormArray["type-04"] ="тип 4";
+
+FormArray["type-05"] ="тип 5";
+
+FormArray["type-06"] ="тип 6";
+
+FormArray["type-07"] ="тип 7";
+
+FormArray["type-08"] ="тип 8";
+
+FormArray["type-09"] ="тип 9";
+
 var StandartSizes=[];
 
 StandartSizes["01-size"]="620x200";
@@ -313,8 +333,11 @@ function getTotalPrice() {
 function changeImage() {
 
     document.getElementById("image-source").setAttribute("xlink:href", ImageArray[document.getElementsByClassName("blue-border")[0].id]);
+    document.getElementById("formValueM").innerHTML=FormArray[document.getElementsByClassName("blue-border")[0].id];
 
 }
+
+
 
 //функція для зміни "+ціни"
 function priceInfo(){
@@ -360,10 +383,12 @@ function laminationCheckBox(){
     if(document.getElementById("lamination").checked){
 
         document.getElementById("laminationFinal").checked=true;
+        document.getElementById("laminationFinalM").checked=true;
 
     }else{
 
         document.getElementById("laminationFinal").checked=false;
+        document.getElementById("laminationFinalM").checked=false;
 
     }
     
@@ -381,10 +406,12 @@ function holesCheckBox(){
  if(document.getElementById("holes").checked){
 
         document.getElementById("holesFinal").checked=true;
+        document.getElementById("holesFinalM").checked=true;
 
     }else{
 
         document.getElementById("holesFinal").checked=false;
+        document.getElementById("holesFinalM").checked=false;
 
     }
  
@@ -405,10 +432,12 @@ function stickersCheckBox(){
     if(document.getElementById("stickers").checked){
 
         document.getElementById("stickersFinal").checked=true;
+        document.getElementById("stickersFinalM").checked=true;
 
     }else{
 
         document.getElementById("stickersFinal").checked=false;
+        document.getElementById("stickersFinalM").checked=false;
 
     }
     
@@ -417,10 +446,13 @@ function stickersCheckBox(){
 function stickersFinalCheckBox(){
     if(document.getElementById("stickersFinal").checked){
         document.getElementById("stickers").checked=true;
+        document.getElementById("stickersFinalM").checked=true;
     }else{
         document.getElementById("stickers").checked=false;
+        document.getElementById("stickersFinalM").checked=false;
     }
 }
+
 
 function bracingCheckBox(){
 
@@ -429,6 +461,7 @@ function bracingCheckBox(){
         if(document.getElementsByName("optionsRadio")[i].checked){
 
             document.getElementById("bracingFinal").checked=true;
+            document.getElementById("bracingFinalM").checked=true;
 
         }
 
@@ -445,6 +478,7 @@ function colorData(){
         if(document.getElementsByName("colors")[i].checked){
 
              document.getElementById("colorValue").innerHTML=document.getElementsByName("colors")[i].getAttribute("data-name");
+             document.getElementById("colorValueM").innerHTML=document.getElementsByName("colors")[i].getAttribute("data-name");
 
         }  
 
@@ -481,6 +515,7 @@ function textSizeData(){
 function previewSizeData(){
 
     document.getElementById("sizeValue").innerHTML=document.getElementsByClassName("blue-border")[0].querySelectorAll("p")[0].innerHTML;
+    document.getElementById("sizeValueM").innerHTML=document.getElementsByClassName("blue-border")[0].querySelectorAll("p")[0].innerHTML;
 
 }
 
@@ -491,10 +526,12 @@ function previewMaterialData(){
         if(document.getElementById("oneMaterial").checked){
 
              document.getElementById("materialValue").innerHTML=document.getElementById("oneMaterial").getAttribute("data-name");
+             document.getElementById("materialValueM").innerHTML=document.getElementById("oneMaterial").getAttribute("data-name");
 
         }else{
 
             document.getElementById("materialValue").innerHTML=document.getElementById("twoMaterial").getAttribute("data-name");
+            document.getElementById("materialValueM").innerHTML=document.getElementById("twoMaterial").getAttribute("data-name");
 
         }  
 
@@ -523,6 +560,8 @@ function previewStreetConstructor(){
     document.getElementById("OutputStreet").textContent=document.getElementById("InputStreet").value;
     document.getElementById("OutputStreetName").textContent=document.getElementById("InputStreetName").value;
     document.getElementById("OutputNumber").textContent=document.getElementById("InputNumber").value;
+    
+   
 }
 
 jQuery(document).ready(getTotalPrice());
