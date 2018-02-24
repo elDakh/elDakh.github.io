@@ -93,54 +93,15 @@
         <div class="row">
             <div class="col-md-7 mb-3">
                 <div id="accordion">
-                    <div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0">
-                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <span class="red-header"><i class="fas fa-pencil-alt text-primary"></i><span class="ml-2">Що пишемо на табличці</span></span>
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <form>
-                                            <div class="form-group">
-                                                <input class="form-control" id="InputStreet" aria-describedby="streetHelp" onkeyup="previewStreetConstructor()" value="вулиця">
-                                                <small id="streetHelp" class="form-text text-muted">Або проспект/майдан тощо</small>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="col-sm-5">
-                                        <form>
-                                            <div class="form-group">
-                                                <input class="form-control" id="InputStreetName" aria-describedby="streetNameHelp" onkeyup="previewStreetConstructor()" value="Сагайдачного">
-                                                <small id="streetNameHelp" class="form-text text-muted">Назва потрібної вулиці</small>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <div class="col-sm-3">
-                                        <form>
-                                            <div class="form-group">
-                                                <input class="form-control" id="InputNumber" aria-describedby="numberHelp" onkeyup="previewStreetConstructor()" value="4">
-                                                <small id="numberHelp" class="form-text text-muted">Номер будинку</small>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" id="cardTwo">
+                   <div class="card" id="cardTwo">
                         <div class="card-header" id="headingTwo">
                             <h5 class="mb-0">
-                                <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <a class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     <span class="red-header"><i class="fas fa-sliders-h text-primary"></i><span class="ml-2">Форма та розмір</span></span>
                                 </a>
                             </h5>
                         </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="row text-center" onclick="imageResize()">
                                     <div class="col-sm-6">
@@ -193,6 +154,45 @@
                                     <div class="col-sm-4 col-6 input_selector" id="type-09" onclick="setBorder(9), getTotalPrice(), changeImage(), previewSizeData(), previewStreetConstructor()">
                                         <img class="img-fluid mb-0 pb-0" src="img/table-09.png">
                                         <p class="text-center size-data" id="09-size"> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <span class="red-header"><i class="fas fa-pencil-alt text-primary"></i><span class="ml-2">Що пишемо на табличці</span></span>
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <form>
+                                            <div class="form-group">
+                                                <input class="form-control" id="InputStreet" aria-describedby="streetHelp" onkeyup="previewStreetConstructor()" value="вулиця">
+                                                <small id="streetHelp" class="form-text text-muted">Або проспект/майдан тощо</small>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <form>
+                                            <div class="form-group">
+                                                <input class="form-control" id="InputStreetName" aria-describedby="streetNameHelp" onkeyup="previewStreetConstructor()" value="Сагайдачного">
+                                                <small id="streetNameHelp" class="form-text text-muted">Назва потрібної вулиці</small>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <form>
+                                            <div class="form-group">
+                                                <input class="form-control" id="InputNumber" aria-describedby="numberHelp" onkeyup="previewStreetConstructor()" value="4">
+                                                <small id="numberHelp" class="form-text text-muted">Номер будинку</small>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
