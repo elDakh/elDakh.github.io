@@ -28,7 +28,7 @@
                 <h4>
                     <b>(095) 881-10-06</b>
                     <br>
-                    <button type="button" class="btn btn-primary mt-1 pl-4 pr-4"> Замовити дзвінок </button>
+                    <button type="button" class="btn btn-primary mt-1" data-toggle="modal" data-target="#exampleModal"> Замовити дзвінок </button>
                 </h4>
             </div>
         </div>
@@ -208,6 +208,34 @@
             </div>
         </div>
     </footer>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Залишіть свої контакти для надання безкоштовної консультації</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="mail.php" method="POST">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ім'я" class="form-control" id="sender-name" name="user_name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" placeholder="Номер телефону" class="form-control" id="sender-phone" name="user_phone" maxlength="13" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Електронна адреса" class="form-control" id="sender-email" name="user_email" required>
+                        </div> 
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Скасувати</button>
+                        <button type="submit" class="btn btn-primary">Замовити дзвінок</button>
+                    </form>
+                </div>    
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>

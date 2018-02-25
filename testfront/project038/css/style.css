@@ -123,12 +123,12 @@ body {
     background-color: #eee;
 }
 .responsive-logo {
-    width: 50%;
+    width: 35%;
 }
 
 @media (max-width: 768px) {
     .responsive-logo {
-        width: 80%;
+        width: 60%;
     }
 }
 

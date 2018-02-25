@@ -22,8 +22,8 @@
             <div class="col-md-1 col-2 pt-3 order-md-3">
                 <a href="">UA</a><br><a href="ru/index.html">RU</a>
             </div>
-            <div class="col-md-4 pt-3 order-md-2">
-                <p class="thin-paragraph"><b>Адресні таблички для приватного будинку від виробника.</b><br>Доставка по Україні без передоплати</p>
+            <div class="col-md-4 pt-4 order-md-2">
+                <p class="thin-paragraph"><b>Адресні таблички для будинку від виробника.</b><br>Доставка по Україні без передоплати</p>
             </div>
             <div class="col-md-3 pt-2 order-md-4">
                 <h4>
@@ -163,7 +163,7 @@
                         <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
                                 <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <span class="red-header"><i class="fas fa-pencil-alt text-primary"></i><span class="ml-2">Що пишемо на табличці</span></span>
+                                    <span class="red-header"><i class="fas fa-pencil-alt text-primary"></i><span class="ml-2">Надпис на табличці</span></span>
                                 </a>
                             </h5>
                         </div>
@@ -457,30 +457,24 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Залишіть свої контакти для надання безкоштовної консультації</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
                     <form action="mail.php" method="POST">
                         <div class="form-group">
-                            <label for="sender-name" class="col-form-label">Ім'я</label>
-                            <input type="text" class="form-control" id="sender-name" name="user_name" required>
+                            <input type="text" placeholder="Ім'я" class="form-control" id="sender-name" name="user_name" required>
                         </div>
                         <div class="form-group">
-                            <label for="sender-phone" class="col-form-label">Телефон</label>
-                            <input type="text" class="form-control" id="sender-phone" name="user_phone" required>
+                            <input type="number" placeholder="Номер телефону" class="form-control" id="sender-phone" name="user_phone" maxlength="13" required>
                         </div>
                         <div class="form-group">
-                            <label for="sender-email" class="col-form-label">Електронна адреса</label>
-                            <input type="text" class="form-control" id="sender-email" name="user_email" required>
+                            <input type="email" placeholder="Електронна адреса" class="form-control" id="sender-email" name="user_email" required>
                         </div> 
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Скасувати</button>
                         <button type="submit" class="btn btn-primary">Замовити дзвінок</button>
                     </form>
-                </div>
-                <div class="modal-footer">
-                    
-                </div>
+                </div>    
             </div>
         </div>
     </div>
@@ -495,20 +489,6 @@
             </button>
                 </div>
                 <div class="modal-body">
-                    <form action="mailSend.php" method="post">
-                        <div class="form-group">
-                            <label for="sender-name" class="col-form-label">Ім'я</label>
-                            <input type="text" class="form-control" id="sender-name" name="username" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="sender-phone" class="col-form-label">Телефон</label>
-                            <input type="text" class="form-control" id="sender-phone" name="userphone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="sender-email" class="col-form-label">Електронна адреса</label>
-                            <input type="text" class="form-control" id="sender-email" name="usermail" required>
-                        </div> 
-                    </form>
                     <div class="card">
                         <div class="card-body">
                             <div class="row">
@@ -553,10 +533,19 @@
                             <h2 id="totalPriceM" class="text-center"> </h2>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Скасувати</button>
-                    <button type="submit" class="btn btn-primary">Замовити табличку</button>
+                    <form action="mail.php" method="POST" class="mt-3">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ім'я" class="form-control" id="sender-name" name="user_name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" placeholder="Номер телефону" class="form-control" id="sender-phone" name="user_phone" maxlength="13" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Електронна адреса" class="form-control" id="sender-email" name="user_email" required>
+                        </div> 
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Скасувати</button>
+                        <button type="submit" class="btn btn-primary">Замовити табличку</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -566,7 +555,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="http://e-timer.ru/js/etimer.js"></script>
-
+   
     <script type="text/javascript">
         jQuery(document).ready(function() {
             jQuery(".eTimer").eTimer({
