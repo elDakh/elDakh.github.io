@@ -123,19 +123,19 @@ body {
     background-color: #eee;
 }
 .responsive-logo {
-    width: 35%;
+    width: 25%;
 }
 
 @media (max-width: 768px) {
     .responsive-logo {
-        width: 60%;
+        width: 40%;
     }
 }
 
 #projectsvg { 
     position: relative;
     width: 100%; 
-    padding-bottom: 67%;
+    padding-bottom: 66%;
     vertical-align: middle; 
     margin: 0; 
     overflow: hidden; 
