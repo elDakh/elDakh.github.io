@@ -22,23 +22,23 @@ var bigKompozyt = 360;
 
 var StandartSizesPrice = [];
 
-StandartSizesPrice["type-01"] = 240;
+StandartSizesPrice["type-01"] = 320;
 
-StandartSizesPrice["type-02"] = 240;
+StandartSizesPrice["type-02"] = 320;
 
 StandartSizesPrice["type-03"] = 300;
 
-StandartSizesPrice["type-04"] = 240;
+StandartSizesPrice["type-04"] = 320;
 
-StandartSizesPrice["type-05"] = 240;
+StandartSizesPrice["type-05"] = 320;
 
-StandartSizesPrice["type-06"] = 240;
+StandartSizesPrice["type-06"] = 320;
 
-StandartSizesPrice["type-07"] = 400;
+StandartSizesPrice["type-07"] = 480;
 
-StandartSizesPrice["type-08"] = 400;
+StandartSizesPrice["type-08"] = 480;
 
-StandartSizesPrice["type-09"] = 400;
+StandartSizesPrice["type-09"] = 480;
 
 var BigSizesPrice = [];
 
