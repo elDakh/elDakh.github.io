@@ -17,14 +17,14 @@
 }
 
 #main-banner {
-    background-image: url(../img/banner11.png);
-    background-position: top;
+    background-image: url(../img/mainBanner.jpg);
+    background-position: center;
     background-size: cover;
+    padding-right: 150px;
 }
 
 @media (max-width: 992px) {
     #main-banner {
-        background-image: url(../img/banner11.png);
         background-position: left;
     }
 }
@@ -123,12 +123,12 @@ body {
     background-color: #eee;
 }
 .responsive-logo {
-    width: 25%;
+    width: 40%;
 }
 
 @media (max-width: 768px) {
     .responsive-logo {
-        width: 40%;
+        width: 80%;
     }
 }
 
