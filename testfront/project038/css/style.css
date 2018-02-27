@@ -20,7 +20,6 @@
     background-image: url(../img/mainBanner.jpg);
     background-position: center;
     background-size: cover;
-    padding-right: 150px;
 }
 
 @media (max-width: 992px) {
