@@ -24,7 +24,7 @@ var StandartSizesPrice = [];
 
 StandartSizesPrice["type-01"] = 240;
 
-StandartSizesPrice["type-02"] = 240;
+StandartSizesPrice["type-02"] = 320;
 
 StandartSizesPrice["type-03"] = 300;
 
