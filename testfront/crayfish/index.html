@@ -15,7 +15,7 @@
 
 <body>
     <div class="parallax-window" data-parallax="scroll" data-image-src="img/bg.jpg">
-        <div id="wrapper">
+        <div id="wrapper" class="toggled">
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
                     <li class="sidebar-brand">
@@ -88,43 +88,6 @@
             </div>
         </div>
     </div>
-   
-    <!--Я текст без тегів, написаний прямо перед контейнером
-    <div class="container" style="background-color: #eee">
-        <div class="row"> 
-            <div class="col" style="border: solid #000 1px">
-                <h1>Я найбільший заголовок і займаю 12 стовпців на всіх екранах</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-7" style="border: solid #000 1px">
-                <h6>Я найменший заголовок і займаю 7 стовпців на екранах починаючи від середніх</h6>
-            </div>
-            <div class="col-md-5" style="border: solid #000 1px">
-                <p>Я параграф і займаю 5 стовпців на екранах починаючи від середніх</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4 col-lg-3" style="border: solid #000 1px">
-                <p>Я параграф і займаю 4 стовпці на екранах починаючи від малих та 3 стовпці на екранах починаючи від великих</p>
-            </div>
-            <div class="col-sm-4 col-lg-6" style="border: solid #000 1px">
-                <a href="https://google.com">Я посилання яке веде на https://google.com і займаю 4 стовпці на екранах починаючи від малих та 6 стовпців на екранах починаючи від великих</a>
-            </div>
-            <div class="col-sm-4 col-lg-3" style="border: solid #000 1px">
-                <p>Я параграф і займаю 4 стовпці на екранах починаючи від малих та 3 стовпці на екранах починаючи від великих</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-10 col-6" style="border: solid #000 1px">
-                <h2>Я другий по розміру заголовок який займає 10 колонок на екранах починаючи від великих та по замовчуванню займає 6 замість 12</h2>
-            </div>
-            <div class="col-6" style="border: solid #000 1px">
-                <h5>Я передостанній по розміру заголовок який завжди займає 6 колонок і не вміщається в один рядок з попереднім надписом</h5>
-            </div>
-        </div>
-        Я текст без тегів поза всіма рядками, але всередині контейнера
-    </div>-->
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -133,8 +96,17 @@
     <script src="js/parallax.min.js"></script>
     
     <script>
+    $(document).ready(function() {
+        if ($(window).width() < 768) {
+            $("#wrapper").toggleClass("toggled");
+            
+        }
+    });
+    </script>
+    
+    <script>
     $("#sidebarCollapse").click(function(e) {
-        e.preventDefault();
+         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
     </script>
