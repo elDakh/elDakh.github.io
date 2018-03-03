@@ -15,7 +15,7 @@
 
 <body>
     <div class="parallax-window" data-parallax="scroll" data-image-src="img/bg.jpg">
-        <div id="wrapper" class="toggled">
+        <div id="wrapper">
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
                     <li class="sidebar-brand">
@@ -97,7 +97,7 @@
     
     <script>
     $(document).ready(function() {
-        if ($(window).width() < 768) {
+        if ($(window).width() > 768) {
             $("#wrapper").toggleClass("toggled");   
         }
     });
