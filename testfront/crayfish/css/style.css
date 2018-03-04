@@ -35,18 +35,24 @@
         max-height: 22vh;
         min-height: 22vh;
     }
+    
+    h2 {
+        font-size: 2rem;
+    }
 }
 
 .menu-bar {
-    background-color: #101010;
+    /*background-color: #101010;*/
     transition: 0.2s;
     border: solid #fff 1px;
+    filter: blur(3px);
 }
 
 .menu-bar:hover {
     transition: 0.2s;
     border: solid #ff5800 8px;
-    background-color: rgba(0, 0, 0, 0);
+    /*background-color: rgba(0, 0, 0, 0);*/
+    filter: none;
 }
 
 h2 {
@@ -63,3 +69,4 @@ h2 {
     text-decoration-line: overline;
     text-decoration-color: #ff5800;
 }
+
