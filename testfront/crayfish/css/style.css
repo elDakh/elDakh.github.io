@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
 
 .overlay {
     height: 0%;
@@ -30,37 +30,24 @@
     vertical-align: middle;
 }
 
-@media (max-width: 768px) {
-    .full-h {
-        max-height: 22vh;
-        min-height: 22vh;
-    }
-    
-    h2 {
-        font-size: 2rem;
-    }
-}
-
 .menu-bar {
-    /*background-color: #101010;*/
+    background-color: #101010;*/
     transition: 0.2s;
     border: solid #fff 1px;
-    filter: blur(3px);
 }
 
 .menu-bar:hover {
     transition: 0.2s;
     border: solid #ff5800 8px;
-    /*background-color: rgba(0, 0, 0, 0);*/
-    filter: none;
+    background-color: rgba(0, 0, 0, 0);*/
 }
 
 h2 {
     transition: 0.3;
     text-decoration: underline;
     text-decoration-line: overline;
-    font-family: 'Amatic SC', cursive;
-    font-size: 5rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3rem;
 }
 
 .menu-bar:hover h2{
@@ -68,5 +55,16 @@ h2 {
     text-decoration: underline;
     text-decoration-line: overline;
     text-decoration-color: #ff5800;
+}
+
+@media (max-width: 768px) {
+    .full-h {
+        max-height: 22vh;
+        min-height: 22vh;
+    }
+    
+    h2 {
+        text-decoration: none;
+    }
 }
 
