@@ -8,13 +8,36 @@
     
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="style.scss">
+    
     <script defer src="js/fontawesome-all.js"></script>
 
-    <title>Crayfish Studio</title>
+    <title>Crayfish Studio: Portfolio</title>
 </head>
 
 <body>
-    <div class="parallax-window" data-parallax="scroll" data-image-src="img/bg.jpg">
+    <div class="overlay-navigation">
+      <nav role="navigation">
+        <ul>
+          <li><a href="#" data-content="The beginning">Home</a></li>
+          <li><a href="#" data-content="Curious?">About</a></li>
+          <li><a href="#" data-content="I got game">Skills</a></li>
+          <li><a href="#" data-content="Only the finest">Works</a></li>
+          <li><a href="#" data-content="Don't hesitate">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="home">
+        <a href="https://codepen.io/fluxus/pen/gPWxXJ" target="_blank">Click for CSS version</a>
+      <div class="open-overlay">
+        <span class="bar-top"></span>
+        <span class="bar-middle"></span>
+        <span class="bar-bottom"></span>
+      </div>
+    </section>
+   
+    <!--<div class="parallax-window" data-parallax="scroll" data-image-src="img/bg.jpg">
         <div id="wrapper">
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
@@ -49,12 +72,12 @@
 
             <div id="page-content-wrapper">
                 <div class="container-fluid">
-                   <nav class="navbar fixed-top">
-<button href="#menu-toggle" id="sidebarCollapse">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+                   <nav class="navbar sticky-top">
+                        <button href="#menu-toggle" id="sidebarCollapse">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                    </nav>
                     
                     <h1>Simple Sidebar</h1>
@@ -90,15 +113,15 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/velocity.min.js"></script>
     
-    <script>
+    <!--<script>
     $(document).ready(function() {
         if ($(window).width() > 768) {
             $("#wrapper").toggleClass("toggled");   
@@ -120,7 +143,11 @@
                  $(this).toggleClass('active');
              });
          });
-     </script>
+     </script>-->
+     
+     <script>
+        $('.open-overlay').click(function() { $('.open-overlay').css('pointer-events', 'none'); var overlay_navigation = $('.overlay-navigation'), top_bar = $('.bar-top'), middle_bar = $('.bar-middle'), bottom_bar = $('.bar-bottom'); overlay_navigation.toggleClass('overlay-active'); if (overlay_navigation.hasClass('overlay-active')) { top_bar.removeClass('animate-out-top-bar').addClass('animate-top-bar'); middle_bar.removeClass('animate-out-middle-bar').addClass('animate-middle-bar'); bottom_bar.removeClass('animate-out-bottom-bar').addClass('animate-bottom-bar'); overlay_navigation.removeClass('overlay-slide-up').addClass('overlay-slide-down') overlay_navigation.velocity('transition.slideLeftIn', { duration: 300, delay: 0, begin: function() { $('nav ul li').velocity('transition.perspectiveLeftIn', { stagger: 150, delay: 0, complete: function() { $('nav ul li a').velocity({ opacity: [1, 0], }, { delay: 10, duration: 140 }); $('.open-overlay').css('pointer-events', 'auto'); } }) } }) } else { $('.open-overlay').css('pointer-events', 'none'); top_bar.removeClass('animate-top-bar').addClass('animate-out-top-bar'); middle_bar.removeClass('animate-middle-bar').addClass('animate-out-middle-bar'); bottom_bar.removeClass('animate-bottom-bar').addClass('animate-out-bottom-bar'); overlay_navigation.removeClass('overlay-slide-down').addClass('overlay-slide-up') $('nav ul li').velocity('transition.perspectiveRightOut', { stagger: 150, delay: 0, complete: function() { overlay_navigation.velocity('transition.fadeOut', { delay: 0, duration: 300, complete: function() { $('nav ul li a').velocity({ opacity: [0, 1], }, { delay: 0, duration: 50 }); $('.open-overlay').css('pointer-events', 'auto'); } }); } }) } })
+    </script>
 </body>
 
 </html>
