@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
 .overlay {
     height: 0%;
     width: 100%;
@@ -10,7 +12,7 @@
     overflow-y: hidden;
     transition: 0.8s;
     background-image: url(../img/bg.jpg);
-    background-size: contain;
+    background-size: cover;
 }
 
 @media screen and (max-height: 450px) {
@@ -51,6 +53,8 @@ h2 {
     transition: 0.3;
     text-decoration: underline;
     text-decoration-line: overline;
+    font-family: 'Amatic SC', cursive;
+    font-size: 5rem;
 }
 
 .menu-bar:hover h2{
