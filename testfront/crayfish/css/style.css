@@ -28,8 +28,8 @@
 
 @media (max-width: 768px) {
     .full-h {
-        max-height: 25vh;
-        min-height: 25vh;
+        max-height: 22vh;
+        min-height: 22vh;
     }
 }
 
@@ -41,12 +41,13 @@
 
 .menu-bar:hover {
     transition: 0.2s;
-    border: solid #ff5800 10px;
+    border: solid #ff5800 8px;
 }
 
 h2 {
     transition: 0.3;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-line: overline;
 }
 
 .menu-bar:hover h2{
