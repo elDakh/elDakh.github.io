@@ -38,12 +38,13 @@
 
 .menu-bar:hover {
     transition: 0.2s;
-    border: solid #ff5800 8px;
+    border: solid #ff2700 8px;
     background-color: rgba(0, 0, 0, 0);*/
 }
 
 h2 {
-    transition: 0.3;
+    transition: 0.3s;
+    transition-delay: 0.3s;
     text-decoration: underline;
     text-decoration-line: overline;
     font-family: 'Rajdhani', sans-serif;
@@ -52,9 +53,10 @@ h2 {
 
 .menu-bar:hover h2{
     transition: 0.3s;
+    transition-delay: 0.3s;
     text-decoration: underline;
     text-decoration-line: overline;
-    text-decoration-color: #ff5800;
+    text-decoration-color: #ff2700;
 }
 
 @media (max-width: 768px) {
@@ -64,6 +66,10 @@ h2 {
     }
     
     h2 {
+        text-decoration: none;
+    }
+    
+    .menu-bar:hover h2{
         text-decoration: none;
     }
 }
