@@ -1,35 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Neucha');
 
-@media (max-width: 768px) {
-    .full-bg-img,
-    .view {
-        position: relative;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .navbar {
-        background-color: rgba(256, 256, 256, 0.8);
-    }
-    
-    .btn-custom, .btn-custom-outline {
-        width: 90%;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-}
-
-@media (max-width: 1070px) {
-    .description {
-        padding-top: 7rem;
-        text-align: center;
-    }
-    
-    .w-60 {
-        width: 90% !important;
-    }
-}
-
 html,
 body,
 .view {
@@ -49,7 +19,7 @@ body,
 }
 
 .top-nav-collapse {
-    background-color: rgba(256, 256, 256, 0.8);
+    background-color: rgba(256, 256, 256, 0.85);
 }
 
 .noborder {
@@ -100,7 +70,7 @@ body,
     border-radius: 5px;
 }
 #products {
-    background-color: rgb(232, 218, 199);
+    background-color: #e8dac7;
 }
 
 #about {
@@ -121,4 +91,32 @@ body,
 .w-60 {
     width: 60%;
     margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: rgba(256, 256, 256, 0.85);
+    }
+    
+    .btn-custom, .btn-custom-outline {
+        width: 95%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .full-bg-img,
+    .view {
+        position: relative;
+    }
+}
+
+@media (max-width: 1070px) {
+    .description {
+        padding-top: 7rem;
+        text-align: center;
+    }
+    
+    .w-60 {
+        width: 90% !important;
+    }
 }
