@@ -95,3 +95,10 @@ body,
     box-shadow: none;
     border-radius: 5px;
 }
+#products {
+    background-color: rgb(232, 218, 199);
+}
+
+#about {
+    height: 80vh;
+}
