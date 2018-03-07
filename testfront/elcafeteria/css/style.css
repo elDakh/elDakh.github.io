@@ -1,32 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Neucha');
 
-html,
-body,
-.view {
-    height: 100%;
-}
-
-.view {
-    background: url("../img/wendy-rueter-316018-unsplash%20(1).jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 @media (max-width: 768px) {
     .full-bg-img,
     .view {
         position: relative;
     }
-}
-
-.navbar {
-    background-color: rgba(256, 256, 256, 0.2);
-}
-
-.top-nav-collapse {
-    background-color: rgba(256, 256, 256, 0.8);
 }
 
 @media only screen and (max-width: 768px) {
@@ -35,17 +13,43 @@ body,
     }
     
     .btn-custom, .btn-custom-outline {
-        width: 100%;
+        width: 90%;
         margin-left: 0px;
         margin-right: 0px;
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1070px) {
     .description {
         padding-top: 7rem;
         text-align: center;
     }
+    
+    .w-60 {
+        width: 90% !important;
+    }
+}
+
+html,
+body,
+.view {
+    height: 100%;
+}
+
+.view {
+    background: url("../img/wendy-rueter-316018-unsplash.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: rgba(256, 256, 256, 0.2);
+}
+
+.top-nav-collapse {
+    background-color: rgba(256, 256, 256, 0.8);
 }
 
 .noborder {
@@ -101,4 +105,20 @@ body,
 
 #about {
     height: 80vh;
+}
+
+.text-neucha {
+    font-family: 'Neucha', cursive;
+}
+
+.horizontal-line {
+    height: 1px;
+    width: 65%;
+    background-color: #2b0200;
+    margin: auto;
+}
+
+.w-60 {
+    width: 60%;
+    margin: auto;
 }
