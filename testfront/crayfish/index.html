@@ -16,50 +16,49 @@
 
 <body>
     <div id="myNav" class="overlay">
-       <div class="container-fluid p-0">
-           <div class="row no-gutters">
-               <div class="col-md-3 full-h text-center menu-bar" id="yourElement" onclick="closeNav()">
-                   <h2 class="vertical-centered text-white" style="cursor: pointer">ABOUT</h2>
-               </div>
-               <div class="col-md-3 full-h text-center menu-bar" id="yourElement" onclick="closeNav()">
-                   <h2 class="vertical-centered text-white" style="cursor: pointer">WORKS</h2>
-               </div>
-               <div class="col-md-3 full-h text-center menu-bar" id="yourElement" onclick="closeNav()">
-                   <h2 class="vertical-centered text-white" style="cursor: pointer">PRICES</h2>
-               </div>
-               <div class="col-md-3 full-h text-center menu-bar" id="yourElement" onclick="closeNav()">
-                   <h2 class="vertical-centered text-white" style="cursor: pointer">CONTACT</h2>
-               </div>
-           </div>
-       </div>
-    </div>
-   <!--<a class="btn btn-primary" href="#" onclick="openNav()">Menu</a>-->
-    <div class="container">
-        <p class="bg-info">Параграф в звичайному контейнері поза рядками</p>
-        <div class="row">
-            <div class="col-6">
-                <h1 class="text-center">Відцентрований найбільший заголовок який завжди займає 6 колонок</h1>
-                <small class="text-muted"><mark>Малееенький</mark> приглушений текст вирівняний по лівому боці в тій же колонці що й заголовок над ним</small>
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-md-3 full-h text-center menu-bar" id="yourElement" onclick="closeNav()">
+                    <h2 class="vertical-centered text-white" style="cursor: pointer">ABOUT</h2>
+                </div>
+                <div class="col-md-3 full-h text-center menu-bar" id="yourElement" onclick="closeNav()">
+                    <h2 class="vertical-centered text-white" style="cursor: pointer">WORKS</h2>
+                </div>
+                <div class="col-md-3 full-h text-center menu-bar" id="yourElement" onclick="closeNav()">
+                    <h2 class="vertical-centered text-white" style="cursor: pointer">PRICES</h2>
+                </div>
+                <div class="col-md-3 full-h text-center menu-bar" id="yourElement" onclick="closeNav()">
+                    <h2 class="vertical-centered text-white" style="cursor: pointer">CONTACT</h2>
+                </div>
             </div>
-            <div class="col-3"></div>
-            <div class="col-3 text-right">
-                <h6>Найменший заголовок вирівняний по правому <span class="text-success">боці який завжди займає</span> 3 колонки</h6>
-                <p><b><u>Жирний підкреслений параграф, вирівняний по правому боці який знаходиться в тій же колонці що і найменший заголовок</u></b></p>
+        </div>
+    </div>
+
+    <div class="bg-viol">
+        <div class="container-fluid">
+            <div class="v-line" style="left: 5%"></div>
+            <div class="v-line" style="left: 35%"></div>
+            <div class="v-line" style="left: 65%"></div>
+            <div class="v-line" style="left: 95%"></div>
+            <div id="menu-toggler" class="text-white">
+                <input type="checkbox" onclick="openNav()"/>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="row justify-content-center">
+                <div class="img-hoverable" id="hwr">
+                    <div class="row justify-content-center no-gutters">
+                        <div class="col-lg-5 col-sm-6 col-9">
+                            <img class="img-fluid mt-10" src="img/crayLogo.png">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-md-12  col-sm-10 col-8">
-                <h1 class="display-4 text-right">
-                    <em>Найменший зі збільшених заголовків <del>Бутстрапу</del>, написаний курсивом і вирівняний по правому боці, в колонці яка завжди вирівняна по центру і займає 8 колонок на найменших екранах, 10 на малих та 12 на середніх і більших</em>
-                </h1>
-            </div>
-            <p class="lead text-white bg-dark">Параграф із класом lead, в контейнері на всю ширину екрану, розташований в рядку, але поза колонками, із <a href="">посиланням</a> <del>кудись</del></p>
-        </div>
-    </div>
-
+    
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -67,7 +66,6 @@
 
     <script>
         new WOW().init();
-
     </script>
 
     <script>
@@ -75,7 +73,6 @@
             document.getElementById("myNav").style.height = "100%";
         }
 
-        /* Close */
         function closeNav() {
             document.getElementById("myNav").style.height = "0%";
         }
