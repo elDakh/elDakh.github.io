@@ -3,13 +3,13 @@
 
 .overlay {
     height: 100vh;
-    max-width: 100%;
     width: 0%;
+    max-width: 100%;
     position: fixed;
     z-index: 2;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(256, 256, 256, 0.85);
     overflow-y: hidden;
     transition: 0.8s;
 }
@@ -24,38 +24,26 @@
     min-height: 100%;
     display: table;
 }
-.vertical-centered {
+
+.full-centered {
     display: table-cell;
     vertical-align: middle;
+    text-align: center;
+    width: 100vw;
 }
 
-.menu-bar {
-    background-color: #101010;*/
-    transition: 0.2s;
-    border: solid #fff 1px;
+.full-centered a {
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    color: #292230;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: color 0.5s;
 }
 
-.menu-bar:hover {
-    transition: 0.2s;
-    border: solid #ff2700 8px;
-    background-color: rgba(0, 0, 0, 0);*/
-}
-
-h2 {
-    transition: 0.3s;
-    transition-delay: 0.3s;
-    text-decoration: underline;
-    text-decoration-line: overline;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 3rem;
-}
-
-.menu-bar:hover h2{
-    transition: 0.3s;
-    transition-delay: 0.3s;
-    text-decoration: underline;
-    text-decoration-line: overline;
-    text-decoration-color: #ff2700;
+.full-centered a:hover {
+    text-decoration: none;
+    color: #423145;
 }
 
 .bg-viol {
@@ -67,7 +55,7 @@ h2 {
 }
 
 .mt-10 {
-    margin-top: 20vh;
+    margin-top: 18vh;
 }
 
 .img-hoverable {
@@ -95,20 +83,7 @@ h2 {
     opacity: 1;
 }
 
-@media (max-width: 768px) {
-    .full-h {
-        max-height: 22vh;
-        min-height: 22vh;
-    }
-    
-    h2 {
-        text-decoration: none;
-    }
-    
-    .menu-bar:hover h2{
-        text-decoration: none;
-    }
-    
+@media (max-width: 768px) {  
     .mt-10 {
         margin-top: 10vh;
     }
@@ -150,10 +125,9 @@ h2 {
     position: relative;
     display: block;
     width: 36px;
-    height: 3px;
-    margin-bottom: 7px;
+    height: 2px;
+    margin-bottom: 8px;
     background: #fff;
-    border-radius: 3px;
     z-index: 2;
 }
 
@@ -175,4 +149,18 @@ h2 {
     top: 30px;
     right: 7%;
     z-index: 2;
+}
+
+.btn-transp {
+    background-color: transparent;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    color: white;
+    font-size: 1.2rem;
+    padding-top: 0;
+}
+
+.drop-items:hover {
+    background-color: transparent;
 }
