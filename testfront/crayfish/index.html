@@ -33,18 +33,43 @@
             </div>
         </div>
     </div>
-
+    
+    <div class="container">
+        <div class="row no-gutters justify-content-center" style="height: 0px;">
+            <div class="col-4">
+                <div class="v-line" style="border-left: 1px solid #3d3d3d;"></div>
+            </div>
+            <div class="col-4">
+                <div class="v-line" style="border-left: 1px solid #3d3d3d; border-right: 1px solid #3d3d3d;"></div>
+            </div>
+            <div class="col-4">
+                <div class="v-line" style="border-right: 1px solid #3d3d3d;"></div>
+            </div>
+        </div>
+    </div>
+    
     <div class="bg-viol">
-        <div class="container-fluid">
-            <div class="v-line" style="left: 5%"></div>
-            <div class="v-line" style="left: 35%"></div>
-            <div class="v-line" style="left: 65%"></div>
-            <div class="v-line" style="left: 95%"></div>
-            <div id="menu-toggler" class="text-white">
-                <input type="checkbox" onclick="openNav()"/>
+        <div id="web-studio-text">
+            web-studio
+        </div>
+        <div class="container">
+            <div id="menu-toggler"  onclick="openNav()">
+                <input type="checkbox" style="cursor: pointer"/>
                 <span></span>
                 <span></span>
                 <span></span>
+            </div>
+            <div id="lang-toggler" class="text-white">
+                <div class="btn-group dropleft dropdown-transparent">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        EN
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item">EN</a>
+                        <a class="dropdown-item">UA</a>
+                        <a class="dropdown-item">RU</a>
+                    </div>
+                </div>
             </div>
             <div class="row justify-content-center">
                 <div class="img-hoverable" id="hwr">
@@ -58,7 +83,6 @@
         </div>
     </div>
     
-    
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -70,11 +94,11 @@
 
     <script>
         function openNav() {
-            document.getElementById("myNav").style.height = "100%";
+            document.getElementById("myNav").style.width = "100%";
         }
 
         function closeNav() {
-            document.getElementById("myNav").style.height = "0%";
+            document.getElementById("myNav").style.width = "0%";
         }
     </script>
 </body>

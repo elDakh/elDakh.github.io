@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Rajdhani');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 
 .overlay {
-    height: 0%;
-    max-height: 100vh;
-    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    width: 0%;
     position: fixed;
     z-index: 2;
     top: 0;
     left: 0;
-    background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.9);
     overflow-y: hidden;
     transition: 0.8s;
-    background-image: url(../img/bg.jpg);
-    background-size: cover;
 }
 
 @media screen and (max-height: 450px) {
@@ -119,7 +117,7 @@ h2 {
     position: fixed;
     top: 30px;
     left: 7%;
-    z-index: 1;
+    z-index: 2;
     
     cursor: pointer;
     
@@ -129,7 +127,7 @@ h2 {
 
 @media (min-width: 1100px) {
     .v-line {
-        border-left: 1px solid #3d3d3d;
+        width: 100%;
         height: 100vh;
         position: absolute;
         top: 0;
@@ -138,53 +136,43 @@ h2 {
 
 #menu-toggler input
 {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute; 
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+    display: block;
+    width: 36px;
+    height: 32px;
+    position: absolute; 
+
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
 }
 
 #menu-toggler span
 {
-  display: block;
-  width: 40px;
-  height: 3px;
-  margin-bottom: 7px;
-  position: relative;
-  
-  background: #fff;
-  border-radius: 3px;
-  
-  z-index: 1;
+    position: relative;
+    display: block;
+    width: 36px;
+    height: 3px;
+    margin-bottom: 7px;
+    background: #fff;
+    border-radius: 3px;
+    z-index: 2;
 }
 
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
+#web-studio-text {
+    position: fixed;
+    width: 100%;
+    top: 30px;     
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 1.2rem;
+    font-family: 'Nunito', sans-serif;
+    z-index: 1;
 }
 
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
+#lang-toggler {
+    position: fixed;
+    top: 30px;
+    right: 7%;
+    z-index: 2;
 }
