@@ -40,7 +40,7 @@
         <div id="myNav" class="overlay">
             <div class="overlay-content">
                 <div class="menu-items">
-                    <a href="#" class="menu-item" onclick="openNav(), uncheckInput()">about</a><br>
+                    <a href="#about" class="menu-item" onclick="openNav(), uncheckInput()">about</a><br>
                     <a href="#" class="menu-item" onclick="openNav(), uncheckInput()">prices</a><br>
                     <a href="#" class="menu-item" onclick="openNav(), uncheckInput()">portfolio</a><br>
                     <a href="#" class="menu-item" onclick="openNav(), uncheckInput()">contacts</a> 
@@ -53,18 +53,11 @@
         
         <div class="container">
             <div id="lang-toggler" class="text-white">
-                <div class="btn-group dropdown-transparent">
-                    <button type="button" class="btn-transp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        EN
-                    </button>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item-custom">EN</a>
-                        <a class="dropdown-item">UA</a>
-                        <a class="dropdown-item">RU</a>
-                    </div>
-                </div>
+                <button type="button" class="btn-transp" data-toggle="tooltip" data-placement="left" title="Sorry, only EN now :(" disabled>
+                    EN
+                </button>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center" style="height: 100vh">
                 <div class="img-hoverable" id="hwr">
                     <div class="row justify-content-center no-gutters">
                         <div class="col-lg-5 col-sm-6 col-9">
@@ -75,8 +68,15 @@
             </div>
         </div>
         
-        <div class="container" style="height: 100vh">
-        
+        <div class="container" id="about">
+            <div class="vertical-text" style="right: 5px">
+                <h2 class="section-header display-4">About</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-white text-center">
+                    <h2 class="section-header display-4">About</h2>
+                </div>
+            </div>
         </div>
     </div>
     
@@ -84,7 +84,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
-
+   
     <script>
         new WOW().init();
     </script>
