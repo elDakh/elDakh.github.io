@@ -16,7 +16,7 @@
 
 <body>
     <div id="menuToggle">
-        <input type="checkbox" onclick="openNav()">
+        <input type="checkbox" onclick="openNav()" id="untoggle">
         <span></span>
         <span></span>
         <span></span>
@@ -39,10 +39,10 @@
         <div id="myNav" class="overlay">
             <div class="overlay-content">
                 <div class="menu-items">
-                    <a href="#" class="menu-item" onclick="openNav()">about</a><br>
-                    <a href="#" class="menu-item" onclick="openNav()">prices</a><br>
-                    <a href="#" class="menu-item" onclick="openNav()">portfolio</a><br>
-                    <a href="#" class="menu-item" onclick="openNav()">contacts</a> 
+                    <a href="#" class="menu-item" onclick="openNav(), uncheckInput()">about</a><br>
+                    <a href="#" class="menu-item" onclick="openNav(), uncheckInput()">prices</a><br>
+                    <a href="#" class="menu-item" onclick="openNav(), uncheckInput()">portfolio</a><br>
+                    <a href="#" class="menu-item" onclick="openNav(), uncheckInput()">contacts</a> 
                 </div>
             </div>
         </div>
@@ -74,6 +74,10 @@
         </div>
     </div>
     
+    <div class="container" style="height: 100vh">
+        
+    </div>
+    
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -86,6 +90,10 @@
     <script>
         function openNav() {
             document.getElementById("myNav").classList.toggle("menu-unwrapped");
+        }
+        
+        function uncheckInput() {
+            document.getElementById("untoggle").checked = false;
         }
     </script>
 </body>
