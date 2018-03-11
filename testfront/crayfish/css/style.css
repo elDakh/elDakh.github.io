@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto');
 
 .overlay {
     height: 100%;
     max-width: 100%;
     width: 0%;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     top: 0;
     left: 0;
     background-color: rgba(256, 256, 256, 0.9);
@@ -24,7 +25,7 @@
     display: block;
     position: fixed;
     top: 30px;
-    right: 5%;
+    left: 5%;
     z-index: 3;
     display: table;
     transition: top 0.3s;
@@ -104,10 +105,10 @@
     margin-top: 7vh;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
     .v-line {
         width: 100%;
-        height: 100vh;
+        height: 200vh;
         position: absolute;
         top: 0;
     }
@@ -136,6 +137,22 @@
     .img-hoverable:hover::before {
         opacity: 1;
     }
+    
+    .vertical-text {
+        transform: rotate(90deg);
+        transform-origin: left top 0.2;
+        color: #423145;
+        position: absolute;
+        z-index: 10;
+        visibility: visible;
+        right:-13%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .vertical-text {
+        visibility: hidden;
+    }
 }
 
 #web-studio-text {
@@ -154,7 +171,7 @@
 #lang-toggler {
     position: absolute;
     top: 28px;
-    left: 5%;
+    right: 5%;
     z-index: 50;
 }
 
@@ -210,13 +227,24 @@
     transition: top 0.3s;
 }
 
-.vertical-text {
-	transform: rotate(90deg);
-	transform-origin: left top 0;
-    color: #2e2e2e;
-    position: absolute;
-}
 .section-header {
     text-transform: uppercase;
     font-family: 'Nunito', sans-serif;
+}
+.text-orange {
+    color: #FD4000;
+}
+
+.h-line {
+    height: 3px;
+    background: linear-gradient(to right, #811c20, #fd4000);
+}
+
+.feature-header {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 20px;
+}
+
+.roboto-thin {
+    font-family: 'Roboto Thin', sans-serif;
 }
