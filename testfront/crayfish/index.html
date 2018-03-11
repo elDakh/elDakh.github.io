@@ -15,18 +15,12 @@
 </head>
 
 <body>
-    <div id="myNav" class="overlay">
-        <div class="full-h">
-            <div class="full-centered">
-                <a href="#" onclick="closeNav()">Home</a><br>
-                <a href="#" onclick="closeNav()">About</a><br>
-                <a href="#" onclick="closeNav()">Prices</a><br>
-                <a href="#" onclick="closeNav()">Portfolio</a><br>
-                <a href="#" onclick="closeNav()">Contacts</a>
-            </div>
-        </div>
+    <div id="menuToggle">
+        <input type="checkbox" onclick="openNav()">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
-    
     <div class="container">
         <div class="row no-gutters justify-content-center" style="height: 0px;">
             <div class="col-4">
@@ -42,16 +36,20 @@
     </div>
     
     <div class="bg-viol">
+        <div id="myNav" class="overlay">
+            <div class="overlay-content">
+                <div class="menu-items">
+                    <a href="#" class="menu-item" onclick="openNav()">about</a><br>
+                    <a href="#" class="menu-item" onclick="openNav()">prices</a><br>
+                    <a href="#" class="menu-item" onclick="openNav()">portfolio</a><br>
+                    <a href="#" class="menu-item" onclick="openNav()">contacts</a> 
+                </div>
+            </div>
+        </div>
         <div id="web-studio-text">
             web-studio
         </div>
         <div class="container">
-            <div id="menu-toggler"  onclick="openNav()">
-                <input type="checkbox" style="cursor: pointer"/>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
             <div id="lang-toggler" class="text-white">
                 <div class="btn-group dropdown-transparent">
                     <button type="button" class="btn-transp dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -87,11 +85,7 @@
 
     <script>
         function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-        }
-
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
+            document.getElementById("myNav").classList.toggle("menu-unwrapped");
         }
     </script>
 </body>
