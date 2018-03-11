@@ -98,6 +98,22 @@
             document.getElementById("untoggle").checked = false;
         }
     </script>
+    
+    <script>
+         var lastScrollTop = 0;
+            $(window).on('scroll', function() {
+                st = $(this).scrollTop();
+                if(st < lastScrollTop) {
+                    console.log('up 1');
+                    document.getElementById("menuToggle").classList.remove("hideble");
+                }
+                else {
+                    console.log('down 1');
+                    document.getElementById("menuToggle").classList.add("hideble");
+                }
+                lastScrollTop = st;
+            });
+    </script>
 </body>
 
 </html>

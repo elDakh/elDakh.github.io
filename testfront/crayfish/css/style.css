@@ -28,6 +28,7 @@
     left: 5%;
     z-index: 3;
     display: table;
+    transition: top 0.3s;
 }
 
 #menuToggle input
@@ -202,4 +203,9 @@
     vertical-align: middle;
     text-align: center;
     width: 100vw;
+}
+
+.hideble {
+    top: -30px !important;
+    transition: top 0.3s;
 }
