@@ -14,7 +14,7 @@
     <title>Crayfish Studio</title>
 </head>
 
-<body>
+<body onload="getDocHeight()" onresize="getDocHeight()">
     <div id="menuToggle">
         <input type="checkbox" onclick="openNav()" id="untoggle">
         <span></span>
@@ -25,13 +25,13 @@
     <div class="container">
         <div class="row no-gutters" style="height: 0px;">
             <div class="col-4">
-                <div class="v-line" style="border-left: 1px solid #3d3d3d;"></div>
+                <div class="v-line" id="vline1" style="border-left: 1px solid #3d3d3d; height: 0px;"></div>
             </div>
             <div class="col-4">
-                <div class="v-line" style="border-left: 1px solid #3d3d3d; border-right: 1px solid #3d3d3d;"></div>
+                <div class="v-line" id="vline2" style="border-left: 1px solid #3d3d3d; border-right: 1px solid #3d3d3d;"></div>
             </div>
             <div class="col-4">
-                <div class="v-line" style="border-right: 1px solid #3d3d3d;"></div>
+                <div class="v-line" id="vline3" style="border-right: 1px solid #3d3d3d;"></div>
             </div>
         </div>
     </div>
@@ -82,8 +82,8 @@
             </div>
             
             <div class="row no-gutters mb-5">
-                <div class="col-sm-4 text-center text-white mt-5">
-                    <i class="fas fa-code fa-5x text-orange"></i>
+                <div class="col-md-4 text-center text-white mt-5">
+                    <img class="img-fluid" src="img/icon-04.png" width="30%">
                     <h3 class="feature-header">
                         Development
                     </h3>
@@ -91,8 +91,8 @@
                         Unique web-solutions with different complexity based on your needs and preferences
                     </p>
                 </div>
-                <div class="col-sm-4 text-center text-white mt-5">
-                    <i class="fas fa-code fa-5x text-orange"></i>
+                <div class="col-md-4 text-center text-white mt-5">
+                    <img class="img-fluid" src="img/icon-05.png" width="30%">
                     <h3 class="feature-header">
                         Design
                     </h3>
@@ -100,8 +100,8 @@
                         2D/3D artistic masterpieces and animations from the best artists
                     </p>
                 </div>
-                <div class="col-sm-4 text-center text-white mt-5">
-                    <i class="fas fa-code fa-5x text-orange"></i>
+                <div class="col-md-4 text-center text-white mt-5">
+                    <img class="img-fluid" src="img/icon-06.png" width="30%">
                     <h3 class="feature-header">
                         Promotion
                     </h3>
@@ -114,7 +114,7 @@
         
         <div class="container" id="prices">
             <div class="row justify-content-center">
-                <div class="col-sm-4"><div class="h-line mb-5"></div></div>
+                <div class="col-sm-4"><div class="h-line my-5"></div></div>
                 <div class="col-12 text-center text-white">
                     <h6 class="display-4 section-header">Prices</h6>
                     <p>Several options for working with us</p>
@@ -149,72 +149,63 @@
             </div>-->
             
             <div class="row no-gutters my-5 py-3">
-                <div class="col-md-4 px-md-2 mb-3">
-                    <div class="card text-center">
+                <div class="col-md-4 px-md-1 mb-3">
+                    <div class="card text-center card-viol text-white">
                         <div class="card-body">
                             <h3 class="card-title mb-4">Landing page</h3>
                             <small class="text-muted">your little business instrument from</small>
-                            <p class="display-4 mb-0">$400</p>
+                            <p class="display-4 mb-0"><b>$400</b></p>
                             <small>and 1 week</small>
-                            <ul class="card-text text-left mt-4">
+                            <div class="thin-h-line"></div>
+                            <ul class="card-text text-left">
                                 <li>
-                                    Feature 1
+                                    Design that sells
                                 </li>
                                 <li>
-                                    Feature 55
+                                    High conversion
                                 </li>
                                 <li>
-                                    Feature 138
-                                </li>
-                                <li>
-                                    Feature 138
-                                </li>
-                                <li>
-                                    Feature 138
+                                    Analytycs included
                                 </li>
                             </ul>
-                            <a href="#" class="btn btn-custom mx-auto">I want it!</a>
+                            <a href="#" class="btn btn-custom-white mx-auto">I want it!</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 px-md-2 mb-3">
-                    <div class="card text-center">
+                <div class="col-md-4 px-md-1 mb-3">
+                    <div class="card text-center card-viol text-white">
                         <div class="card-body">
                             <h3 class="card-title mb-4">Internet-shop</h3>
                             <small class="text-muted">your big business instrument from</small>
-                            <p class="display-4 mb-0">$1000</p>
+                            <p class="display-4 mb-0"><b>$1000</b></p>
                             <small>and 3 weeks</small>
-                            <ul class="card-text text-left mt-4">
+                            <div class="thin-h-line"></div>
+                            <ul class="card-text text-left">
                                 <li>
-                                    Feature 1
+                                    User-friendly design
                                 </li>
                                 <li>
-                                    Feature 55
-                                </li>
-                                <li>
-                                    Feature 138
-                                </li>
-                                <li>
-                                    Feature 138
+                                    Fast and effective
                                 </li>
                                 <li>
                                     Feature 138
                                 </li>
                             </ul>
-                            <a href="#" class="btn btn-custom mx-auto">I want it!</a>
+                            <a href="#" class="btn btn-custom-white mx-auto">I want it!</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 px-md-2 mb-3">
-                    <div class="card text-center">
+                <div class="col-md-4 px-md-1 mb-3">
+                    <div class="card text-center card-viol text-white">
                         <div class="card-body">
-                            <h3 class="card-title mb-4">Your own project</h3>
+                            <h3 class="card-title mb-4">Custom project</h3>
                             <small class="text-muted">opportunities as in LEGO from</small>
-                            <p class="display-4 mb-0">$XXX</p>
-                            <small>and X week</small>
-                            <ul class="card-text text-left mt-4">
+                            <p class="display-4 mb-0"><b>$XXX</b></p>
+                            <small>and X weeks</small>
+                            <div class="thin-h-line"></div>
+                            <ul class="card-text text-left">
                                 <li>
-                                    Feature 1
+                                    Your own design
                                 </li>
                                 <li>
                                     Feature 55
@@ -222,14 +213,8 @@
                                 <li>
                                     Feature 138
                                 </li>
-                                <li>
-                                    Feature 138
-                                </li>
-                                <li>
-                                    Feature 138
-                                </li>
                             </ul>
-                            <a href="#" class="btn btn-custom mx-auto">I want it!</a>
+                            <a href="#" class="btn btn-custom-white mx-auto">I want it!</a>
                         </div>
                     </div>
                 </div>
@@ -238,7 +223,7 @@
         
         <div class="container" id="portfolio">
             <div class="row justify-content-center">
-                <div class="col-sm-4"><div class="h-line mb-5"></div></div>
+                <div class="col-sm-4"><div class="h-line my-5"></div></div>
                 <div class="col-12 text-center text-white">
                     <h6 class="display-4 section-header">Portfolio</h6>
                     <p>Our best projects</p>
@@ -246,32 +231,47 @@
             </div>
             
             <div class="row no-gutters my-5">
-                <div class="col-md-4 px-md-2 mb-3">
-                    <div class="card">
+                <div class="col-md-4 px-md-1 mb-2">
+                    <div class="card card-portfolio-viol">
                         <img class="card-img-top" src="img/UNIMsite.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-text">UNIM 
-                                <span class="badge badge-primary">UI/UX</span>
-                                <span class="badge badge-danger">Design</span>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 px-md-2 mb-3">
-                    <div class="card">
-                        <img class="card-img-top" src="img/UNIManimation.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-text">UNIM 
+                        <div class="card-body py-2">
+                            <h5 class="card-text">
+                                UNIM 
+                                <span class="badge badge-orange">Web-site</span>
+                                <span class="badge badge-orange">Design</span>
                                 <span class="badge badge-orange">UI/UX</span>
-                                <span class="badge badge-danger">Design</span>
                             </h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 px-md-2 mb-3">
-                    <div class="card">
+                <div class="col-md-4 px-md-1 mb-2">
+                    <div class="card card-portfolio-viol">
+                        <img class="card-img-top" src="img/GCpromomaterials.jpg" alt="Card image cap">
+                        <div class="card-body py-2">
+                            <h5 class="card-text">GoldenCase 
+                                <span class="badge badge-orange">Promo materials</span>
+                                <span class="badge badge-orange">Design</span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 px-md-1 mb-2">
+                    <div class="card card-portfolio-viol">
+                        <img class="card-img-top" src="img/UNIManimation.jpg" alt="Card image cap">
+                        <div class="card-body py-2">
+                            <h5 class="card-text">
+                                UNIM
+                                <span class="badge badge-orange">3D</span>
+                                <span class="badge badge-orange">Animation</span>
+                                <span class="badge badge-orange">Promo</span>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 px-md-1 mb-2">
+                    <div class="card card-portfolio-viol">
                         <img class="card-img-top" src="img/UNIMsite.jpg" alt="Card image cap">
-                        <div class="card-body">
+                        <div class="card-body py-2">
                             <h5 class="card-text">UNIM 
                                 <span class="badge badge-primary">UI/UX</span>
                                 <span class="badge badge-danger">Design</span>
@@ -279,32 +279,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 px-md-2 mb-3">
-                    <div class="card">
-                        <img class="card-img-top" src="img/UNIMsite.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-text">UNIM 
-                                <span class="badge badge-primary">UI/UX</span>
-                                <span class="badge badge-danger">Design</span>
+                <div class="col-md-4 px-md-1 mb-2">
+                    <div class="card card-portfolio-viol">
+                        <img class="card-img-top" src="img/GCwebsite.jpg" alt="Card image cap">
+                        <div class="card-body py-2">
+                            <h5 class="card-text">
+                                GoldenCase
+                                <span class="badge badge-orange">Web-site</span>
+                                <span class="badge badge-orange">Design</span>
+                                <span class="badge badge-orange">UI/UX</span>
                             </h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 px-md-2 mb-3">
-                    <div class="card">
+                <div class="col-md-4 px-md-1 mb-2">
+                    <div class="card card-portfolio-viol">
                         <img class="card-img-top" src="img/UNIMsite.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-text">UNIM 
-                                <span class="badge badge-primary">UI/UX</span>
-                                <span class="badge badge-danger">Design</span>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 px-md-2 mb-3">
-                    <div class="card">
-                        <img class="card-img-top" src="img/UNIMsite.jpg" alt="Card image cap">
-                        <div class="card-body">
+                        <div class="card-body py-2">
                             <h5 class="card-text">UNIM 
                                 <span class="badge badge-primary">UI/UX</span>
                                 <span class="badge badge-danger">Design</span>
@@ -314,7 +305,7 @@
                 </div>
             </div>
             <div class="row no-gutters justify-content-center mb-5">
-                <div class="col-md-4 px-md-2 mb-3">
+                <div class="col-md-4 px-md-1 mb-2">
                     <a href="#" class="btn btn-custom-white">I want better!</a>
                 </div>
             </div>
@@ -322,7 +313,7 @@
         
         <div class="container" id="about">
             <div class="row justify-content-center">
-                <div class="col-sm-4"><div class="h-line mb-5"></div></div>
+                <div class="col-sm-4"><div class="h-line my-5"></div></div>
                 <div class="col-12 text-center text-white">
                     <h6 class="display-4 section-header">Contacts</h6>
                     <p>Fill out the form to chat with us</p>
@@ -337,16 +328,9 @@
         </div>
     </div>
     
-    
-    
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/wow.min.js"></script>
-   
-    <script>
-        new WOW().init();
-    </script>
 
     <script>
         function openNav() {
@@ -363,15 +347,34 @@
             $(window).on('scroll', function() {
                 st = $(this).scrollTop();
                 if(st < lastScrollTop) {
-                    console.log('up 1');
                     document.getElementById("menuToggle").classList.remove("hideble");
                 }
                 else {
-                    console.log('down 1');
                     document.getElementById("menuToggle").classList.add("hideble");
                 }
                 lastScrollTop = st;
             });
+    </script>
+    
+    <script>
+        function getDocHeight() {
+            var D = document;
+            var bh = Math.max(
+                D.body.scrollHeight, D.documentElement.scrollHeight,
+                D.body.offsetHeight, D.documentElement.offsetHeight,
+                D.body.clientHeight, D.documentElement.clientHeight
+            );
+            
+            if (window.innerWidth > 1000) {
+                document.getElementById("vline1").style.height = bh + "px";
+                document.getElementById("vline2").style.height = bh + "px";
+                document.getElementById("vline3").style.height = bh + "px";
+            } else {
+                document.getElementById("vline1").style.height = 0;
+                document.getElementById("vline2").style.height = 0;
+                document.getElementById("vline3").style.height = 0;
+            }
+        }
     </script>
 </body>
 
