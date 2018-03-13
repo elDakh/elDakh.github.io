@@ -281,7 +281,7 @@
 }
 
 .card-viol {
-    background-color: transparent;
+    background-color: #292230;
     border: none;
 }
 
@@ -294,7 +294,30 @@
 }
 
 .card-portfolio-viol {
-    background-color: transparent;
+    background-color: #292230;
     color: white;
     border: 1px solid white;
 }
+
+.a-no-hover:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.a-no-hover {
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fd4000;
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+   background: #fd4000;
+}
+
