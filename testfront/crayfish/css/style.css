@@ -324,3 +324,8 @@
 .contacts-text {
     font-family: 'Nunito', sans-serif;
 }
+
+.form-transparent {
+    background-color: #292230;
+    color: white;
+}
