@@ -354,3 +354,14 @@
     background-color: #292230;
     color: white;
 }
+.btn-custom-white-input {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #fff;
+}
+
+.btn-custom-white-input:hover {
+    background-color: #fb4000;
+    border: 1px solid #fb4000;
+}
