@@ -336,26 +336,28 @@
                     <p>Fill out the form to chat with us</p>
                 </div>
             </div>
-            
+            <form action="https://formspree.io/contact@crayfish.studio"
+      method="POST">
             <div class="row no-gutters mb-5 justify-content-center">
                 <div class="col-md-4 px-md-1 mb-md-2 mb-3">
-                    <input class="form-control form-transparent" type="text" placeholder="Your name">
+                    <input class="form-control form-transparent" type="text" name="name" placeholder="Your name">
                 </div>
                 <div class="col-md-4 px-md-1 mb-md-2 mb-3">
-                    <input class="form-control form-transparent" type="tel" placeholder="Your phone">
+                    <input class="form-control form-transparent" type="tel" name="phone" placeholder="Your phone">
                 </div>
                 <div class="col-md-4 px-md-1 mb-md-2 mb-3">
-                    <input class="form-control form-transparent" type="email" placeholder="Your email">
+                    <input class="form-control form-transparent" type="email" name="_replyto" placeholder="Your email">
                 </div>
                 <div class="col-12 px-md-1 mb-md-2 mb-3">
-                    <textarea class="form-control form-transparent" id="exampleFormControlTextarea1" rows="5" placeholder="Your text..."></textarea>
+                    <textarea name="text" class="form-control form-transparent" id="exampleFormControlTextarea1" rows="5" placeholder="Your text..."></textarea>
                 </div>
                 <div class="col-md-4 px-md-1 mb-md-2 mb-3">
-                    <a href="#contacts" class="btn btn-custom-white mx-auto">Send it!</a>
+                	<input type="submit" class="btn btn-custom-white mx-auto" value="Send it!">
+                    
                 </div>
             </div>
         </div>
-        
+        </form>
         <footer>
             <div class="container">
                 <div class="row no-gutters text-white text-center text-uppercase mb-3">
