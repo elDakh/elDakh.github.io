@@ -97,6 +97,8 @@
     
     .card-viol {
         border: 1px solid white !important;
+        background-color: #292230 !important;
+        -webkit-background-color: #292230 !important;
     }
 }
 
@@ -167,7 +169,7 @@
 #lang-toggler {
     position: absolute;
     top: 22px;
-    right: 3.5%;
+    right: 3%;
     z-index: 50;
 }
 
@@ -185,6 +187,7 @@
     height: 40px;
     overflow: hidden;
     transition: all .5s ease;
+    text-align: right;
 }
 
 .languagepicker:hover {
@@ -344,7 +347,6 @@
 ::-webkit-scrollbar-thumb:window-inactive {
    background: #fd4000;
 }
-
 
 .contacts-text {
     font-family: 'Nunito', sans-serif;
