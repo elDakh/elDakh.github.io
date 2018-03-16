@@ -355,7 +355,22 @@
 .form-transparent {
     background-color: #292230;
     color: white;
+    width: 100%;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    border: 1px solid #fff;  
+    padding-left: 15px;
 }
+
+input, textarea {
+    outline: none;
+}
+
+textarea {
+    height: 135px; 
+    resize: none;
+}
+
 .btn-custom-white-input {
     width: 100%;
     background-color: transparent;
