@@ -366,6 +366,11 @@ input, textarea {
     outline: none;
 }
 
+textarea {
+    height: 135px; 
+    resize: none;
+}
+
 .btn-custom-white-input {
     width: 100%;
     background-color: transparent;
