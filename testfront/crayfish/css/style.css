@@ -298,14 +298,51 @@
 .btn-custom-white {
     border: 1px solid #fff;
     color: #fff;
-    width: 100%;
+    width: 100%;  
 }
+
 
 .btn-custom-white:hover {
     border: 1px solid #fd4000;
     color: #fff;
     background-color: #fd4000;
+    text-decoration: none;
 }
+/* //////////////////// */
+
+.btn-want {
+    color: #fff;
+    width: 100%;  
+}
+
+.btn-want:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-backg {
+    cursor: pointer;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #fff;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: transparent;
+    padding: 6px 0px;
+    -webkit-transition: all ease-in-out .3s;
+       -moz-transition: all ease-in-out .3s;
+        -ms-transition: all ease-in-out .3s;
+         -o-transition: all ease-in-out .3s;
+            transition: all ease-in-out .3s;
+}
+
+.btn-backg:hover {
+     border: 1px solid #fd4000;
+     background-color: #fd4000;
+}
+/* //////////////////// */
+
 
 .card-viol {
     background-color: #292230;
