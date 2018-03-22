@@ -266,7 +266,7 @@
 }
 
 .feature-header {
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Roboto Bold', sans-serif;
     margin-top: 20px;
 }
 
@@ -292,7 +292,7 @@
 .badge-orange {
     background-color: #fd4000;
     color: #fff;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Roboto Thin', sans-serif;
     font-size: 70%;
 }
 
