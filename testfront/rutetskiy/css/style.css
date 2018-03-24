@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Jura');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@media screen and (min-width: 768px) {
+    #back-bg {
+        position: absolute;
+        width: calc(100vw/12*5);
+        background-color: #000;
+        top: 0;
+        right: 0;
+        height: 100vh;
+    }
+    
+    #top-line {
+        position: absolute;
+        height: 1px;
+        background-color: #ffc98f;
+        width: 46vw;
+        left: 27vw;
+        top: calc((100vh - (100vw/12*5))/2);
+        z-index: 1;
+    }
+    
+    #bottom-line {
+        position: absolute;
+        height: 1px;
+        background-color: #ffc98f;
+        width: 46vw;
+        left: 27vw;
+        bottom: calc((100vh - (100vw/12*5))/2);
+        z-index: 1;
+    }
+    
+    .p-custom {
+        padding-left: 5.5vw;
+    }
+}
+
+.main-bg {
+    height: 100vh;
+    background-color: #fcfcfc;
+}
+
+.full-h {
+    height: 100%;
+}
+
+.main-text {
+    font-family: 'Jura', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.text-raleway {
+    font-family: 'Raleway Light', sans-serif;
+}
+
+.secondary-phrase {
+    color: #9b5100;
+    font-family: 'Raleway', sans-serif;
+}
+#menu-button {
+    position: relative;
+    color: #2e2e2e;
+    top: -40px;
+}
+
+#menu-button:hover {
+    color: #000;
+    text-decoration: none;
+}
