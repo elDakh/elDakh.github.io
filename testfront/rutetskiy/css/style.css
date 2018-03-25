@@ -207,22 +207,26 @@
     position: absolute;
     margin-top: 10px;
     margin-left: 10px;
+    -moz-position: absolute;
+    -moz-margin-top: 10px;
+    -moz-margin-left: 10px;
     height: 1px;
     width: 15px;
     background-color: #101010;
     transition: all .8s cubic-bezier(0.77,0.2,0.05,1.0);
     -moz-transition: all .8s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-}
 
 .btn-custom span:nth-last-child(1) {
     margin-left: 25px;
+    -moz-margin-left: 25px;
 }
 
 .btn-custom:hover span:nth-last-child(1) {
     transform-origin: 0px 1px;
     -moz-transform-origin: 0px 1px;
     margin-top: 15px;
+    -moz-margin-top: 15px;
     transform: rotate(-30deg);
     -moz-transform: rotate(-30deg);
 }
@@ -231,6 +235,7 @@
     transform-origin: 15px 1px;
     -moz-transform-origin: 15px 1px;
     margin-top: 15px;
+    -moz-margin-top: 15px;
     transform: rotate(30deg);
     -moz-transform: rotate(30deg);
 }
