@@ -239,3 +239,16 @@
     transform: rotate(30deg);
     -moz-transform: rotate(30deg);
 }
+#text-logo {
+    position: absolute;
+    top: 2.5vw;
+    color: #101010;
+    text-transform: uppercase;
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+}
+
+#social-container {
+    position: absolute;
+    bottom: 5vw;
+}
