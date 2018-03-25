@@ -195,8 +195,8 @@
     font-family: 'Raleway', sans-serif;
     padding-top: 10px;
     padding-bottom: 8px;
-    padding-right: 55px;
-    padding-left: 15px;
+    padding-right: 60px;
+    padding-left: 20px;
 }
 
 .btn-custom span {
@@ -206,7 +206,7 @@
     height: 1px;
     width: 15px;
     background-color: #101010;
-    transition: all .5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: all .8s cubic-bezier(0.77,0.2,0.05,1.0);
     
 }
 
