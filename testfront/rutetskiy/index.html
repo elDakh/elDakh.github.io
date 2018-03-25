@@ -13,8 +13,9 @@
     <title>Rutetskiy Layer Designs</title>
 </head>
 
-<body>
+<body onload="loadAnim()">
     <div class="container-fluid p-0 main-bg text-center">
+        <span id="back-bg-animated"></span>
         <span id="back-bg"></span>
         <span id="top-line">
             <a id="menu-button" class="text-raleway" href="#">МЕНЮ</a>
@@ -36,7 +37,7 @@
                         <span></span>
                         <span></span>
                     </div>
-                    <img class="img-fluid py-md-0" src="img/testimage.jpg">
+                    <img class="img-fluid py-md-0" src="img/photo-5.png">
                     <div id="arrow-down">
                         <span></span>
                         <span></span>
@@ -50,6 +51,18 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript">
+        function loadAnim() {
+            document.getElementById("back-bg-animated").style.width = window.innerWidth/12*5 + "px";
+            document.getElementById("back-bg-animated").style.opacity = 0;
+            setTimeout('zindexToNull()', 3000);  
+        }
+        
+        function zindexToNull() {
+            document.getElementById("back-bg-animated").style.zIndex = 0;
+        }
+    </script>
 </body>
 
 </html>
