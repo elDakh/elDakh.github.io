@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
 .overlay {
     height: 100%;
@@ -162,7 +163,7 @@
     text-transform: uppercase;
     font-weight: 100;
     font-size: 1.2rem;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Comfortaa', cursive;
     z-index: 1;
 }
 
@@ -176,7 +177,7 @@
 .btn-transp {
     background-color: transparent;
     border: none;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Comfortaa', cursive;
     font-weight: 100;
     color: white;
     font-size: 1.2rem;
@@ -223,7 +224,7 @@
     transition: opacity 0.4s;
     color: #2e2e2e;
     text-transform: uppercase;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Comfortaa', cursive;
     font-size: 3rem;
     line-height: 2;
 }
@@ -253,7 +254,7 @@
 
 .section-header {
     text-transform: uppercase;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 .text-orange {
     color: #FD4000;
@@ -265,7 +266,7 @@
 }
 
 .feature-header {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Bold', sans-serif;
     margin-top: 20px;
 }
 
@@ -291,20 +292,21 @@
 .badge-orange {
     background-color: #fd4000;
     color: #fff;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Thin', sans-serif;
     font-size: 70%;
 }
 
 .btn-custom-white {
     border: 1px solid #fff;
     color: #fff;
-    width: 100%;
+    width: 100%;  
 }
 
+
 .btn-custom-white:hover {
+    background-color: #fb4000;
     border: 1px solid #fd4000;
     color: #fff;
-    background-color: #fd4000;
 }
 
 .card-viol {
@@ -349,13 +351,28 @@
 }
 
 .contacts-text {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 
 .form-transparent {
     background-color: #292230;
     color: white;
+    width: 100%;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    border: 1px solid #fff;  
+    padding-left: 15px;
 }
+
+input, textarea {
+    outline: none;
+}
+
+textarea {
+    height: 135px; 
+    resize: none;
+}
+
 .btn-custom-white-input {
     width: 100%;
     background-color: transparent;
