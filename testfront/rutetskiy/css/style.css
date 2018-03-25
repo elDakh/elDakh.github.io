@@ -211,6 +211,8 @@
     width: 15px;
     background-color: #101010;
     transition: all .8s cubic-bezier(0.77,0.2,0.05,1.0);
+    -moz-transition: all .8s cubic-bezier(0.77,0.2,0.05,1.0);
+}
 }
 
 .btn-custom span:nth-last-child(1) {
@@ -219,12 +221,16 @@
 
 .btn-custom:hover span:nth-last-child(1) {
     transform-origin: 0px 1px;
+    -moz-transform-origin: 0px 1px;
     margin-top: 15px;
     transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
 }
 
 .btn-custom:hover span:nth-last-child(2) {
     transform-origin: 15px 1px;
+    -moz-transform-origin: 15px 1px;
     margin-top: 15px;
     transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
 }
