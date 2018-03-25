@@ -50,7 +50,7 @@
     
     #scroll-text {
         position: relative;
-        top: 15px;
+        top: 18px;
     }
 }
 
@@ -81,7 +81,7 @@
 #menu-button {
     position: relative;
     color: #2e2e2e;
-    top: -40px;
+    top: -43px;
 }
 
 #menu-button:hover {
