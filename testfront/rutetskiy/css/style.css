@@ -70,7 +70,7 @@
 }
 
 .text-raleway {
-    font-family: 'Raleway Light', sans-serif;
+    font-family: 'Raleway Light', sans-serif !important;
 }
 
 .secondary-phrase {
