@@ -5,7 +5,7 @@
     #back-bg-animated {
         position: absolute;
         width: 100%;
-        background-color: #fff;
+        background-color: #101010;
         top: 0;
         right: 0;
         height: 100vh;
@@ -166,12 +166,12 @@
 }
 
 #arrow-up:hover span:nth-last-child(2) {
-    width: 20px;
+    width: 14px;
     transform: rotate(30deg);
 }
 
 #arrow-up:hover span:nth-last-child(3) {
-    width: 20px;
+    width: 14px;
     transform: rotate(150deg);
 }
 
@@ -180,11 +180,11 @@
 }
 
 #arrow-down:hover span:nth-last-child(2) {
-    width: 20px;
+    width: 14px;
     transform: rotate(30deg);
 }
 
 #arrow-down:hover span:nth-last-child(3) {
-    width: 20px;
+    width: 14px;
     transform: rotate(150deg);
 }
