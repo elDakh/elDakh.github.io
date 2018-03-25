@@ -33,6 +33,7 @@
     
     .p-custom {
         padding-left: 5.5vw !important;
+        padding-right: 5.5vw !important;
     }
     
     #scroll-text {
@@ -83,6 +84,7 @@
     width: 31px;
     height: 31px;
     top: -15px;
+    transition: all .5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #arrow-up span {
@@ -90,25 +92,23 @@
     position: absolute;
     background: #fff;
     z-index: 1;
-    left: 50%;
-    transition: transform 1s cubic-bezier(0.77,0.2,0.05,1.0) 1s;
+    left: 16px;
+    transform-origin: 0px 0px;
+    transition: all .5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #arrow-up span:nth-last-child(1) {
-    transform-origin: 0px 0px;
     width: 31px;
     transform: rotate(90deg);
 }
 
 #arrow-up span:nth-last-child(2) {
     width: 10px;
-    transform-origin: 0px 0px;
     transform: rotate(45deg);
 }
 
 #arrow-up span:nth-last-child(3) {
     width: 11px;
-    transform-origin: 0px 0.1px;
     transform: rotate(135deg);
 }
 
@@ -119,6 +119,7 @@
     width: 31px;
     height: 31px;
     bottom: -15px;
+    transition: all .5s cubic-bezier(0.77,0.2,0.05,1.0);
     transform-origin: 16px 16px;
     transform: rotate(180deg);
 }
@@ -128,24 +129,50 @@
     position: absolute;
     background: #fff;
     z-index: 1;
-    left: 50%;
-    transition: transform 1s cubic-bezier(0.77,0.2,0.05,1.0) 1s;
+    left: 16px;
+    transform-origin: 0px 0px;
+    transition: all .5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #arrow-down span:nth-last-child(1) {
-    transform-origin: 0px 0px;
     width: 31px;
     transform: rotate(90deg);
 }
 
 #arrow-down span:nth-last-child(2) {
     width: 10px;
-    transform-origin: 0px 0px;
     transform: rotate(45deg);
 }
 
 #arrow-down span:nth-last-child(3) {
     width: 11px;
-    transform-origin: 0px 0.1px;
     transform: rotate(135deg);
+}
+
+#arrow-up:hover span:nth-last-child(1) {
+    width: 0px;
+}
+
+#arrow-up:hover span:nth-last-child(2) {
+    width: 20px;
+    transform: rotate(30deg);
+}
+
+#arrow-up:hover span:nth-last-child(3) {
+    width: 20px;
+    transform: rotate(150deg);
+}
+
+#arrow-down:hover span:nth-last-child(1) {
+    width: 0px;
+}
+
+#arrow-down:hover span:nth-last-child(2) {
+    width: 20px;
+    transform: rotate(30deg);
+}
+
+#arrow-down:hover span:nth-last-child(3) {
+    width: 20px;
+    transform: rotate(150deg);
 }
